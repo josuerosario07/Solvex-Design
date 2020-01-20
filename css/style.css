@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+@font-face {
+  font-family: coolvetica;
+  src: url(../assets/fonts/coolvetica-rg.ttf);
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+html body {
+  background: #162539;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+html body .container-atsj {
+  max-width: 1640px !important;
+}
+html body header {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/images/back-header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000a19;
+}
+html body header .navbar {
+  background-color: transparent !important;
+  padding-top: 15px;
+}
+html body header .navbar .container-atsj .navbar-brand {
+  margin-right: 60px;
+}
+html body header .navbar .container-atsj ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between !important;
+  width: 100%;
+}
+html body header .navbar .container-atsj ul li a {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+}
+html body header .navbar .container-atsj ul li .active {
+  padding: 5px 20px;
+  border-radius: 30px;
+  background-color: #dd3b30;
+}
+html body header .container-atsj .atsjcn {
+  background: transparent !important;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0;
+  max-width: 914px;
+  margin-top: 15%;
+}
+html body header .container-atsj .atsjcn h1 {
+  font-family: coolvetica;
+  font-size: 83px;
+  color: #dd3b30;
+}
+html body header .container-atsj .atsjcn p {
+  margin-top: 60px;
+}
+html body .content {
+  color: #fff;
+  min-height: 600px;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+html body .content .clouds {
+  position: absolute;
+}
+html body .content .cloud-1 {
+  top: 10px;
+  left: -140px;
+}
+html body .content .cloud-2 {
+  right: -140px;
+  top: 10px;
+}
+html body .content .cloud-3 {
+  bottom: 10px;
+  left: -140px;
+}
+html body .content .cloud-4 {
+  right: -140px;
+  bottom: 10px;
+}
+html body .content .serves-hq {
+  bottom: 80px;
+  right: 100px;
+  animation: float 2.5s ease-in-out infinite;
+}
+html body .content .container-atsj {
+  padding-top: 138px;
+}
+html body .content .container-atsj .text-left {
+  max-width: 440px;
+}
+html body .content .container-atsj .text-left h1 {
+  font-size: 133px;
+  font-family: coolvetica;
+  margin: -20px;
+  line-height: 63px;
+}
+html body .content .container-atsj .text-left h1 span {
+  font-size: 63px;
+  color: #aaaaaa;
+}
+html body .content .container-atsj .definition p {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,124 @@
+@import "main";
+
+html {
+  height: 100%;
+  width: 100%;
+
+  body {
+    background: $back-solvex;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    .container-atsj {
+      max-width: 1640px !important;
+    }
+    header {
+      height: 100%;
+      width: 100%;
+      background-image: url(../assets/images/back-header.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-color: $dark-solvex;
+      .navbar {
+        background-color: transparent !important;
+        padding-top: 15px;
+        .container-atsj {
+          .navbar-brand {
+            margin-right: 60px;
+          }
+          ul {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between !important;
+            width: 100%;
+            li {
+              a {
+                color: $white !important;
+                text-transform: capitalize;
+                font-size: 20px;
+                font-weight: 500;
+              }
+              .active {
+                padding: 5px 20px;
+                border-radius: 30px;
+                background-color: $orange-solvex;
+              }
+            }
+          }
+        }
+      }
+      .container-atsj {
+        .atsjcn {
+          background: transparent !important;
+          margin: 0 auto;
+          color: $white;
+          padding: 0;
+          max-width: 914px;
+          margin-top: 15%;
+          h1 {
+            font-family: $coolvetica;
+            font-size: 83px;
+            color: $orange-solvex;
+          }
+          p {
+            margin-top: 60px;
+          }
+        }
+      }
+    }
+    .content {
+      color: $white;
+      min-height: 600px;
+      position: relative;
+      z-index: -1;
+      overflow: hidden;
+      .clouds {
+        position: absolute;
+      }
+      .cloud-1 {
+        top: 10px;
+        left: -140px;
+      }
+      .cloud-2 {
+        right: -140px;
+        top: 10px;
+      }
+      .cloud-3 {
+        bottom: 10px;
+        left: -140px;
+      }
+      .cloud-4 {
+        right: -140px;
+        bottom: 10px;
+      }
+      .serves-hq {
+        bottom: 80px;
+        right: 100px;
+        animation: float 2.5s ease-in-out infinite;
+      }
+      .container-atsj {
+        padding-top: 138px;
+        .text-left {
+          max-width: 440px;
+          h1 {
+            font-size: 133px;
+            font-family: $coolvetica;
+            margin: -20px;
+            line-height: 63px;
+            span {
+              font-size: 63px;
+              color: $gray-solvex-text;
+            }
+          }
+        }
+        .definition {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
