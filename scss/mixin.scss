@@ -8,3 +8,17 @@
   flex-flow: column;
   flex-direction: column;
 }
+@mixin bigBtn {
+  width: 200px/340px;
+  padding: 28px 39px;
+  font-size: 22px;
+  font-family: $coolvetica;
+  background-color: $white;
+  color: $dark-solvex;
+  border-radius: 60px;
+}
+
+@mixin subtitleSection {
+  font-family: $coolvetica;
+  font-size: 63px;
+}

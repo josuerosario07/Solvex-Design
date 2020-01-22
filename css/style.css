@@ -14,12 +14,23 @@
     transform: translatey(0px);
   }
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 html {
   height: 100%;
   width: 100%;
 }
 html body {
-  background: #162539;
+  background: #000a19;
   height: 100%;
   width: 100%;
   font-family: "Montserrat", sans-serif;
@@ -30,16 +41,25 @@ html body .container-atsj {
 html body header {
   height: 100%;
   width: 100%;
-  background-image: url(../assets/images/back-header.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #000a19;
+  transition: all ease-in-out 0.6s;
+  position: relative;
+}
+html body header .back-header {
+  position: absolute;
+  top: 0 !important;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 html body header .navbar {
   background-color: transparent !important;
   padding-top: 15px;
+  position: fixed !important;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
 html body header .navbar .container-atsj .navbar-brand {
   margin-right: 60px;
@@ -61,71 +81,167 @@ html body header .navbar .container-atsj ul li .active {
   border-radius: 30px;
   background-color: #dd3b30;
 }
-html body header .container-atsj .atsjcn {
-  background: transparent !important;
-  margin: 0 auto;
-  color: #fff;
-  padding: 0;
-  max-width: 914px;
-  margin-top: 15%;
+html body header .new-nav {
+  background-color: black !important;
+  box-shadow: 0px 8px 20px rgba(221, 60, 48, 0.16);
 }
-html body header .container-atsj .atsjcn h1 {
+html body header .all-pl {
+  position: relative;
+  padding-top: 14%;
+}
+html body header .all-pl .atsjcn {
+  background-color: transparent;
+  max-width: 940px;
+  display: block;
+  margin: auto;
+}
+html body header .all-pl .atsjcn h1 {
   font-family: coolvetica;
-  font-size: 83px;
   color: #dd3b30;
+  font-size: 83px;
 }
-html body header .container-atsj .atsjcn p {
-  margin-top: 60px;
+html body header .all-pl .atsjcn p {
+  color: white;
+  margin-top: 20px;
 }
 html body .content {
   color: #fff;
+}
+html body .content .us {
   min-height: 600px;
   position: relative;
   z-index: -1;
   overflow: hidden;
 }
-html body .content .clouds {
+html body .content .us .clouds {
   position: absolute;
 }
-html body .content .cloud-1 {
-  top: 10px;
+html body .content .us .cloud-1 {
+  top: -140px;
   left: -140px;
 }
-html body .content .cloud-2 {
+html body .content .us .cloud-2 {
   right: -140px;
-  top: 10px;
+  top: -140px;
 }
-html body .content .cloud-3 {
+html body .content .us .cloud-3 {
   bottom: 10px;
   left: -140px;
 }
-html body .content .cloud-4 {
+html body .content .us .cloud-4 {
   right: -140px;
   bottom: 10px;
 }
-html body .content .serves-hq {
+html body .content .us .serves-hq {
   bottom: 80px;
   right: 100px;
   animation: float 2.5s ease-in-out infinite;
 }
-html body .content .container-atsj {
+html body .content .us .container-atsj {
   padding-top: 138px;
 }
-html body .content .container-atsj .text-left {
+html body .content .us .container-atsj .text-left {
   max-width: 440px;
 }
-html body .content .container-atsj .text-left h1 {
+html body .content .us .container-atsj .text-left h1 {
   font-size: 133px;
   font-family: coolvetica;
-  margin: -20px;
-  line-height: 63px;
+  margin-top: -30px;
+  margin-bottom: 0;
 }
-html body .content .container-atsj .text-left h1 span {
+html body .content .us .container-atsj .text-left h4 {
   font-size: 63px;
   color: #aaaaaa;
+  font-family: coolvetica;
+  margin-top: -30px;
+  margin-bottom: 0;
 }
-html body .content .container-atsj .definition p {
+html body .content .us .container-atsj .definition p {
   font-size: 20px;
+}
+html body .content .services {
+  width: 100%;
+  padding-top: 130px;
+  min-height: 650px;
+}
+html body .content .services .text {
+  width: 700px;
+}
+html body .content .services .text h2 {
+  font-family: coolvetica;
+  font-size: 63px;
+}
+html body .content .services .text p {
+  font-size: 20px;
+  margin-top: 0px;
+}
+html body .content .services .row {
+  margin: 163px;
+}
+html body .content .services .item-sx {
+  width: 190px;
+  height: 190px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  position: relative;
+  padding-top: 20px;
+  background-color: #000a19;
+  transition: 0.3s ease-in-out;
+}
+html body .content .services .item-sx:hover {
+  transform: scaleX(-1);
+}
+html body .content .services .item-sx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: 100%;
+  background: linear-gradient(-45deg, #ff4500, #ff7cc3, #006dff, #ff1000);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+}
+html body .content .services .item-sx img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+html body .content .services .description h3 {
+  margin-top: 35px;
+  font-weight: 300;
+  font-size: 20px;
+}
+html body .content .tools .item-sx .title {
+  max-width: 443px;
+}
+html body .content .tools .item-sx .title h1 {
+  color: #dd3b30;
+  font-family: coolvetica;
+  font-size: 63px;
+}
+html body .content .tools .item-sx .paraf {
+  max-width: 600px;
+  color: white;
+  margin-top: 40px;
+}
+html body .content .tools .item-sx .btn {
+  width: 200px/340px;
+  padding: 28px 39px;
+  font-size: 22px;
+  font-family: coolvetica;
+  background-color: #fff;
+  color: #000a19;
+  border-radius: 60px;
+  margin-top: 43px;
+  transition: 0.3s all ease-in-out;
+}
+html body .content .tools .item-sx .btn:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

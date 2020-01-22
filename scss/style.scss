@@ -5,7 +5,7 @@ html {
   width: 100%;
 
   body {
-    background: $back-solvex;
+    background: $dark-solvex;
     height: 100%;
     width: 100%;
     font-family: "Montserrat", sans-serif;
@@ -15,15 +15,29 @@ html {
     header {
       height: 100%;
       width: 100%;
-      background-image: url(../assets/images/back-header.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      background-color: $dark-solvex;
+      transition: all ease-in-out 0.6s;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      // background-attachment: fixed;
+      // background-color: $dark-solvex;
+      position: relative;
+      .back-header {
+        position: absolute;
+        top: 0 !important;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
       .navbar {
         background-color: transparent !important;
         padding-top: 15px;
+        position: fixed !important;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        left: 0;
         .container-atsj {
           .navbar-brand {
             margin-right: 60px;
@@ -49,73 +63,173 @@ html {
           }
         }
       }
-      .container-atsj {
+      .new-nav {
+        background-color: black !important;
+        box-shadow: 0px 8px 20px rgba(221, 60, 48, 0.16);
+      }
+      .all-pl {
+        position: relative;
+        padding-top: 14%;
         .atsjcn {
-          background: transparent !important;
-          margin: 0 auto;
-          color: $white;
-          padding: 0;
-          max-width: 914px;
-          margin-top: 15%;
+          background-color: transparent;
+          max-width: 940px;
+          display: block;
+          margin: auto;
           h1 {
             font-family: $coolvetica;
-            font-size: 83px;
             color: $orange-solvex;
+            font-size: 83px;
           }
           p {
-            margin-top: 60px;
+            color: white;
+            margin-top: 20px;
           }
         }
       }
     }
     .content {
       color: $white;
-      min-height: 600px;
-      position: relative;
-      z-index: -1;
-      overflow: hidden;
-      .clouds {
-        position: absolute;
-      }
-      .cloud-1 {
-        top: 10px;
-        left: -140px;
-      }
-      .cloud-2 {
-        right: -140px;
-        top: 10px;
-      }
-      .cloud-3 {
-        bottom: 10px;
-        left: -140px;
-      }
-      .cloud-4 {
-        right: -140px;
-        bottom: 10px;
-      }
-      .serves-hq {
-        bottom: 80px;
-        right: 100px;
-        animation: float 2.5s ease-in-out infinite;
-      }
-      .container-atsj {
-        padding-top: 138px;
-        .text-left {
-          max-width: 440px;
-          h1 {
-            font-size: 133px;
-            font-family: $coolvetica;
-            margin: -20px;
-            line-height: 63px;
-            span {
+      .us {
+        min-height: 600px;
+        position: relative;
+        z-index: -1;
+        overflow: hidden;
+        .clouds {
+          position: absolute;
+        }
+        .cloud-1 {
+          top: -140px;
+          left: -140px;
+        }
+        .cloud-2 {
+          right: -140px;
+          top: -140px;
+        }
+        .cloud-3 {
+          bottom: 10px;
+          left: -140px;
+        }
+        .cloud-4 {
+          right: -140px;
+          bottom: 10px;
+        }
+        .serves-hq {
+          bottom: 80px;
+          right: 100px;
+          animation: float 2.5s ease-in-out infinite;
+        }
+        .container-atsj {
+          padding-top: 138px;
+          .text-left {
+            max-width: 440px;
+            h1 {
+              font-size: 133px;
+              font-family: $coolvetica;
+              margin-top: -30px;
+              margin-bottom: 0;
+            }
+            h4 {
               font-size: 63px;
               color: $gray-solvex-text;
+              font-family: $coolvetica;
+              margin-top: -30px;
+              margin-bottom: 0;
+            }
+          }
+          .definition {
+            p {
+              font-size: 20px;
             }
           }
         }
-        .definition {
+      }
+      .services {
+        width: 100%;
+        padding-top: 130px;
+        min-height: 650px;
+        .text {
+          width: 700px;
+          h2 {
+            font-family: $coolvetica;
+            font-size: 63px;
+          }
           p {
             font-size: 20px;
+            margin-top: 0px;
+          }
+        }
+        .row {
+          margin: 163px;
+        }
+        .item-sx {
+          width: 190px;
+          height: 190px;
+          display: block;
+          margin: 0 auto;
+          border-radius: 100%;
+          position: relative;
+          padding-top: 20px;
+          background-color: $dark-solvex;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            transform: scaleX(-1);
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin: -5px;
+            border-radius: 100%;
+            background: linear-gradient(
+              -45deg,
+              #ff4500,
+              #ff7cc3,
+              #006dff,
+              #ff1000
+            );
+            background-size: 400% 400%;
+            animation: gradient 3s ease infinite;
+          }
+
+          img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+          }
+        }
+        .description {
+          h3 {
+            margin-top: 35px;
+            font-weight: 300;
+            font-size: 20px;
+          }
+        }
+      }
+      .tools {
+        .item-sx {
+          .title {
+            max-width: 443px;
+            h1 {
+              color: $orange-solvex;
+              @include subtitleSection;
+            }
+          }
+          .paraf {
+            max-width: 600px;
+            color: white;
+            margin-top: 40px;
+          }
+          .btn {
+            @include bigBtn;
+            margin-top: 43px;
+            transition: 0.3s all ease-in-out;
+            &:hover {
+              transform: scale(1.1);
+            }
           }
         }
       }
