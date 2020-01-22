@@ -35,7 +35,7 @@ html {
         padding-top: 15px;
         position: fixed !important;
         width: 100%;
-        z-index: 2;
+        z-index: 10;
         top: 0;
         left: 0;
         .container-atsj {
@@ -229,6 +229,123 @@ html {
             transition: 0.3s all ease-in-out;
             &:hover {
               transform: scale(1.1);
+            }
+          }
+        }
+        .item-bg {
+          display: block;
+          margin-right: auto;
+          float: right;
+          padding: 30px;
+          height: 500px;
+          width: 500px;
+          border-radius: 100%;
+          background: rgb(0, 0, 0);
+          position: relative;
+          background: transparent;
+          img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+            position: relative;
+            z-index: 3;
+            animation: float 2.5s ease-in-out infinite;
+          }
+          .blured {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+
+            background: linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 1) 0%,
+              rgba(169, 15, 175, 1) 32%,
+              rgba(53, 32, 139, 1) 57%,
+              rgba(147, 68, 9, 1) 79%,
+              rgba(0, 0, 0, 1) 100%
+            );
+            filter: blur(30px);
+            opacity: 0.19;
+          }
+        }
+      }
+      .patner {
+        .item-sx {
+          display: block;
+          margin: 200px auto;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .clients {
+        min-height: 602px;
+        h1 {
+          @include subtitleSection;
+          text-align: center;
+          margin-top: 100px;
+        }
+        .client-logos {
+          @include flexRow;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 100%;
+          margin-top: 80px;
+          margin-bottom: 80px;
+          .item {
+            align-content: center;
+            align-items: center;
+            img {
+            }
+          }
+        }
+      }
+      .trust {
+        h1 {
+          @include subtitleSection;
+          text-align: center;
+        }
+        .content-sx {
+          max-width: 670px;
+          height: 450px;
+          position: relative;
+          margin-top: 100px;
+          .title {
+            @include subtitleSection;
+            color: $orange-solvex;
+          }
+          .paraf {
+            color: $white;
+            font-weight: 300;
+            margin-top: 30px;
+          }
+          .footer-item {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            @include flexRow;
+            justify-content: space-between;
+            .autor {
+              margin-top: 30px;
+              a {
+                color: $orange-solvex;
+              }
+              .job {
+                margin-top: 15px;
+                p {
+                  color: $white;
+                  text-transform: uppercase;
+                  font-size: 20px;
+                  margin-bottom: -5px;
+                }
+              }
+            }
+            .profile-autor {
+              box-shadow: 0 3px 21px rgba(221, 59, 48, 0.69);
             }
           }
         }
