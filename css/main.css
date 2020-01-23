@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+.btn-big {
+  width: 200px/340px;
+  padding: 28px 39px;
+  font-size: 22px;
+  font-family: coolvetica;
+  background-color: #fff;
+  color: #000a19;
+  border-radius: 60px;
+  margin-top: 43px;
+  transition: 0.3s all ease-in-out;
+}
+.btn-big:hover {
+  transform: scale(1.1);
+}
+
 @font-face {
   font-family: coolvetica;
   src: url(../assets/fonts/coolvetica-rg.ttf);

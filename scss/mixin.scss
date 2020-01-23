@@ -22,3 +22,12 @@
   font-family: $coolvetica;
   font-size: 63px;
 }
+
+.btn-big {
+  @include bigBtn;
+  margin-top: 43px;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
