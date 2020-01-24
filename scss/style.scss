@@ -9,6 +9,7 @@ html {
     height: 100%;
     width: 100%;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
     .container-atsj {
       max-width: 1640px !important;
     }
@@ -269,16 +270,24 @@ html {
         }
       }
       .patner {
+        position: relative;
+        height: 100%;
+        width: 120%;
+        z-index: 9;
+
         .item-sx {
           display: block;
           margin: 200px auto;
           img {
             width: 100%;
+            position: relative;
+            z-index: -1;
           }
         }
       }
       .clients {
         min-height: 602px;
+        position: relative;
         h1 {
           @include subtitleSection;
           text-align: center;
@@ -414,4 +423,18 @@ html {
       }
     }
   }
+}
+
+.magic {
+  z-index: 5;
+  position: absolute;
+  top: calc(100% - 10rem);
+  left: calc(100% - 10rem);
+  width: 30rem;
+  filter: blur(5px);
+  height: 30rem;
+  background: url("https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-15/e35/37188836_1973437792721179_4754693177955319808_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=FsfU7nrzHtcAX_f-257&oh=1041e642799138325c2d5cb78e8fd3e6&oe=5EB8D4E6")
+    50% 50% no-repeat fixed;
+  background-size: cover;
+  border-radius: 50%;
 }
