@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+.btn-big {
+  width: 200px/340px;
+  padding: 28px 39px;
+  font-size: 22px;
+  font-family: coolvetica;
+  background-color: #fff;
+  color: #000a19;
+  border-radius: 60px;
+  margin-top: 43px;
+  transition: 0.3s all ease-in-out;
+}
+.btn-big:hover {
+  transform: scale(1.1);
+}
+
+@font-face {
+  font-family: coolvetica;
+  src: url(../assets/fonts/coolvetica-rg.ttf);
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes rotatecircle {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@media screen and (max-width: 1440px) {
+  html body .container-atsj {
+    max-width: 1160px;
+  }
+  html body header .navbar {
+    display: table;
+  }
+  html body .content .us .serves-hq {
+    right: 40px;
+  }
+  html body .content .us .container-atsj .text-left .mini {
+    font-size: 50px;
+  }
+  html body .content .us .container-atsj .text-left h1 {
+    font-size: 90px;
+  }
+  html body .content .services .item-sx {
+    width: 150px;
+    height: 150px;
+  }
+  html body .content .services .item-sx img {
+    margin-top: 20px;
+    width: 80px;
+  }
+  html body .content .trust .content-sx .title h1 {
+    font-size: 43px;
+  }
+  html body .content .trust .content-sx .paraf,
+html body .content .trust .content-sx .footer-item {
+    max-width: 443px;
+  }
+}
+@media screen and (max-width: 991px) {
+  body .content {
+    padding: 30px;
+  }
+  body .content .tools .item-sx {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  body .content .tools .item-sx .title,
+body .content .tools .item-sx .paraf,
+body .content .tools .item-sx .btn {
+    display: block;
+    margin: auto;
+  }
+  body .content .tools .item-bg {
+    display: block;
+    margin: auto;
+    margin-top: 110px;
+    float: none !important;
+  }
+  body .trust .desktop-trust {
+    display: none !important;
+  }
+  body .trust .content-sx {
+    max-width: 100% !important;
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: auto !important;
+  }
+  body .trust .content-sx .title,
+body .trust .content-sx .paraf,
+body .trust .content-sx .footer-item {
+    max-width: 70% !important;
+    display: block;
+    margin: auto;
+    position: relative !important;
+  }
+  body .trust .owl-carousel {
+    display: block !important;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

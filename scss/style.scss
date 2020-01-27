@@ -11,7 +11,7 @@ html {
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
     .container-atsj {
-      max-width: 1640px !important;
+      max-width: 1640px;
     }
     header {
       height: 100%;
@@ -52,7 +52,7 @@ html {
               a {
                 color: $white !important;
                 text-transform: capitalize;
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 500;
               }
               .active {
@@ -140,6 +140,10 @@ html {
           .definition {
             p {
               font-size: 20px;
+              //special media-query
+              @media screen and (max-width: 1440px) {
+                font-size: 17px;
+              }
             }
           }
         }
@@ -246,6 +250,7 @@ html {
             position: relative;
             z-index: 3;
             animation: float 2.5s ease-in-out infinite;
+            margin-top: 25px;
           }
           .blured {
             position: absolute;
@@ -279,7 +284,7 @@ html {
           display: block;
           margin: 200px auto;
           img {
-            width: 100%;
+            width: 80%;
             position: relative;
             z-index: -1;
           }
@@ -295,14 +300,16 @@ html {
         }
         .client-logos {
           @include flexRow;
-          justify-content: space-between;
+          justify-content: center;
           flex-wrap: wrap;
           width: 100%;
           margin-top: 80px;
           margin-bottom: 80px;
           .item {
+            @include flexRow;
             align-content: center;
             align-items: center;
+            margin: 20px;
             img {
             }
           }
@@ -314,7 +321,7 @@ html {
         }
         .content-sx {
           max-width: 670px;
-          height: 450px;
+          height: 640px;
           position: relative;
           margin-top: 100px;
           .title {
@@ -383,6 +390,9 @@ html {
           display: block;
           margin: 100px auto;
         }
+        .owl-carousel {
+          display: none;
+        }
       }
       .cost {
         h1 {
@@ -422,6 +432,212 @@ html {
         }
       }
     }
+
+    // about page
+    #section-about {
+      #about {
+        .all-pl {
+          .atsjcn {
+            max-width: 100% !important;
+            h1 {
+              max-width: 522px;
+              text-shadow: 3px 8px 20px rgba(0, 0, 0, 0.4);
+            }
+            p {
+              font-family: $coolvetica;
+              color: $white;
+              font-size: 54px;
+              max-width: 722px;
+            }
+          }
+        }
+        .back-header {
+          top: -300px !important;
+          right: -900px !important;
+          width: 130% !important;
+          height: unset !important;
+          transform: rotate(-100deg) !important;
+        }
+        .profile-header {
+          position: absolute;
+          top: 250px;
+          right: 120px;
+          img {
+            &:last-child {
+              margin-left: -180px;
+            }
+          }
+        }
+      }
+      .content {
+        margin-top: 200px;
+        h1 {
+          @include subtitleSection;
+        }
+        h2 {
+          @include subtitleSection;
+          color: $gray-solvex-text;
+          font-size: 35px;
+        }
+        .people {
+          width: 100%;
+          margin-top: 100px;
+          @include flexRow;
+          justify-content: space-between;
+          flex: 1 1 auto;
+          .item {
+            @include flexColum;
+            min-height: 672px;
+            max-width: 475px;
+            position: relative;
+            img {
+              @include fitImage;
+            }
+            .social {
+              width: 70px;
+              height: 70px;
+              border-radius: 60px;
+              position: absolute;
+              right: 30px;
+              bottom: 40px;
+            }
+          }
+        }
+        .btn {
+          @extend .btn-big;
+          width: 340px;
+          @include blockItem;
+          margin-top: 100px !important;
+        }
+        .experience {
+          margin-top: 200px;
+          .item-sx {
+            width: 100%;
+            min-height: 762px;
+            background-color: $back-solvex;
+            padding: 50px 130px;
+            @include flexColum;
+            .content-sx {
+              margin-top: 0;
+              @include flexRow;
+              .left {
+                width: 50%;
+                h1 {
+                  color: $orange-solvex;
+                  @include subtitleSection;
+                  font-size: 81px;
+                  max-width: 369px;
+                }
+                p {
+                  max-width: 790px;
+                }
+              }
+              .right {
+                width: 50%;
+                align-items: flex-end;
+                position: relative;
+                img {
+                  width: 80%;
+                  align-self: flex-end;
+                  float: right;
+                  &:last-child {
+                    position: absolute;
+                    right: -260px;
+                    top: 100px;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            .people-sx {
+              @include flexRow;
+              margin-top: 0;
+              .item {
+                width: 120px;
+                height: 120px;
+                margin-right: 25px;
+                border-radius: 100%;
+                border: solid 5px $back-solvex;
+                img {
+                  @include fitImage;
+                }
+              }
+              .active {
+                border: solid 5px $orange-solvex;
+              }
+            }
+          }
+        }
+        .credits {
+          margin-top: 100px;
+          height: 450px;
+          position: relative;
+
+          .item-sx {
+            @include flexRow;
+            justify-content: space-between;
+            .left {
+              max-width: 563px;
+              height: 450px;
+              position: relative;
+              h1 {
+                @include subtitleSection;
+                color: $orange-solvex;
+                font-size: 63px;
+              }
+              .author {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+              }
+            }
+            .right {
+              min-width: 837px;
+              min-height: 483px;
+              background: $back-solvex;
+              @include flexRow;
+              padding: 55px;
+              justify-content: space-between;
+              .items {
+                img {
+                  width: 98px;
+                }
+                .title {
+                  font-size: 38px;
+                  font-family: $coolvetica;
+                }
+
+                .member {
+                  margin-top: 34px;
+                  font-family: $coolvetica;
+                }
+                .date {
+                  margin-top: 60px;
+                  font-size: 14px;
+                }
+                .mini-title {
+                  margin-top: 34px;
+                  font-size: 14px;
+                }
+                p {
+                  font-size: 14px;
+                  font-family: "Montserrat", sans-serif;
+                }
+              }
+              .item-2 {
+                max-width: 398px;
+              }
+              .item-3 {
+                min-width: 100px;
+                img {
+                  width: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -438,3 +654,5 @@ html {
   background-size: cover;
   border-radius: 50%;
 }
+
+@import "responsive";

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
-.btn-big, html body .content .cost .btn, html body .content .trust .btn-client, html body .content .tools .item-sx .btn {
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+.btn-big, html body #section-about .content .btn, html body .content .cost .btn, html body .content .trust .btn-client, html body .content .tools .item-sx .btn {
   width: 200px/340px;
   padding: 28px 39px;
   font-size: 22px;
@@ -10,7 +11,7 @@
   margin-top: 43px;
   transition: 0.3s all ease-in-out;
 }
-.btn-big:hover, html body .content .cost .btn:hover, html body .content .trust .btn-client:hover, html body .content .tools .item-sx .btn:hover {
+.btn-big:hover, html body #section-about .content .btn:hover, html body .content .cost .btn:hover, html body .content .trust .btn-client:hover, html body .content .tools .item-sx .btn:hover {
   transform: scale(1.1);
 }
 
@@ -60,7 +61,7 @@ html body {
   overflow-x: hidden;
 }
 html body .container-atsj {
-  max-width: 1640px !important;
+  max-width: 1640px;
 }
 html body header {
   height: 100%;
@@ -97,7 +98,7 @@ html body header .navbar .container-atsj ul {
 html body header .navbar .container-atsj ul li a {
   color: #fff !important;
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 html body header .navbar .container-atsj ul li .active {
@@ -182,6 +183,11 @@ html body .content .us .container-atsj .text-left h4 {
 }
 html body .content .us .container-atsj .definition p {
   font-size: 20px;
+}
+@media screen and (max-width: 1440px) {
+  html body .content .us .container-atsj .definition p {
+    font-size: 17px;
+  }
 }
 html body .content .services {
   width: 100%;
@@ -272,6 +278,7 @@ html body .content .tools .item-bg img {
   position: relative;
   z-index: 3;
   animation: float 2.5s ease-in-out infinite;
+  margin-top: 25px;
 }
 html body .content .tools .item-bg .blured {
   position: absolute;
@@ -296,7 +303,7 @@ html body .content .patner .item-sx {
   margin: 200px auto;
 }
 html body .content .patner .item-sx img {
-  width: 100%;
+  width: 80%;
   position: relative;
   z-index: -1;
 }
@@ -314,15 +321,19 @@ html body .content .clients .client-logos {
   display: flex;
   flex-flow: row;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 80px;
   margin-bottom: 80px;
 }
 html body .content .clients .client-logos .item {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
   align-content: center;
   align-items: center;
+  margin: 20px;
 }
 html body .content .trust h1 {
   font-family: coolvetica;
@@ -330,7 +341,7 @@ html body .content .trust h1 {
 }
 html body .content .trust .content-sx {
   max-width: 670px;
-  height: 450px;
+  height: 640px;
   position: relative;
   margin-top: 100px;
 }
@@ -394,6 +405,9 @@ html body .content .trust .btn-client {
   display: block;
   margin: 100px auto;
 }
+html body .content .trust .owl-carousel {
+  display: none;
+}
 html body .content .cost h1 {
   font-family: coolvetica;
   font-size: 63px;
@@ -430,6 +444,220 @@ html body .content .logo-patner .items {
 html body .content .logo-patner .items img {
   margin: 20px;
 }
+html body #section-about #about .all-pl .atsjcn {
+  max-width: 100% !important;
+}
+html body #section-about #about .all-pl .atsjcn h1 {
+  max-width: 522px;
+  text-shadow: 3px 8px 20px rgba(0, 0, 0, 0.4);
+}
+html body #section-about #about .all-pl .atsjcn p {
+  font-family: coolvetica;
+  color: #fff;
+  font-size: 54px;
+  max-width: 722px;
+}
+html body #section-about #about .back-header {
+  top: -300px !important;
+  right: -900px !important;
+  width: 130% !important;
+  height: unset !important;
+  transform: rotate(-100deg) !important;
+}
+html body #section-about #about .profile-header {
+  position: absolute;
+  top: 250px;
+  right: 120px;
+}
+html body #section-about #about .profile-header img:last-child {
+  margin-left: -180px;
+}
+html body #section-about .content {
+  margin-top: 200px;
+}
+html body #section-about .content h1 {
+  font-family: coolvetica;
+  font-size: 63px;
+}
+html body #section-about .content h2 {
+  font-family: coolvetica;
+  font-size: 63px;
+  color: #aaaaaa;
+  font-size: 35px;
+}
+html body #section-about .content .people {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+html body #section-about .content .people .item {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  min-height: 672px;
+  max-width: 475px;
+  position: relative;
+}
+html body #section-about .content .people .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body #section-about .content .people .item .social {
+  width: 70px;
+  height: 70px;
+  border-radius: 60px;
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+html body #section-about .content .btn {
+  width: 340px;
+  display: block;
+  margin: auto;
+  margin-top: 100px !important;
+}
+html body #section-about .content .experience {
+  margin-top: 200px;
+}
+html body #section-about .content .experience .item-sx {
+  width: 100%;
+  min-height: 762px;
+  background-color: #162539;
+  padding: 50px 130px;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+}
+html body #section-about .content .experience .item-sx .content-sx {
+  margin-top: 0;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+}
+html body #section-about .content .experience .item-sx .content-sx .left {
+  width: 50%;
+}
+html body #section-about .content .experience .item-sx .content-sx .left h1 {
+  color: #dd3b30;
+  font-family: coolvetica;
+  font-size: 63px;
+  font-size: 81px;
+  max-width: 369px;
+}
+html body #section-about .content .experience .item-sx .content-sx .left p {
+  max-width: 790px;
+}
+html body #section-about .content .experience .item-sx .content-sx .right {
+  width: 50%;
+  align-items: flex-end;
+  position: relative;
+}
+html body #section-about .content .experience .item-sx .content-sx .right img {
+  width: 80%;
+  align-self: flex-end;
+  float: right;
+}
+html body #section-about .content .experience .item-sx .content-sx .right img:last-child {
+  position: absolute;
+  right: -260px;
+  top: 100px;
+  width: 100%;
+}
+html body #section-about .content .experience .item-sx .people-sx {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  margin-top: 0;
+}
+html body #section-about .content .experience .item-sx .people-sx .item {
+  width: 120px;
+  height: 120px;
+  margin-right: 25px;
+  border-radius: 100%;
+  border: solid 5px #162539;
+}
+html body #section-about .content .experience .item-sx .people-sx .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body #section-about .content .experience .item-sx .people-sx .active {
+  border: solid 5px #dd3b30;
+}
+html body #section-about .content .credits {
+  margin-top: 100px;
+  height: 450px;
+  position: relative;
+}
+html body #section-about .content .credits .item-sx {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body #section-about .content .credits .item-sx .left {
+  max-width: 563px;
+  height: 450px;
+  position: relative;
+}
+html body #section-about .content .credits .item-sx .left h1 {
+  font-family: coolvetica;
+  font-size: 63px;
+  color: #dd3b30;
+  font-size: 63px;
+}
+html body #section-about .content .credits .item-sx .left .author {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html body #section-about .content .credits .item-sx .right {
+  min-width: 837px;
+  min-height: 483px;
+  background: #162539;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  padding: 55px;
+  justify-content: space-between;
+}
+html body #section-about .content .credits .item-sx .right .items img {
+  width: 98px;
+}
+html body #section-about .content .credits .item-sx .right .items .title {
+  font-size: 38px;
+  font-family: coolvetica;
+}
+html body #section-about .content .credits .item-sx .right .items .member {
+  margin-top: 34px;
+  font-family: coolvetica;
+}
+html body #section-about .content .credits .item-sx .right .items .date {
+  margin-top: 60px;
+  font-size: 14px;
+}
+html body #section-about .content .credits .item-sx .right .items .mini-title {
+  margin-top: 34px;
+  font-size: 14px;
+}
+html body #section-about .content .credits .item-sx .right .items p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+html body #section-about .content .credits .item-sx .right .item-2 {
+  max-width: 398px;
+}
+html body #section-about .content .credits .item-sx .right .item-3 {
+  min-width: 100px;
+}
+html body #section-about .content .credits .item-sx .right .item-3 img {
+  width: 40px;
+}
 
 .magic {
   z-index: 5;
@@ -442,6 +670,131 @@ html body .content .logo-patner .items img {
   background: url("https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-15/e35/37188836_1973437792721179_4754693177955319808_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=FsfU7nrzHtcAX_f-257&oh=1041e642799138325c2d5cb78e8fd3e6&oe=5EB8D4E6") 50% 50% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
+}
+
+.btn-big, html body .content .tools .item-sx .btn, html body .content .trust .btn-client, html body .content .cost .btn, html body #section-about .content .btn {
+  width: 200px/340px;
+  padding: 28px 39px;
+  font-size: 22px;
+  font-family: coolvetica;
+  background-color: #fff;
+  color: #000a19;
+  border-radius: 60px;
+  margin-top: 43px;
+  transition: 0.3s all ease-in-out;
+}
+.btn-big:hover, html body .content .tools .item-sx .btn:hover, html body .content .trust .btn-client:hover, html body .content .cost .btn:hover, html body #section-about .content .btn:hover {
+  transform: scale(1.1);
+}
+
+@font-face {
+  font-family: coolvetica;
+  src: url(../assets/fonts/coolvetica-rg.ttf);
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes rotatecircle {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@media screen and (max-width: 1440px) {
+  html body .container-atsj {
+    max-width: 1160px;
+  }
+  html body header .navbar {
+    display: table;
+  }
+  html body .content .us .serves-hq {
+    right: 40px;
+  }
+  html body .content .us .container-atsj .text-left .mini {
+    font-size: 50px;
+  }
+  html body .content .us .container-atsj .text-left h1 {
+    font-size: 90px;
+  }
+  html body .content .services .item-sx {
+    width: 150px;
+    height: 150px;
+  }
+  html body .content .services .item-sx img {
+    margin-top: 20px;
+    width: 80px;
+  }
+  html body .content .trust .content-sx .title h1 {
+    font-size: 43px;
+  }
+  html body .content .trust .content-sx .paraf,
+html body .content .trust .content-sx .footer-item {
+    max-width: 443px;
+  }
+}
+@media screen and (max-width: 991px) {
+  body .content {
+    padding: 30px;
+  }
+  body .content .tools .item-sx {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  body .content .tools .item-sx .title,
+body .content .tools .item-sx .paraf,
+body .content .tools .item-sx .btn {
+    display: block;
+    margin: auto;
+  }
+  body .content .tools .item-bg {
+    display: block;
+    margin: auto;
+    margin-top: 110px;
+    float: none !important;
+  }
+  body .trust .desktop-trust {
+    display: none !important;
+  }
+  body .trust .content-sx {
+    max-width: 100% !important;
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: auto !important;
+  }
+  body .trust .content-sx .title,
+body .trust .content-sx .paraf,
+body .trust .content-sx .footer-item {
+    max-width: 70% !important;
+    display: block;
+    margin: auto;
+    position: relative !important;
+  }
+  body .trust .owl-carousel {
+    display: block !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

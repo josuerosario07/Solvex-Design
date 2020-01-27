@@ -1,0 +1,105 @@
+@import "main";
+
+@media screen and (max-width: 1440px) {
+  html {
+    body {
+      .container-atsj {
+        max-width: 1160px;
+      }
+      header {
+        .navbar {
+          display: table;
+        }
+      }
+      .content {
+        .us {
+          .serves-hq {
+            right: 40px;
+          }
+          .container-atsj {
+            .text-left {
+              .mini {
+                font-size: 50px;
+              }
+              h1 {
+                font-size: 90px;
+              }
+            }
+          }
+        }
+        .services {
+          .item-sx {
+            width: 150px;
+            height: 150px;
+            img {
+              margin-top: 20px;
+              width: 80px;
+            }
+          }
+        }
+        .trust {
+          .content-sx {
+            .title {
+              h1 {
+                font-size: 43px;
+              }
+            }
+            .paraf,
+            .footer-item {
+              max-width: 443px;
+            }
+          }
+        }
+        .cost {
+          ul {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    .content {
+      padding: 30px;
+      .tools {
+        .item-sx {
+          text-align: center;
+          @include blockItem;
+          .title,
+          .paraf,
+          .btn {
+            @include blockItem;
+          }
+        }
+        .item-bg {
+          @include blockItem;
+          margin-top: 110px;
+          float: none !important;
+        }
+      }
+    }
+    .trust {
+      .desktop-trust {
+        display: none !important;
+      }
+      .content-sx {
+        max-width: 100% !important;
+        @include blockItem;
+        text-align: center;
+        height: auto !important;
+        .title,
+        .paraf,
+        .footer-item {
+          max-width: 70% !important;
+          @include blockItem;
+          position: relative !important;
+        }
+      }
+      .owl-carousel {
+        display: block !important;
+      }
+    }
+  }
+}
