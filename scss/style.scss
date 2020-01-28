@@ -570,9 +570,8 @@ html {
         }
         .credits {
           margin-top: 100px;
-          height: 450px;
           position: relative;
-
+          padding-bottom: 80px;
           .item-sx {
             @include flexRow;
             justify-content: space-between;
@@ -593,7 +592,7 @@ html {
             }
             .right {
               min-width: 837px;
-              min-height: 483px;
+              min-height: 350px;
               background: $back-solvex;
               @include flexRow;
               padding: 55px;
@@ -629,8 +628,11 @@ html {
               }
               .item-3 {
                 min-width: 100px;
+                @include flexColum;
+                justify-content: center;
                 img {
                   width: 40px;
+                  align-self: center;
                 }
               }
             }

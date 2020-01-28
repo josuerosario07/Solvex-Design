@@ -591,8 +591,8 @@ html body #section-about .content .experience .item-sx .people-sx .active {
 }
 html body #section-about .content .credits {
   margin-top: 100px;
-  height: 450px;
   position: relative;
+  padding-bottom: 80px;
 }
 html body #section-about .content .credits .item-sx {
   display: flex;
@@ -618,7 +618,7 @@ html body #section-about .content .credits .item-sx .left .author {
 }
 html body #section-about .content .credits .item-sx .right {
   min-width: 837px;
-  min-height: 483px;
+  min-height: 350px;
   background: #162539;
   display: flex;
   flex-flow: row;
@@ -654,9 +654,14 @@ html body #section-about .content .credits .item-sx .right .item-2 {
 }
 html body #section-about .content .credits .item-sx .right .item-3 {
   min-width: 100px;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: center;
 }
 html body #section-about .content .credits .item-sx .right .item-3 img {
   width: 40px;
+  align-self: center;
 }
 
 .magic {
