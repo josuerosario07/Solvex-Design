@@ -45,3 +45,10 @@ $(document).ready(function() {
     }
   });
 });
+
+$(function() {
+  var cube = new Cube({
+    cubeWrapperSelector: ".CubeWrapper",
+    transitionTime: 300
+  });
+});

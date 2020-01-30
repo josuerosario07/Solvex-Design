@@ -52,3 +52,12 @@
   height: 100%;
   object-fit: cover;
 }
+
+@mixin mini-buttom {
+  background: white;
+  color: $orange-solvex;
+  padding: 8px 15px;
+  border-radius: 30px;
+  width: 90%;
+  font-weight: bold;
+}

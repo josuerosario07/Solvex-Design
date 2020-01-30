@@ -61,6 +61,33 @@
 
 @media screen and (max-width: 991px) {
   body {
+    header {
+      .navbar {
+        .container-atsj {
+          .navbar-nav {
+            display: block;
+            padding: 35px 15px 15px 0;
+            li {
+              .active {
+                background: transparent;
+                color: $orange-solvex !important;
+                position: relative;
+                &::before {
+                  content: " ";
+                  position: absolute;
+                  top: 11px;
+                  left: 0;
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 100%;
+                  background-color: $orange-solvex;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .content {
       padding: 30px;
       .tools {
