@@ -104,7 +104,7 @@ html {
       .us {
         min-height: 600px;
         position: relative;
-        z-index: -1;
+        z-index: 1;
         overflow: hidden;
         .clouds {
           position: absolute;
@@ -134,17 +134,18 @@ html {
           padding-top: 138px;
           .text-left {
             max-width: 440px;
-            h1 {
+            line-height: 0px;
+            h2 {
               font-size: 133px;
               font-family: $coolvetica;
-              margin-top: -30px;
               margin-bottom: 0;
+              margin-top: -10x;
+              color: $orange-solvex;
             }
-            h4 {
+            .mini {
               font-size: 63px;
-              color: $gray-solvex-text;
+              color: $white;
               font-family: $coolvetica;
-              margin-top: -30px;
               margin-bottom: 0;
             }
           }
@@ -165,7 +166,7 @@ html {
         min-height: 650px;
         .text {
           width: 700px;
-          h2 {
+          h3 {
             font-family: $coolvetica;
             font-size: 63px;
           }
@@ -229,7 +230,7 @@ html {
         .item-sx {
           .title {
             max-width: 443px;
-            h1 {
+            h3 {
               color: $orange-solvex;
               @include subtitleSection;
             }
@@ -304,7 +305,7 @@ html {
       .clients {
         min-height: 602px;
         position: relative;
-        h1 {
+        h3 {
           @include subtitleSection;
           text-align: center;
           margin-top: 100px;
@@ -326,8 +327,9 @@ html {
           }
         }
       }
+
       .trust {
-        h1 {
+        h3 {
           @include subtitleSection;
         }
         .content-sx {
@@ -335,9 +337,12 @@ html {
           height: 640px;
           position: relative;
           margin-top: 100px;
+          margin-bottom: 100px;
           .title {
-            @include subtitleSection;
-            color: $orange-solvex;
+            h4 {
+              @include subtitleSection;
+              color: $orange-solvex;
+            }
           }
           .paraf {
             color: $white;
@@ -399,7 +404,7 @@ html {
           width: 289px !important;
           padding: 18px 29px;
           display: block;
-          margin: 100px auto;
+          margin: 150px auto;
         }
         .owl-carousel {
           display: none;
@@ -457,10 +462,10 @@ html {
               text-shadow: 3px 8px 20px rgba(0, 0, 0, 0.4);
             }
             p {
-              font-family: $coolvetica;
               color: $white;
               font-size: 54px;
-              max-width: 722px;
+              max-width: 822px;
+              font-weight: 600;
             }
           }
         }
@@ -477,6 +482,8 @@ html {
           right: 233px;
           img {
             width: 366px;
+            box-shadow: $box-shadow;
+            border-radius: 100%;
             &:last-child {
               width: 280px;
               margin-left: -180px;
@@ -486,10 +493,10 @@ html {
       }
       .content {
         margin-top: 80px;
-        h1 {
+        h2 {
           @include subtitleSection;
         }
-        h2 {
+        span {
           @include subtitleSection;
           color: $gray-solvex-text;
           font-size: 35px;
@@ -518,6 +525,9 @@ html {
               right: 30px;
               bottom: 140px;
             }
+          }
+          span {
+            color: $white;
           }
         }
         .btn {
@@ -687,10 +697,10 @@ html {
               text-shadow: 3px 8px 20px rgba(0, 0, 0, 0.4);
             }
             p {
-              font-family: $coolvetica;
               color: $white;
               font-size: 54px;
               max-width: 722px;
+              font-weight: 600;
             }
           }
         }
@@ -716,16 +726,11 @@ html {
       }
       .challege {
         .title {
-          margin-top: 50px;
-          h1 {
-            @include subtitleSection;
-            font-size: 96px;
-            color: white;
-          }
+          margin-top: 150px;
           h2 {
             @include subtitleSection;
-            color: $gray-solvex-text;
-            font-size: 64px;
+            color: $white;
+            font-size: 50px;
           }
         }
         .paraf {
@@ -784,17 +789,19 @@ html {
       .content {
         .title {
           margin-top: 100px;
-          h1 {
-            @include subtitleSection;
-            font-size: 96px;
-          }
           h2 {
             @include subtitleSection;
-            color: $gray-solvex-text;
-            font-size: 64px;
+            color: $white;
+            font-size: 50px;
           }
         }
         position: relative;
+        .paraf {
+          color: $white;
+          font-size: 20px;
+          max-width: 1000px;
+          margin-top: 20px;
+        }
         .slider-tabs {
           @include flexRow;
           justify-content: space-between;

@@ -145,7 +145,7 @@ html body .content {
 html body .content .us {
   min-height: 600px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   overflow: hidden;
 }
 html body .content .us .clouds {
@@ -177,18 +177,19 @@ html body .content .us .container-atsj {
 }
 html body .content .us .container-atsj .text-left {
   max-width: 440px;
+  line-height: 0px;
 }
-html body .content .us .container-atsj .text-left h1 {
+html body .content .us .container-atsj .text-left h2 {
   font-size: 133px;
   font-family: coolvetica;
-  margin-top: -30px;
   margin-bottom: 0;
+  margin-top: -10x;
+  color: #dd3b30;
 }
-html body .content .us .container-atsj .text-left h4 {
+html body .content .us .container-atsj .text-left .mini {
   font-size: 63px;
-  color: #aaaaaa;
+  color: #fff;
   font-family: coolvetica;
-  margin-top: -30px;
   margin-bottom: 0;
 }
 html body .content .us .container-atsj .definition p {
@@ -207,7 +208,7 @@ html body .content .services {
 html body .content .services .text {
   width: 700px;
 }
-html body .content .services .text h2 {
+html body .content .services .text h3 {
   font-family: coolvetica;
   font-size: 63px;
 }
@@ -259,7 +260,7 @@ html body .content .services .description h3 {
 html body .content .tools .item-sx .title {
   max-width: 443px;
 }
-html body .content .tools .item-sx .title h1 {
+html body .content .tools .item-sx .title h3 {
   color: #dd3b30;
   font-family: coolvetica;
   font-size: 63px;
@@ -321,7 +322,7 @@ html body .content .clients {
   min-height: 602px;
   position: relative;
 }
-html body .content .clients h1 {
+html body .content .clients h3 {
   font-family: coolvetica;
   font-size: 63px;
   text-align: center;
@@ -345,7 +346,7 @@ html body .content .clients .client-logos .item {
   align-items: center;
   margin: 20px;
 }
-html body .content .trust h1 {
+html body .content .trust h3 {
   font-family: coolvetica;
   font-size: 63px;
 }
@@ -354,8 +355,9 @@ html body .content .trust .content-sx {
   height: 640px;
   position: relative;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
-html body .content .trust .content-sx .title {
+html body .content .trust .content-sx .title h4 {
   font-family: coolvetica;
   font-size: 63px;
   color: #dd3b30;
@@ -413,7 +415,7 @@ html body .content .trust .btn-client {
   width: 289px !important;
   padding: 18px 29px;
   display: block;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 html body .content .trust .owl-carousel {
   display: none;
@@ -468,10 +470,10 @@ html body #section-about #about .all-pl .atsjcn h1 {
   text-shadow: 3px 8px 20px rgba(0, 0, 0, 0.4);
 }
 html body #section-about #about .all-pl .atsjcn p {
-  font-family: coolvetica;
   color: #fff;
   font-size: 54px;
-  max-width: 722px;
+  max-width: 822px;
+  font-weight: 600;
 }
 html body #section-about #about .back-header {
   top: 0px !important;
@@ -487,6 +489,8 @@ html body #section-about #about .profile-header {
 }
 html body #section-about #about .profile-header img {
   width: 366px;
+  box-shadow: 0px 12px 34px #dd3b30;
+  border-radius: 100%;
 }
 html body #section-about #about .profile-header img:last-child {
   width: 280px;
@@ -495,11 +499,11 @@ html body #section-about #about .profile-header img:last-child {
 html body #section-about .content {
   margin-top: 80px;
 }
-html body #section-about .content h1 {
+html body #section-about .content h2 {
   font-family: coolvetica;
   font-size: 63px;
 }
-html body #section-about .content h2 {
+html body #section-about .content span {
   font-family: coolvetica;
   font-size: 63px;
   color: #aaaaaa;
@@ -536,6 +540,9 @@ html body #section-about .content .people .item .social {
   position: absolute;
   right: 30px;
   bottom: 140px;
+}
+html body #section-about .content .people span {
+  color: #fff;
 }
 html body #section-about .content .btn {
   width: 340px;
@@ -717,10 +724,10 @@ html body #mccp #about .all-pl .atsjcn h1 {
   text-shadow: 3px 8px 20px rgba(0, 0, 0, 0.4);
 }
 html body #mccp #about .all-pl .atsjcn p {
-  font-family: coolvetica;
   color: #fff;
   font-size: 54px;
   max-width: 722px;
+  font-weight: 600;
 }
 html body #mccp #about .back-header {
   top: 0px !important;
@@ -742,19 +749,13 @@ html body #mccp #about .profile-header img:last-child {
   margin-left: -180px;
 }
 html body #mccp .challege .title {
-  margin-top: 50px;
-}
-html body #mccp .challege .title h1 {
-  font-family: coolvetica;
-  font-size: 63px;
-  font-size: 96px;
-  color: white;
+  margin-top: 150px;
 }
 html body #mccp .challege .title h2 {
   font-family: coolvetica;
   font-size: 63px;
-  color: #aaaaaa;
-  font-size: 64px;
+  color: #fff;
+  font-size: 50px;
 }
 html body #mccp .challege .paraf {
   color: #fff;
@@ -818,16 +819,17 @@ html body #mccp .content {
 html body #mccp .content .title {
   margin-top: 100px;
 }
-html body #mccp .content .title h1 {
-  font-family: coolvetica;
-  font-size: 63px;
-  font-size: 96px;
-}
 html body #mccp .content .title h2 {
   font-family: coolvetica;
   font-size: 63px;
-  color: #aaaaaa;
-  font-size: 64px;
+  color: #fff;
+  font-size: 50px;
+}
+html body #mccp .content .paraf {
+  color: #fff;
+  font-size: 20px;
+  max-width: 1000px;
+  margin-top: 20px;
 }
 html body #mccp .content .slider-tabs {
   display: flex;
