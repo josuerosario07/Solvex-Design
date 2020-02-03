@@ -202,9 +202,15 @@
         .title,
         .paraf,
         .footer-item {
-          max-width: 70% !important;
+          max-width: 100% !important;
           @include blockItem;
           position: relative !important;
+          margin-top: 45px;
+          .profile {
+            width: 90px !important;
+            height: 90px !important;
+            margin-top: 26px;
+          }
         }
       }
 

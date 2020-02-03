@@ -1157,10 +1157,18 @@ body .content .tools .item-sx .btn {
   body .trust .content-sx .title,
 body .trust .content-sx .paraf,
 body .trust .content-sx .footer-item {
-    max-width: 70% !important;
+    max-width: 100% !important;
     display: block;
     margin: auto;
     position: relative !important;
+    margin-top: 45px;
+  }
+  body .trust .content-sx .title .profile,
+body .trust .content-sx .paraf .profile,
+body .trust .content-sx .footer-item .profile {
+    width: 90px !important;
+    height: 90px !important;
+    margin-top: 26px;
   }
   body .trust .owl-carousel {
     display: block !important;
