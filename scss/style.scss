@@ -178,7 +178,6 @@ html {
                 margin-bottom: 0;
               }
             }
-
           }
 
           .definition {
@@ -242,11 +241,13 @@ html {
             z-index: -1;
             margin: -5px;
             border-radius: 100%;
-            background: linear-gradient(-45deg,
-                #ff4500,
-                #ff7cc3,
-                #006dff,
-                #ff1000);
+            background: linear-gradient(
+              -45deg,
+              #ff4500,
+              #ff7cc3,
+              #006dff,
+              #ff1000
+            );
             background-size: 400% 400%;
             animation: gradient 3s ease infinite;
           }
@@ -323,12 +324,14 @@ html {
             height: 100%;
             border-radius: 100%;
 
-            background: linear-gradient(90deg,
-                rgba(0, 0, 0, 1) 0%,
-                rgba(169, 15, 175, 1) 32%,
-                rgba(53, 32, 139, 1) 57%,
-                rgba(147, 68, 9, 1) 79%,
-                rgba(0, 0, 0, 1) 100%);
+            background: linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 1) 0%,
+              rgba(169, 15, 175, 1) 32%,
+              rgba(53, 32, 139, 1) 57%,
+              rgba(147, 68, 9, 1) 79%,
+              rgba(0, 0, 0, 1) 100%
+            );
             filter: blur(30px);
             opacity: 0.19;
           }
@@ -378,7 +381,8 @@ html {
             align-items: center;
             margin: 20px;
 
-            img {}
+            img {
+            }
           }
         }
       }
@@ -444,10 +448,12 @@ html {
               position: relative;
               padding: 5px;
               background: rgb(234, 63, 0);
-              background: linear-gradient(0deg,
-                  rgba(234, 63, 0, 1) 0%,
-                  rgba(255, 226, 0, 1) 51%,
-                  rgba(255, 0, 216, 1) 100%);
+              background: linear-gradient(
+                0deg,
+                rgba(234, 63, 0, 1) 0%,
+                rgba(255, 226, 0, 1) 51%,
+                rgba(255, 0, 216, 1) 100%
+              );
 
               a {
                 img {
@@ -524,12 +530,11 @@ html {
           padding: 20px;
           //special query
 
-
           img {
             margin: 20px;
           }
 
-          @media screen and (max-width:991px) {
+          @media screen and (max-width: 991px) {
             @include flexColum;
             margin-top: 40px;
 
@@ -1069,7 +1074,8 @@ html {
   width: 30rem;
   filter: blur(5px);
   height: 30rem;
-  background: url("https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-15/e35/37188836_1973437792721179_4754693177955319808_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=FsfU7nrzHtcAX_f-257&oh=1041e642799138325c2d5cb78e8fd3e6&oe=5EB8D4E6") 50% 50% no-repeat fixed;
+  background: url("https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-15/e35/37188836_1973437792721179_4754693177955319808_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=FsfU7nrzHtcAX_f-257&oh=1041e642799138325c2d5cb78e8fd3e6&oe=5EB8D4E6")
+    50% 50% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
 }

@@ -8,178 +8,419 @@
   color: #000a19;
   border-radius: 60px;
   margin-top: 43px;
-  transition: 0.3s all ease-in-out; }
-  .btn-big:hover {
-    transform: scale(1.1); }
+  transition: 0.3s all ease-in-out;
+}
+.btn-big:hover {
+  transform: scale(1.1);
+}
 
 @font-face {
   font-family: coolvetica;
-  src: url(../assets/fonts/coolvetica-rg.ttf); }
+  src: url(../assets/fonts/coolvetica-rg.ttf);
+}
 @keyframes float {
   0% {
-    transform: translatey(0px); }
+    transform: translatey(0px);
+  }
   50% {
-    transform: translatey(-20px); }
+    transform: translatey(-20px);
+  }
   100% {
-    transform: translatey(0px); } }
+    transform: translatey(0px);
+  }
+}
 @keyframes gradient {
   0% {
-    background-position: 0% 50%; }
+    background-position: 0% 50%;
+  }
   50% {
-    background-position: 100% 50%; }
+    background-position: 100% 50%;
+  }
   100% {
-    background-position: 0% 50%; } }
+    background-position: 0% 50%;
+  }
+}
 @-moz-keyframes rotatecircle {
   0% {
-    -moz-transform: rotate(0deg); }
+    -moz-transform: rotate(0deg);
+  }
   100% {
-    -moz-transform: rotate(-360deg); } }
+    -moz-transform: rotate(-360deg);
+  }
+}
 @media screen and (max-width: 1440px) {
   html body .container-atsj {
-    max-width: 1160px; }
+    max-width: 1160px;
+  }
   html body header .navbar {
-    display: table; }
+    display: table;
+  }
   html body .content .us .serves-hq {
-    right: 40px; }
+    right: 40px;
+  }
   html body .content .us .container-atsj .text-left h2 {
     font-size: 90px;
-    line-height: 38px; }
-    html body .content .us .container-atsj .text-left h2 .mini {
-      font-size: 50px; }
+    line-height: 38px;
+  }
+  html body .content .us .container-atsj .text-left h2 .mini {
+    font-size: 50px;
+  }
   html body .content .services .item-sx {
     width: 150px;
-    height: 150px; }
-    html body .content .services .item-sx img {
-      margin-top: 20px;
-      width: 80px; }
+    height: 150px;
+  }
+  html body .content .services .item-sx img {
+    margin-top: 20px;
+    width: 80px;
+  }
   html body .content .trust .content-sx .title h1 {
-    font-size: 43px; }
+    font-size: 43px;
+  }
   html body .content .trust .content-sx .paraf,
-  html body .content .trust .content-sx .footer-item {
-    max-width: 443px; } }
-@media screen and (max-width: 1050px) {
-  body {
-    padding: 15px; } }
+html body .content .trust .content-sx .footer-item {
+    max-width: 443px;
+  }
+}
 @media screen and (max-width: 991px) {
-  body {
-    padding: 15px; }
-    body .magic {
-      display: none !important; }
-    body .container {
-      padding: 25px; }
-    body header .navbar .container-atsj .navbar-nav {
-      display: block;
-      padding: 35px 15px 15px 0; }
-      body header .navbar .container-atsj .navbar-nav li .active {
-        background: transparent;
-        color: #dd3b30 !important;
-        position: relative; }
-        body header .navbar .container-atsj .navbar-nav li .active::before {
-          content: " ";
-          position: absolute;
-          top: 11px;
-          left: 0;
-          width: 10px;
-          height: 10px;
-          border-radius: 100%;
-          background-color: #dd3b30; }
-    body .content h3 {
-      margin-bottom: 40px !important; }
-    body .content p {
-      font-size: 20px !important; }
-    body .content .us .clouds {
-      display: none; }
-    body .content .us .container-atsj .title {
-      width: 100%; }
-      body .content .us .container-atsj .title .text-left {
-        max-width: 680px !important;
-        text-align: center;
-        display: block;
-        margin: auto; }
-        body .content .us .container-atsj .title .text-left h2 {
-          font-size: 90px;
-          line-height: 70px !important; }
-          body .content .us .container-atsj .title .text-left h2 .mini {
-            font-size: 90px !important; }
-    body .content .us .container-atsj .definition {
-      max-width: 700px;
-      display: block;
-      margin: auto; }
-    body .content .services {
-      margin-top: 400px !important;
-      min-height: unset;
-      margin-bottom: 0; }
-      body .content .services .text {
-        text-align: center; }
-        body .content .services .text h3 {
-          max-width: 550px !important;
-          text-align: center;
-          display: block;
-          margin: auto; }
-      body .content .services .row {
-        margin: 0 !important; }
-        body .content .services .row .description {
-          margin-bottom: 60px; }
-    body .content .tools .item-sx {
-      text-align: center;
-      display: block;
-      margin: auto; }
-      body .content .tools .item-sx .title,
-      body .content .tools .item-sx .paraf,
-      body .content .tools .item-sx .btn {
-        display: block;
-        margin: auto; }
-      body .content .tools .item-sx .paraf {
-        max-width: 700px !important; }
-      body .content .tools .item-sx .btn {
-        margin-top: 90px !important; }
-    body .content .tools .item-bg {
-      display: block;
-      margin: auto;
-      margin-top: 110px;
-      float: none !important; }
-    body .trust .desktop-trust {
-      display: none !important; }
-    body .trust .content-sx {
-      max-width: 100% !important;
-      display: block;
-      margin: auto;
-      text-align: center;
-      height: auto !important; }
-      body .trust .content-sx .title,
-      body .trust .content-sx .paraf,
-      body .trust .content-sx .footer-item {
-        max-width: 70% !important;
-        display: block;
-        margin: auto;
-        position: relative !important; }
-    body .trust .owl-carousel {
-      display: block !important; }
-    body .cost h3 {
-      font-size: 50px; } }
-@media screen and (max-width: 770px) {
-  html body header .all-pl .container .atsjcn {
-    margin-top: 11%; }
-  html body .content h3 {
-    font-size: 50px !important;
-    max-width: 442px !important;
+  body .magic {
+    display: none !important;
+  }
+  body .container {
+    padding: 25px;
+  }
+  body header .navbar .container-atsj .navbar-nav {
+    display: block;
+    padding: 35px 15px 15px 0;
+  }
+  body header .navbar .container-atsj .navbar-nav li .active {
+    background: transparent;
+    color: #dd3b30 !important;
+    position: relative;
+  }
+  body header .navbar .container-atsj .navbar-nav li .active::before {
+    content: " ";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #dd3b30;
+  }
+  body .content h3 {
+    margin-bottom: 40px !important;
+  }
+  body .content p {
+    font-size: 20px !important;
+  }
+  body .content .us .clouds {
+    display: none;
+  }
+  body .content .us .container-atsj .title {
+    width: 100%;
+  }
+  body .content .us .container-atsj .title .text-left {
+    max-width: 680px !important;
+    text-align: center;
     display: block;
     margin: auto;
-    margin-bottom: 30px; }
+  }
+  body .content .us .container-atsj .title .text-left h2 {
+    font-size: 90px;
+    line-height: 70px !important;
+  }
+  body .content .us .container-atsj .title .text-left h2 .mini {
+    font-size: 90px !important;
+  }
+  body .content .us .container-atsj .definition {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+  }
+  body .content .services {
+    margin-top: 400px !important;
+    min-height: unset;
+    margin-bottom: 0;
+  }
+  body .content .services .text {
+    text-align: center;
+  }
+  body .content .services .text h3 {
+    max-width: 550px;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  body .content .services .row {
+    margin: 0 !important;
+  }
+  body .content .services .row .description {
+    margin-bottom: 60px;
+  }
+  body .content .tools .item-sx {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  body .content .tools .item-sx .title,
+body .content .tools .item-sx .paraf,
+body .content .tools .item-sx .btn {
+    display: block;
+    margin: auto;
+  }
+  body .content .tools .item-sx .paraf {
+    max-width: 700px !important;
+  }
+  body .content .tools .item-sx .btn {
+    margin-top: 90px !important;
+  }
+  body .content .tools .item-bg {
+    display: block;
+    margin: auto;
+    margin-top: 110px;
+    float: none !important;
+  }
+  body .trust .desktop-trust {
+    display: none !important;
+  }
+  body .trust .content-sx {
+    max-width: 100% !important;
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: auto !important;
+  }
+  body .trust .content-sx .title,
+body .trust .content-sx .paraf,
+body .trust .content-sx .footer-item {
+    max-width: 70% !important;
+    display: block;
+    margin: auto;
+    position: relative !important;
+  }
+  body .trust .owl-carousel {
+    display: block !important;
+  }
+  body .trust .owl-carousel .content-sx {
+    padding: 15px;
+    text-align: left;
+  }
+  body .trust .owl-carousel .content-sx .title h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: coolvetica;
+    color: #dd3b30 !important;
+  }
+  body .trust .owl-carousel .content-sx .paraf {
+    max-width: 100% !important;
+  }
+  body .trust .owl-carousel .footer-item {
+    max-width: 100% !important;
+  }
+  body .cost h3 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 770px) {
+  html body header .all-pl .container .atsjcn {
+    margin-top: 21%;
+  }
+  html body header .all-pl .container .atsjcn h1 {
+    font-size: 55px;
+  }
+  html body .content h3 {
+    font-size: 50px !important;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  html body .content .us {
+    margin-top: 15px;
+  }
   html body .content .us .container-atsj {
-    padding-top: 80px; }
-    html body .content .us .container-atsj .text-left {
-      line-height: 5px; }
-    html body .content .us .container-atsj .definition {
-      margin-top: 50px; }
-      html body .content .us .container-atsj .definition p {
-        text-align: justify; }
+    padding-top: 80px;
+  }
+  html body .content .us .container-atsj .title {
+    margin-bottom: 15px;
+  }
+  html body .content .us .container-atsj .title .text-left {
+    line-height: 5px;
+  }
+  html body .content .us .container-atsj .title .text-left h2 {
+    text-align: center;
+  }
+  html body .content .us .container-atsj .definition {
+    margin-top: 50px;
+    max-width: 600px;
+  }
+  html body .content .us .container-atsj .definition p {
+    text-align: left;
+  }
   html body .content .services {
     padding-top: 0px;
-    margin-top: 240px; }
+    margin-top: 240px;
+  }
+  html body .content .services .title {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: 120px;
+  }
+  html body .content .services .title .text p {
+    text-align: left;
+  }
   html body .content .patner .item-sx img {
     width: 100%;
     display: block;
-    margin: auto; } }
+    margin: auto;
+  }
+  html body .content .tools .item-sx .title {
+    max-width: 700px !important;
+  }
+  html body .content .tools .item-sx .paraf {
+    max-width: 600px !important;
+  }
+  html body .content .tools .item-sx .paraf p {
+    text-align: left;
+  }
+  html body .content .logo-patner {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 442px) {
+  html body .btn {
+    padding: 20px 32px !important;
+    font-size: 15px !important;
+    width: 90%;
+  }
+  html body header nav {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  html body header .all-pl .container-atsj .atsjcn {
+    margin-top: 50%;
+  }
+  html body header .all-pl .container-atsj .atsjcn h1 {
+    font-size: 32px;
+  }
+  html body header .all-pl .container-atsj .atsjcn p {
+    font-size: 15px;
+  }
+  html body .content .services h3,
+html body .content .tools h3,
+html body .content .patner h3,
+html body .content .clients h3,
+html body .content .trust h3,
+html body .content .cost h3,
+html body .content .logo-patner h3 {
+    font-size: 36px !important;
+    text-align: left;
+    max-width: 195px !important;
+  }
+  html body .content p {
+    font-size: 15px !important;
+  }
+  html body .content .us .container-atsj .title {
+    max-width: 342px;
+    display: block;
+    margin: auto;
+  }
+  html body .content .us .container-atsj .title .text-left h2 {
+    font-size: 45px !important;
+    line-height: 40px !important;
+    text-align: left;
+  }
+  html body .content .us .container-atsj .title .text-left h2 .mini {
+    font-size: 45px !important;
+  }
+  html body .content .us .container-atsj .definition {
+    max-width: 342px;
+  }
+  html body .content .us .container-atsj .definition p {
+    font-size: 15px !important;
+  }
+  html body .content .services {
+    margin-top: 70px !important;
+  }
+  html body .content .services .title {
+    margin-bottom: 70px;
+  }
+  html body .content .services .title .text {
+    max-width: 342px;
+  }
+  html body .content .services .title .text h3 {
+    max-width: 195px;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 18px !important;
+  }
+  html body .content .services .title .text p {
+    font-size: 15px;
+  }
+  html body .content .tools {
+    margin-top: 70px;
+  }
+  html body .content .tools .item-sx {
+    max-width: 342px;
+  }
+  html body .content .tools .item-sx .title h3 {
+    max-width: unset !important;
+    margin-bottom: 18px !important;
+  }
+  html body .content .tools .item-sx .paraf {
+    margin-top: 0;
+  }
+  html body .content .tools .item-bg {
+    display: none !important;
+  }
+  html body .content .patner {
+    margin-top: 70px !important;
+  }
+  html body .content .patner .item-sx img {
+    width: 90%;
+  }
+  html body .content .clients {
+    margin-top: 70px;
+  }
+  html body .content .clients .title {
+    max-width: 342px;
+    display: block;
+    margin: auto;
+  }
+  html body .content .clients .title h3 {
+    margin-top: 0;
+    max-width: unset !important;
+    margin-bottom: 18px !important;
+  }
+  html body .content .trust {
+    margin-top: 70px;
+  }
+  html body .content .trust .title h3 {
+    text-align: left !important;
+  }
+  html body .content .trust .btn-client {
+    padding: 20px 32px !important;
+    font-size: 15px !important;
+  }
+  html body .content .trust .owl-carousel .title h1 {
+    font-size: 35px;
+  }
+  html body .content .cost {
+    margin-top: 70px;
+  }
+  html body .content .cost .title {
+    max-width: 342px;
+    display: block;
+    margin: auto;
+  }
+  html body .content .cost .title h3 {
+    max-width: unset !important;
+    margin-bottom: 18px !important;
+    text-align: center;
+  }
+  html body .content .cost ul {
+    padding-left: 0px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */
