@@ -10,9 +10,11 @@ html {
     width: 100%;
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
+
     .container-atsj {
       max-width: 1640px;
     }
+
     header {
       height: 100%;
       width: 100%;
@@ -23,6 +25,7 @@ html {
       // background-attachment: fixed;
       // background-color: $dark-solvex;
       position: relative;
+
       .back-header {
         position: absolute;
         top: 0 !important;
@@ -31,6 +34,7 @@ html {
         object-fit: cover;
         z-index: -1;
       }
+
       .navbar {
         background-color: transparent !important;
         padding-top: 15px;
@@ -39,15 +43,18 @@ html {
         z-index: 10;
         top: 0;
         left: 0;
+
         .container-atsj {
           .navbar-brand {
             margin-right: 60px;
           }
+
           ul {
             display: flex;
             flex-flow: row;
             justify-content: space-between !important;
             width: 100%;
+
             li {
               a {
                 color: $white !important;
@@ -55,6 +62,7 @@ html {
                 font-size: 16px;
                 font-weight: 500;
               }
+
               .active {
                 padding: 5px 20px;
                 border-radius: 30px;
@@ -62,6 +70,7 @@ html {
               }
             }
           }
+
           button {
             span {
               background-image: url(../assets/images/button-icon.svg) !important;
@@ -70,88 +79,112 @@ html {
           }
         }
       }
+
       .new-nav {
         background-color: black !important;
         box-shadow: 0px 8px 20px rgba(221, 60, 48, 0.16);
       }
+
       .all-pl {
         position: relative;
         padding-top: 14%;
+
         .atsjcn {
           background-color: transparent;
           max-width: 940px;
           display: block;
           margin: auto;
+
           h1 {
             font-family: $coolvetica;
             color: $orange-solvex;
             font-size: 83px;
           }
+
           p {
             color: white;
             margin-top: 20px;
           }
         }
       }
+
       .vineta-solvex {
         position: absolute;
         z-index: 1;
         right: -40px;
       }
     }
+
     .content {
       color: $white;
+
+      .title {
+        margin-bottom: 120px;
+      }
+
       .us {
         min-height: 600px;
         position: relative;
         z-index: 1;
         overflow: hidden;
+        margin-top: 200px;
+
         .clouds {
           position: absolute;
         }
+
         .cloud-1 {
           top: -140px;
           left: -140px;
         }
+
         .cloud-2 {
           right: -140px;
           top: -140px;
         }
+
         .cloud-3 {
           bottom: 10px;
           left: -140px;
         }
+
         .cloud-4 {
           right: -140px;
           bottom: 10px;
         }
+
         .serves-hq {
           bottom: 80px;
           right: 100px;
           animation: float 2.5s ease-in-out infinite;
         }
+
         .container-atsj {
-          padding-top: 138px;
           .text-left {
             max-width: 440px;
-            line-height: 0px;
+
             h2 {
               font-size: 133px;
               font-family: $coolvetica;
               margin-bottom: 0;
               margin-top: -10x;
               color: $orange-solvex;
+              line-height: 64px;
+
+              .mini {
+                font-size: 63px;
+                color: $white;
+                font-family: $coolvetica;
+                margin-bottom: 0;
+              }
             }
-            .mini {
-              font-size: 63px;
-              color: $white;
-              font-family: $coolvetica;
-              margin-bottom: 0;
-            }
+
           }
+
           .definition {
             p {
               font-size: 20px;
+
               //special media-query
               @media screen and (max-width: 1440px) {
                 font-size: 17px;
@@ -160,24 +193,30 @@ html {
           }
         }
       }
+
       .services {
         width: 100%;
-        padding-top: 130px;
+        margin-top: 200px;
         min-height: 650px;
+
         .text {
-          width: 700px;
+          max-width: 700px;
+
           h3 {
             font-family: $coolvetica;
             font-size: 63px;
           }
+
           p {
             font-size: 20px;
             margin-top: 0px;
           }
         }
+
         .row {
           margin: 163px;
         }
+
         .item-sx {
           width: 190px;
           height: 190px;
@@ -188,9 +227,11 @@ html {
           padding-top: 20px;
           background-color: $dark-solvex;
           transition: 0.3s ease-in-out;
+
           &:hover {
             transform: scaleX(-1);
           }
+
           &::before {
             content: "";
             position: absolute;
@@ -201,13 +242,11 @@ html {
             z-index: -1;
             margin: -5px;
             border-radius: 100%;
-            background: linear-gradient(
-              -45deg,
-              #ff4500,
-              #ff7cc3,
-              #006dff,
-              #ff1000
-            );
+            background: linear-gradient(-45deg,
+                #ff4500,
+                #ff7cc3,
+                #006dff,
+                #ff1000);
             background-size: 400% 400%;
             animation: gradient 3s ease infinite;
           }
@@ -218,32 +257,41 @@ html {
             margin-top: 30px;
           }
         }
+
         .description {
-          h3 {
+          h4 {
             margin-top: 35px;
             font-weight: 300;
             font-size: 20px;
           }
         }
       }
+
       .tools {
+        margin-top: 200px;
+
         .item-sx {
           .title {
             max-width: 443px;
+            margin-bottom: 0;
+
             h3 {
               color: $orange-solvex;
               @include subtitleSection;
             }
           }
+
           .paraf {
             max-width: 600px;
             color: white;
             margin-top: 40px;
           }
+
           .btn {
             @extend .btn-big;
           }
         }
+
         .item-bg {
           display: block;
           margin-right: auto;
@@ -255,6 +303,7 @@ html {
           background: rgb(0, 0, 0);
           position: relative;
           background: transparent;
+
           img {
             width: 90%;
             height: 90%;
@@ -264,6 +313,7 @@ html {
             animation: float 2.5s ease-in-out infinite;
             margin-top: 25px;
           }
+
           .blured {
             position: absolute;
             top: 0;
@@ -273,43 +323,47 @@ html {
             height: 100%;
             border-radius: 100%;
 
-            background: linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(169, 15, 175, 1) 32%,
-              rgba(53, 32, 139, 1) 57%,
-              rgba(147, 68, 9, 1) 79%,
-              rgba(0, 0, 0, 1) 100%
-            );
+            background: linear-gradient(90deg,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(169, 15, 175, 1) 32%,
+                rgba(53, 32, 139, 1) 57%,
+                rgba(147, 68, 9, 1) 79%,
+                rgba(0, 0, 0, 1) 100%);
             filter: blur(30px);
             opacity: 0.19;
           }
         }
       }
+
       .patner {
+        margin-top: 200px;
         position: relative;
         height: 100%;
-        width: 120%;
+        width: 100%;
         z-index: 9;
 
         .item-sx {
           display: block;
-          margin: 200px auto;
+          margin: 0 auto;
+
           img {
-            width: 80%;
+            width: 100%;
             position: relative;
             z-index: -1;
           }
         }
       }
+
       .clients {
-        min-height: 602px;
         position: relative;
+        margin-top: 200px;
+
         h3 {
           @include subtitleSection;
           text-align: center;
           margin-top: 100px;
         }
+
         .client-logos {
           @include flexRow;
           justify-content: center;
@@ -317,51 +371,62 @@ html {
           width: 100%;
           margin-top: 80px;
           margin-bottom: 80px;
+
           .item {
             @include flexRow;
             align-content: center;
             align-items: center;
             margin: 20px;
-            img {
-            }
+
+            img {}
           }
         }
       }
 
       .trust {
+        margin-top: 200px;
+
         h3 {
           @include subtitleSection;
         }
+
         .content-sx {
           max-width: 670px;
           height: 640px;
           position: relative;
-          margin-top: 100px;
+
           margin-bottom: 100px;
+
           .title {
             h4 {
               @include subtitleSection;
               color: $orange-solvex;
             }
           }
+
           .paraf {
             color: $white;
             font-weight: 300;
             margin-top: 30px;
           }
+
           .footer-item {
             position: absolute;
             bottom: 0;
             width: 100%;
             @include flexRow;
             justify-content: space-between;
+
             .autor {
               margin-top: 30px;
+
               a {
                 color: $orange-solvex;
               }
+
               .job {
                 margin-top: 15px;
+
                 p {
                   color: $white;
                   text-transform: uppercase;
@@ -370,6 +435,7 @@ html {
                 }
               }
             }
+
             .profile {
               border-radius: 100%;
               width: 100px;
@@ -378,12 +444,11 @@ html {
               position: relative;
               padding: 5px;
               background: rgb(234, 63, 0);
-              background: linear-gradient(
-                0deg,
-                rgba(234, 63, 0, 1) 0%,
-                rgba(255, 226, 0, 1) 51%,
-                rgba(255, 0, 216, 1) 100%
-              );
+              background: linear-gradient(0deg,
+                  rgba(234, 63, 0, 1) 0%,
+                  rgba(255, 226, 0, 1) 51%,
+                  rgba(255, 0, 216, 1) 100%);
+
               a {
                 img {
                   width: 100%;
@@ -393,12 +458,14 @@ html {
                   border-radius: 100%;
                 }
               }
+
               &:hover {
                 box-shadow: 0px 6px 35px #dd3b30;
               }
             }
           }
         }
+
         .btn-client {
           @extend .btn-big;
           width: 289px !important;
@@ -406,19 +473,26 @@ html {
           display: block;
           margin: 150px auto;
         }
+
         .owl-carousel {
           display: none;
         }
       }
+
       .cost {
-        h1 {
+        margin-top: 200px;
+
+        h3 {
           @include subtitleSection;
         }
+
         p {
           margin-top: 30px;
         }
+
         ul {
           margin-top: 50px;
+
           li {
             display: inline-block;
             margin: 20px;
@@ -427,23 +501,41 @@ html {
             font-weight: 600;
           }
         }
+
         .btn {
           @extend .btn-big;
           background-color: $orange-solvex;
           color: $white;
           padding: 18px 29px;
+
+          img {
+            display: none;
+          }
         }
       }
+
       .logo-patner {
         background-color: $middle-solvex;
+
         .items {
           @include flexRow;
           justify-content: center;
           margin-top: 120px;
           padding: 20px;
+          //special query
+
 
           img {
             margin: 20px;
+          }
+
+          @media screen and (max-width:991px) {
+            @include flexColum;
+            margin-top: 40px;
+
+            img {
+              margin-bottom: 8xxxx0px;
+            }
           }
         }
       }
@@ -453,14 +545,18 @@ html {
     #section-about {
       #about {
         max-height: 627px;
+
         .all-pl {
           padding-top: 3%;
+
           .atsjcn {
             max-width: 100% !important;
+
             h1 {
               max-width: 522px;
               text-shadow: 3px 8px 20px rgba(0, 0, 0, 0.4);
             }
+
             p {
               color: $white;
               font-size: 54px;
@@ -469,6 +565,7 @@ html {
             }
           }
         }
+
         .back-header {
           top: 0px !important;
           right: -0px !important;
@@ -476,14 +573,17 @@ html {
           height: 100% !important;
           object-fit: cover;
         }
+
         .profile-header {
           position: absolute;
           top: 100px;
           right: 233px;
+
           img {
             width: 366px;
             box-shadow: $box-shadow;
             border-radius: 100%;
+
             &:last-child {
               width: 280px;
               margin-left: -180px;
@@ -491,32 +591,39 @@ html {
           }
         }
       }
+
       .content {
         margin-top: 80px;
+
         h2 {
           @include subtitleSection;
         }
+
         span {
           @include subtitleSection;
           color: $gray-solvex-text;
           font-size: 35px;
         }
+
         .people {
           width: 100%;
           margin-top: 100px;
           @include flexRow;
           justify-content: space-between;
           flex: 1 1 auto;
+
           .item {
             @include flexColum;
             min-height: 672px;
             max-width: 475px;
             position: relative;
+
             img {
               @include fitImage;
               object-fit: cover;
               margin-bottom: 15px;
             }
+
             .social {
               width: 70px;
               height: 70px;
@@ -526,47 +633,58 @@ html {
               bottom: 140px;
             }
           }
+
           span {
             color: $white;
           }
         }
+
         .btn {
           @extend .btn-big;
           width: 340px;
           @include blockItem;
           margin-top: 100px !important;
         }
+
         .experience {
           margin-top: 200px;
+
           .item-sx {
             width: 100%;
             min-height: 762px;
             background-color: $back-solvex;
             padding: 50px 130px;
             @include flexColum;
+
             .content-sx {
               margin-top: 0;
               @include flexRow;
+
               .left {
                 width: 50%;
+
                 h1 {
                   color: $orange-solvex;
                   @include subtitleSection;
                   font-size: 81px;
                   max-width: 369px;
                 }
+
                 p {
                   max-width: 790px;
                 }
               }
+
               .right {
                 width: 50%;
                 align-items: flex-end;
                 position: relative;
+
                 img {
                   width: 80%;
                   align-self: flex-end;
                   float: right;
+
                   &:last-child {
                     position: absolute;
                     right: -260px;
@@ -576,50 +694,61 @@ html {
                 }
               }
             }
+
             .people-sx {
               @include flexRow;
               margin-top: 0;
+
               .item {
                 width: 120px;
                 height: 120px;
                 margin-right: 25px;
                 border-radius: 100%;
                 border: solid 5px $back-solvex;
+
                 img {
                   @include fitImage;
                 }
               }
+
               .active {
                 border: solid 5px $orange-solvex;
               }
             }
           }
         }
+
         .credits {
           margin-top: 100px;
           position: relative;
           padding-bottom: 80px;
+
           .item-sx {
             @include flexRow;
             justify-content: space-between;
+
             .left {
               max-width: 563px;
               height: 450px;
               position: relative;
+
               h1 {
                 @include subtitleSection;
                 color: $orange-solvex;
                 font-size: 63px;
               }
+
               .author {
                 position: absolute;
                 left: 0;
                 bottom: 0;
+
                 a {
                   text-decoration: none;
                 }
               }
             }
+
             .right {
               min-width: 837px;
               min-height: 350px;
@@ -628,10 +757,12 @@ html {
               padding: 55px;
               justify-content: space-between;
               position: relative;
+
               .items {
                 img {
                   width: 98px;
                 }
+
                 .title {
                   font-size: 38px;
                   font-family: $coolvetica;
@@ -641,32 +772,39 @@ html {
                   margin-top: 34px;
                   font-family: $coolvetica;
                 }
+
                 .date {
                   margin-top: 60px;
                   font-size: 14px;
                 }
+
                 .mini-title {
                   margin-top: 34px;
                   font-size: 14px;
                 }
+
                 p {
                   font-size: 14px;
                   font-family: "Montserrat", sans-serif;
                 }
               }
+
               .item-2 {
                 max-width: 398px;
               }
+
               .item-3 {
                 min-width: 100px;
                 @include flexColum;
                 justify-content: center;
+
                 img {
                   width: 40px;
                   align-self: center;
                 }
               }
             }
+
             .dots {
               width: 20px;
               height: 20px;
@@ -677,6 +815,7 @@ html {
               right: 50%;
               transform: translateX(-50%);
             }
+
             .active {
               width: 100px;
               border-radius: 40px !important;
@@ -685,17 +824,22 @@ html {
         }
       }
     }
+
     #mccp {
       #about {
         max-height: 627px;
+
         .all-pl {
           padding-top: 3%;
+
           .atsjcn {
             max-width: 100% !important;
+
             h1 {
               max-width: 722px;
               text-shadow: 3px 8px 20px rgba(0, 0, 0, 0.4);
             }
+
             p {
               color: $white;
               font-size: 54px;
@@ -704,6 +848,7 @@ html {
             }
           }
         }
+
         .back-header {
           top: 0px !important;
           right: -0px !important;
@@ -711,12 +856,15 @@ html {
           height: 100% !important;
           object-fit: cover;
         }
+
         .profile-header {
           position: absolute;
           top: 100px;
           right: 233px;
+
           img {
             width: 366px;
+
             &:last-child {
               width: 280px;
               margin-left: -180px;
@@ -724,36 +872,44 @@ html {
           }
         }
       }
+
       .challege {
         .title {
           margin-top: 150px;
+
           h2 {
             @include subtitleSection;
             color: $white;
             font-size: 50px;
           }
         }
+
         .paraf {
           color: $white;
           font-size: 20px;
           max-width: 1000px;
           margin-top: 20px;
         }
+
         .flexRow {
           width: 100%;
           margin-top: 100px;
           @include flexRow;
           justify-content: space-between; //cube
+
           .cube {
             width: 320px;
             text-align: center;
             margin: 0 auto;
             height: 320px;
             -webkit-transition: -webkit-transform 0.33s;
-            transition: transform 0.33s; /* Animate the transform properties */
+            transition: transform 0.33s;
+            /* Animate the transform properties */
             -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d; /* <-NB */
+            transform-style: preserve-3d;
+            /* <-NB */
           }
+
           /* The two faces of the cube */
           .flippety,
           .flop {
@@ -782,29 +938,36 @@ html {
           /* Rotate the cube */
           .cube:hover {
             -webkit-transform: rotateX(90deg);
-            transform: rotateX(90deg); /* Text bleed at 90º */
+            transform: rotateX(90deg);
+            /* Text bleed at 90º */
           }
         }
       }
+
       .content {
         .title {
           margin-top: 100px;
+
           h2 {
             @include subtitleSection;
             color: $white;
             font-size: 50px;
           }
         }
+
         position: relative;
+
         .paraf {
           color: $white;
           font-size: 20px;
           max-width: 1000px;
           margin-top: 20px;
         }
+
         .slider-tabs {
           @include flexRow;
           justify-content: space-between;
+
           .item {
             @include flexColum;
             min-height: 672px;
@@ -815,9 +978,11 @@ html {
             flex: 1 1 auto;
             position: relative;
             box-shadow: 0px 28px 50px #0000008c;
+
             &:nth-last-child(2) {
               background: $original-solvex;
             }
+
             .sub-item {
               h4 {
                 font-family: $coolvetica;
@@ -825,6 +990,7 @@ html {
                 font-size: 38px;
               }
             }
+
             p {
               position: absolute;
               bottom: 0;
@@ -833,17 +999,20 @@ html {
             }
           }
         }
+
         .options-tabs {
           @include flexRow;
           margin-top: 100px;
           justify-content: space-between;
           flex-wrap: wrap;
+
           .item {
             min-height: 408px;
             @include flexColum;
             flex: 1 1 auto;
             max-width: 310px;
             margin: 50px 30px;
+
             .icon {
               background: $orange-solvex;
               height: 70px;
@@ -859,17 +1028,20 @@ html {
                 align-self: center;
               }
             }
+
             h4 {
               font-size: 27px;
               font-family: $coolvetica;
               color: $white;
               margin-top: 20px;
             }
+
             p {
               font-size: 15px;
               margin-top: 20px;
               text-align: justify;
             }
+
             .btn {
               @include mini-buttom;
               align-self: center;
@@ -877,6 +1049,7 @@ html {
             }
           }
         }
+
         .bg-vector-blue {
           position: absolute;
           top: 0px;
@@ -896,8 +1069,7 @@ html {
   width: 30rem;
   filter: blur(5px);
   height: 30rem;
-  background: url("https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-15/e35/37188836_1973437792721179_4754693177955319808_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=FsfU7nrzHtcAX_f-257&oh=1041e642799138325c2d5cb78e8fd3e6&oe=5EB8D4E6")
-    50% 50% no-repeat fixed;
+  background: url("https://instagram.fsti4-2.fna.fbcdn.net/v/t51.2885-15/e35/37188836_1973437792721179_4754693177955319808_n.jpg?_nc_ht=instagram.fsti4-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=FsfU7nrzHtcAX_f-257&oh=1041e642799138325c2d5cb78e8fd3e6&oe=5EB8D4E6") 50% 50% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
 }
