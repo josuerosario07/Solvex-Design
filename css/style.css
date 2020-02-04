@@ -856,13 +856,17 @@ html body #mccp .content .paraf {
   max-width: 1000px;
   margin-top: 20px;
 }
-html body #mccp .content .slider-tabs {
+html body #mccp .content .slider-tabs .nav-tabs {
   display: flex;
   flex-flow: row;
   flex-direction: row;
-  justify-content: space-between;
+  cursor: pointer !important;
+  border-bottom: none;
 }
-html body #mccp .content .slider-tabs .item {
+html body #mccp .content .slider-tabs .nav-tabs li a {
+  border: transparent;
+}
+html body #mccp .content .slider-tabs .nav-tabs li a .item {
   display: flex;
   flex-flow: column;
   flex-direction: column;
@@ -871,25 +875,46 @@ html body #mccp .content .slider-tabs .item {
   justify-content: center;
   padding: 40px;
   margin: 30px;
+  color: #fff;
   flex: 1 1 auto;
   position: relative;
   box-shadow: 0px 28px 50px #0000008c;
+  transition: 0.2s;
 }
-html body #mccp .content .slider-tabs .item:nth-last-child(2) {
-  background: #0d4b84;
+html body #mccp .content .slider-tabs .nav-tabs li a .item:hover {
+  background: #000a19;
+  color: #dd3b30;
+  box-shadow: 0px 8px 12px 12px #dd3c3038;
 }
-html body #mccp .content .slider-tabs .item .sub-item h4 {
+html body #mccp .content .slider-tabs .nav-tabs li a .item .arrow {
+  width: 40px;
+  transform: rotate(90deg);
+  align-self: center;
+  position: absolute;
+  bottom: 80px;
+}
+html body #mccp .content .slider-tabs .nav-tabs li a .item .sub-item h4 {
   font-family: coolvetica;
   margin-top: 30px;
   font-size: 38px;
 }
-html body #mccp .content .slider-tabs .item p {
+html body #mccp .content .slider-tabs .nav-tabs li a .item p {
   position: absolute;
   bottom: 0;
   left: 30px;
   opacity: 0.6;
 }
-html body #mccp .content .options-tabs {
+html body #mccp .content .slider-tabs .nav-tabs li a:hover {
+  border: transparent;
+}
+html body #mccp .content .slider-tabs .nav-tabs li:nth-last-child(2) .item {
+  background: #0d4b84;
+}
+html body #mccp .content .slider-tabs .nav-tabs li .active {
+  background-color: transparent;
+  border: transparent;
+}
+html body #mccp .content .slider-tabs .tab-content .tab-pane .options-tabs {
   display: flex;
   flex-flow: row;
   flex-direction: row;
@@ -897,7 +922,7 @@ html body #mccp .content .options-tabs {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-html body #mccp .content .options-tabs .item {
+html body #mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item {
   min-height: 408px;
   display: flex;
   flex-flow: column;
@@ -906,7 +931,7 @@ html body #mccp .content .options-tabs .item {
   max-width: 310px;
   margin: 50px 30px;
 }
-html body #mccp .content .options-tabs .item .icon {
+html body #mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .icon {
   background: #dd3b30;
   height: 70px;
   width: 70px;
@@ -917,23 +942,23 @@ html body #mccp .content .options-tabs .item .icon {
   justify-content: center;
   padding: 10px;
 }
-html body #mccp .content .options-tabs .item .icon img {
+html body #mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .icon img {
   width: 70%;
   height: 70%;
   align-self: center;
 }
-html body #mccp .content .options-tabs .item h4 {
+html body #mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item h4 {
   font-size: 27px;
   font-family: coolvetica;
   color: #fff;
   margin-top: 20px;
 }
-html body #mccp .content .options-tabs .item p {
+html body #mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item p {
   font-size: 15px;
   margin-top: 20px;
   text-align: justify;
 }
-html body #mccp .content .options-tabs .item .btn {
+html body #mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .btn {
   background: white;
   color: #dd3b30;
   padding: 8px 15px;
