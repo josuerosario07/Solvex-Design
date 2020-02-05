@@ -139,6 +139,25 @@ html body header .vineta-solvex {
   z-index: 1;
   right: -40px;
 }
+html body .sub-header {
+  min-height: 623px;
+}
+html body .sub-header .all-pl {
+  padding-top: 9%;
+}
+html body .sub-header .all-pl .container-atsj .atsjcn {
+  background-color: transparent;
+  margin: unset !important;
+}
+html body .sub-header .all-pl .container-atsj .atsjcn h1 {
+  font-family: coolvetica;
+  color: #dd3b30;
+  font-size: 83px;
+}
+html body .sub-header .all-pl .container-atsj .atsjcn p {
+  max-width: 700px;
+  font-size: 28px;
+}
 html body .content {
   color: #fff;
 }
@@ -973,6 +992,47 @@ html body #mccp .content .bg-vector-blue {
   top: 0px;
   left: -800px;
   z-index: -1;
+}
+html body .content-factory {
+  position: relative;
+  margin-top: 110px;
+}
+html body .content-factory .container-atsj .item-factory h2 {
+  color: #fff;
+  font-family: coolvetica;
+  font-size: 58px;
+}
+html body .content-factory .container-atsj .item-factory h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 26px;
+  text-transform: uppercase;
+}
+html body .content-factory .container-atsj .item-factory p {
+  color: white;
+  margin-top: 26px;
+  font-size: 20px;
+}
+html body .content-factory .container-atsj .item-factory ul {
+  color: white;
+}
+html body .content-factory .container-atsj .item-factory ul li {
+  font-size: 20px;
+  margin-top: 20px;
+  list-style: none;
+}
+html body .content-factory .container-atsj .right-side {
+  margin-top: 200px;
+}
+html body .content-factory .container-atsj .bg-solid {
+  width: 910px;
+  height: 741px;
+  background-color: #162539;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: -200px;
 }
 
 .magic {

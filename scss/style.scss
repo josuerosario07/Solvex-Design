@@ -114,6 +114,27 @@ html {
         right: -40px;
       }
     }
+    .sub-header {
+      min-height: 623px;
+      .all-pl {
+        padding-top: 9%;
+        .container-atsj {
+          .atsjcn {
+            background-color: transparent;
+            margin: unset !important;
+            h1 {
+              font-family: coolvetica;
+              color: $orange-solvex;
+              font-size: 83px;
+            }
+            p {
+              max-width: 700px;
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
 
     .content {
       color: $white;
@@ -1091,6 +1112,52 @@ html {
           top: 0px;
           left: -800px;
           z-index: -1;
+        }
+      }
+    }
+
+    .content-factory {
+      position: relative;
+      margin-top: 110px;
+      .container-atsj {
+        .item-factory {
+          h2 {
+            color: $white;
+            font-family: $coolvetica;
+            font-size: 58px;
+          }
+          h3 {
+            color: $white;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 26px;
+            text-transform: uppercase;
+          }
+          p {
+            color: white;
+            margin-top: 26px;
+            font-size: 20px;
+          }
+          ul {
+            color: white;
+            li {
+              font-size: 20px;
+              margin-top: 20px;
+              list-style: none;
+            }
+          }
+        }
+        .right-side {
+          margin-top: 200px;
+        }
+        .bg-solid {
+          width: 910px;
+          height: 741px;
+          background-color: $back-solvex;
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          right: -200px;
         }
       }
     }
