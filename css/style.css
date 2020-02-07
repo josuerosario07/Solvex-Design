@@ -1023,11 +1023,14 @@ html body .content-factory .container-atsj .nav-tabs {
 html body .content-factory .container-atsj .nav-tabs .nav-item {
   padding: 0;
   border: 0;
+  background-color: transparent;
 }
 html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab {
   width: 288px;
   height: 416px;
+  transition: 0.5s all;
   background-color: #162539;
+  border-radius: 14px;
   display: flex;
   flex-flow: column;
   flex-direction: column;
@@ -1049,6 +1052,13 @@ html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
   font-size: 17px;
   color: #dd3b30;
   margin-bottom: 0;
+}
+html body .content-factory .container-atsj .nav-tabs .active .item-tab {
+  background-color: #091945;
+  box-shadow: 0px 40px 43px #000;
+}
+html body .content-factory .container-atsj .nav-tabs .active .item-tab p {
+  color: white;
 }
 html body .content-factory .container-atsj .tab-content {
   margin-top: 100px;

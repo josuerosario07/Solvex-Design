@@ -1140,13 +1140,17 @@ html {
           width: 100%;
           margin-top: 134px;
           border: none;
+
           .nav-item {
             padding: 0;
             border: 0;
+            background-color: transparent;
             .item-tab {
               width: 288px;
               height: 416px;
+              transition: 0.5s all;
               background-color: $color-tabs;
+              border-radius: 14px;
               @include flexColum;
               img {
                 margin-top: 37px;
@@ -1165,6 +1169,15 @@ html {
                 font-size: 17px;
                 color: $orange-solvex;
                 margin-bottom: 0;
+              }
+            }
+          }
+          .active {
+            .item-tab {
+              background-color: #091945;
+              box-shadow: 0px 40px 43px #000;
+              p {
+                color: white;
               }
             }
           }
