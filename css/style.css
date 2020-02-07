@@ -996,43 +996,121 @@ html body #mccp .content .bg-vector-blue {
 html body .content-factory {
   position: relative;
   margin-top: 110px;
+  color: #fff;
 }
-html body .content-factory .container-atsj .item-factory h2 {
+html body .content-factory .container-atsj .title {
+  max-width: 675px;
+}
+html body .content-factory .container-atsj .title h2 {
   color: #fff;
   font-family: coolvetica;
   font-size: 58px;
 }
-html body .content-factory .container-atsj .item-factory h3 {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 26px;
-  text-transform: uppercase;
+html body .content-factory .container-atsj p {
+  margin-top: 27px;
 }
-html body .content-factory .container-atsj .item-factory p {
-  color: white;
-  margin-top: 26px;
-  font-size: 20px;
+html body .content-factory .container-atsj .nav-tabs {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  margin-top: 134px;
+  border: none;
 }
-html body .content-factory .container-atsj .item-factory ul {
-  color: white;
+html body .content-factory .container-atsj .nav-tabs .nav-item {
+  padding: 0;
+  border: 0;
 }
-html body .content-factory .container-atsj .item-factory ul li {
-  font-size: 20px;
-  margin-top: 20px;
-  list-style: none;
-}
-html body .content-factory .container-atsj .right-side {
-  margin-top: 200px;
-}
-html body .content-factory .container-atsj .bg-solid {
-  width: 910px;
-  height: 741px;
+html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab {
+  width: 288px;
+  height: 416px;
   background-color: #162539;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+}
+html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab img {
+  margin-top: 37px;
+}
+html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab img:last-child {
+  margin-top: 10px;
+}
+html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 34px;
+}
+html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
+  margin-top: 38px;
+  font-size: 17px;
+  color: #dd3b30;
+  margin-bottom: 0;
+}
+html body .content-factory .container-atsj .tab-content {
+  margin-top: 100px;
+  width: 100%;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left {
+  max-width: 675px;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .title h3 {
+  color: #fff;
+  font-family: coolvetica;
+  font-size: 58px;
+  color: #dd3b30;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right {
+  max-width: 675px;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right h4 {
+  font-weight: 600;
+  color: #3888f4;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right .last-four {
+  text-transform: uppercase;
+  color: #fff !important;
+  margin-top: 38px;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right ul {
+  margin-top: 30px;
+  font-weight: lighter;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right ul li {
+  margin-top: 20px;
+  list-style-type: none;
+  position: relative;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right ul li:before {
+  content: "";
   position: absolute;
-  top: 0;
-  z-index: -1;
-  right: -200px;
+  width: 7px;
+  height: 7px;
+  background-color: #ead801;
+  border-radius: 100%;
+  top: 10px;
+  left: -30px;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right a {
+  color: #dd3b30;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+  padding-bottom: 6px;
+  margin-top: 25px;
 }
 
 .magic {

@@ -1119,45 +1119,119 @@ html {
     .content-factory {
       position: relative;
       margin-top: 110px;
+      color: $white;
       .container-atsj {
-        .item-factory {
+        .title {
+          max-width: 675px;
           h2 {
             color: $white;
             font-family: $coolvetica;
             font-size: 58px;
           }
-          h3 {
-            color: $white;
-            font-size: 30px;
-            font-weight: 600;
-            margin-top: 26px;
-            text-transform: uppercase;
-          }
-          p {
-            color: white;
-            margin-top: 26px;
-            font-size: 20px;
-          }
-          ul {
-            color: white;
-            li {
-              font-size: 20px;
-              margin-top: 20px;
-              list-style: none;
+        }
+        p {
+          margin-top: 27px;
+        }
+        .nav-tabs {
+          @include flexRow;
+          justify-content: space-between;
+          padding-left: 50px;
+          padding-right: 50px;
+          width: 100%;
+          margin-top: 134px;
+          border: none;
+          .nav-item {
+            padding: 0;
+            border: 0;
+            .item-tab {
+              width: 288px;
+              height: 416px;
+              background-color: $color-tabs;
+              @include flexColum;
+              img {
+                margin-top: 37px;
+                &:last-child {
+                  margin-top: 10px;
+                }
+              }
+              h3 {
+                color: white;
+                font-weight: 600;
+                font-size: 20px;
+                margin-top: 34px;
+              }
+              p {
+                margin-top: 38px;
+                font-size: 17px;
+                color: $orange-solvex;
+                margin-bottom: 0;
+              }
             }
           }
         }
-        .right-side {
-          margin-top: 200px;
-        }
-        .bg-solid {
-          width: 910px;
-          height: 741px;
-          background-color: $back-solvex;
-          position: absolute;
-          top: 0;
-          z-index: -1;
-          right: -200px;
+        .tab-content {
+          margin-top: 100px;
+          width: 100%;
+          .tab-pane {
+            .item-definition {
+              @include flexRow;
+              justify-content: space-between;
+              .left {
+                max-width: 675px;
+                .title {
+                  h3 {
+                    color: $white;
+                    font-family: $coolvetica;
+                    font-size: 58px;
+                    color: $orange-solvex;
+                  }
+                }
+              }
+              .right {
+                max-width: 675px;
+                h4 {
+                  font-weight: 600;
+                  color: $blue-t-solvex;
+                }
+                .last-four {
+                  text-transform: uppercase;
+                  color: $white !important;
+                  margin-top: 38px;
+                }
+                p {
+                  font-size: 20px;
+                  font-weight: lighter;
+                }
+                ul {
+                  margin-top: 30px;
+                  font-weight: lighter;
+                  li {
+                    margin-top: 20px;
+                    list-style-type: none;
+                    position: relative;
+                    &:before {
+                      content: "";
+                      position: absolute;
+                      width: 7px;
+                      height: 7px;
+                      background-color: $yellow-sx;
+                      border-radius: 100%;
+                      top: 10px;
+                      left: -30px;
+                    }
+                  }
+                }
+                a {
+                  color: $orange-solvex;
+                  font-size: 20px;
+                  font-weight: 600;
+                  text-decoration: underline;
+                  padding-bottom: 6px;
+                  margin-top: 25px;
+                }
+              }
+            }
+          }
         }
       }
     }
