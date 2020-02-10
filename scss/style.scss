@@ -1129,6 +1129,17 @@ html {
             font-size: 58px;
           }
         }
+        .title-products {
+          max-width: 80% !important;
+          text-align: center;
+          margin: 25px auto;
+          display: block;
+          p {
+            max-width: 900px;
+            margin: 25px auto;
+            display: block;
+          }
+        }
         p {
           margin-top: 27px;
         }
@@ -1245,6 +1256,199 @@ html {
               }
             }
           }
+        }
+      }
+    }
+
+    .products {
+      .container-atsj {
+        .nav-tabs {
+          justify-content: center;
+
+          .nav-item {
+            margin-left: -50px;
+            &:first-child {
+              margin-left: 0px !important;
+            }
+            .item-tab {
+              background-color: $original-solvex;
+              border-radius: 0;
+              box-shadow: 0 24px 82px #0000006f;
+              align-items: flex-start;
+              padding: 36px;
+              padding-top: 24px;
+              min-width: 350px;
+              min-height: 499px;
+              position: relative;
+              .image {
+                height: 105px;
+                width: 105px;
+                margin-top: 40px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: conver;
+                }
+              }
+              .title {
+                max-width: 250px;
+                height: 100px;
+                h3 {
+                  font-family: $coolvetica;
+                  font-size: 35px;
+                }
+              }
+              p {
+                color: $white;
+                text-align: center !important;
+                margin-top: 40px;
+                position: absolute;
+                bottom: 30px;
+                img {
+                  margin-left: 20px;
+                  margin-top: 0px !important;
+                  width: 20px;
+                }
+                &:first-child {
+                  font-weight: bold;
+                  margin-top: 35px;
+                  font-size: 14px;
+                  opacity: 0.27;
+                  color: $white;
+                  position: relative;
+                }
+              }
+            }
+          }
+          .active {
+            .item-tab {
+              background-color: #0b1829;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.events-body {
+  background-image: url(../assets/images/chevron-solvex.svg);
+  background-position-x: -1000px;
+  background-position-y: -1000px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .sub-header-events {
+    min-height: 500px;
+    padding-top: 200px;
+    .container-atsj {
+      .content {
+        width: 80%;
+        @include blockItem;
+        .input-group {
+          position: relative;
+          width: 100%;
+          .input-group-prepend {
+            position: absolute;
+            top: 0;
+            right: 0;
+            .btn {
+              height: 50px;
+            }
+          }
+          input {
+            height: 50px;
+          }
+        }
+        .brand-event {
+          height: 150px;
+          width: 100%;
+          background-color: #162539a5;
+          @include flexRow;
+          justify-content: space-between;
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+  .event-content {
+    .item-event {
+      padding: 7px;
+      background-color: $back-solvex !important;
+      max-width: 387px;
+      max-height: 530px;
+      color: $white;
+      position: relative;
+      margin-bottom: 40px;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.625);
+      p {
+        margin: 0px !important;
+      }
+      .image {
+        width: 100%;
+        height: 186px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .content-card {
+        padding: 18px;
+        position: relative;
+        padding-bottom: 40px;
+        background-color: #0d192b;
+        margin-left: -7px;
+        margin-right: -7px;
+        margin-top: 7px;
+
+        .date-event {
+          margin-top: 20px;
+          p {
+            color: $orange-solvex;
+            font-weight: bold;
+            font-size: 15px;
+          }
+        }
+        .location {
+          margin-top: 10px;
+          p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.584);
+          }
+        }
+        .title {
+          margin-top: 25px;
+          max-width: 340px;
+          p {
+            font-weight: 800;
+            font-size: 20px;
+          }
+        }
+        .description {
+          margin-top: 25px;
+          font-size: 13px;
+          max-width: 350px;
+        }
+        .see-more {
+          position: absolute;
+          right: 20px;
+          bottom: 7px;
+
+          .btn {
+            color: $orange-solvex;
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+      .interaction {
+        position: absolute;
+        top: 175px;
+        right: 30px;
+        img {
+          margin-right: 10px;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.66);
+          border-radius: 100%;
         }
       }
     }

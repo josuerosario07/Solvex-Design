@@ -1006,6 +1006,17 @@ html body .content-factory .container-atsj .title h2 {
   font-family: coolvetica;
   font-size: 58px;
 }
+html body .content-factory .container-atsj .title-products {
+  max-width: 80% !important;
+  text-align: center;
+  margin: 25px auto;
+  display: block;
+}
+html body .content-factory .container-atsj .title-products p {
+  max-width: 900px;
+  margin: 25px auto;
+  display: block;
+}
 html body .content-factory .container-atsj p {
   margin-top: 27px;
 }
@@ -1121,6 +1132,188 @@ html body .content-factory .container-atsj .tab-content .tab-pane .item-definiti
   text-decoration: underline;
   padding-bottom: 6px;
   margin-top: 25px;
+}
+html body .products .container-atsj .nav-tabs {
+  justify-content: center;
+}
+html body .products .container-atsj .nav-tabs .nav-item {
+  margin-left: -50px;
+}
+html body .products .container-atsj .nav-tabs .nav-item:first-child {
+  margin-left: 0px !important;
+}
+html body .products .container-atsj .nav-tabs .nav-item .item-tab {
+  background-color: #0d4b84;
+  border-radius: 0;
+  box-shadow: 0 24px 82px #0000006f;
+  align-items: flex-start;
+  padding: 36px;
+  padding-top: 24px;
+  min-width: 350px;
+  min-height: 499px;
+  position: relative;
+}
+html body .products .container-atsj .nav-tabs .nav-item .item-tab .image {
+  height: 105px;
+  width: 105px;
+  margin-top: 40px;
+}
+html body .products .container-atsj .nav-tabs .nav-item .item-tab .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: conver;
+}
+html body .products .container-atsj .nav-tabs .nav-item .item-tab .title {
+  max-width: 250px;
+  height: 100px;
+}
+html body .products .container-atsj .nav-tabs .nav-item .item-tab .title h3 {
+  font-family: coolvetica;
+  font-size: 35px;
+}
+html body .products .container-atsj .nav-tabs .nav-item .item-tab p {
+  color: #fff;
+  text-align: center !important;
+  margin-top: 40px;
+  position: absolute;
+  bottom: 30px;
+}
+html body .products .container-atsj .nav-tabs .nav-item .item-tab p img {
+  margin-left: 20px;
+  margin-top: 0px !important;
+  width: 20px;
+}
+html body .products .container-atsj .nav-tabs .nav-item .item-tab p:first-child {
+  font-weight: bold;
+  margin-top: 35px;
+  font-size: 14px;
+  opacity: 0.27;
+  color: #fff;
+  position: relative;
+}
+html body .products .container-atsj .nav-tabs .active .item-tab {
+  background-color: #0b1829;
+}
+
+.events-body {
+  background-image: url(../assets/images/chevron-solvex.svg);
+  background-position-x: -1000px;
+  background-position-y: -1000px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.events-body .sub-header-events {
+  min-height: 500px;
+  padding-top: 200px;
+}
+.events-body .sub-header-events .container-atsj .content {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+.events-body .sub-header-events .container-atsj .content .input-group {
+  position: relative;
+  width: 100%;
+}
+.events-body .sub-header-events .container-atsj .content .input-group .input-group-prepend {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.events-body .sub-header-events .container-atsj .content .input-group .input-group-prepend .btn {
+  height: 50px;
+}
+.events-body .sub-header-events .container-atsj .content .input-group input {
+  height: 50px;
+}
+.events-body .sub-header-events .container-atsj .content .brand-event {
+  height: 150px;
+  width: 100%;
+  background-color: #162539a5;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.events-body .event-content .item-event {
+  padding: 7px;
+  background-color: #162539 !important;
+  max-width: 387px;
+  max-height: 530px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.625);
+}
+.events-body .event-content .item-event p {
+  margin: 0px !important;
+}
+.events-body .event-content .item-event .image {
+  width: 100%;
+  height: 186px;
+}
+.events-body .event-content .item-event .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.events-body .event-content .item-event .content-card {
+  padding: 18px;
+  position: relative;
+  padding-bottom: 40px;
+  background-color: #0d192b;
+  margin-left: -7px;
+  margin-right: -7px;
+  margin-top: 7px;
+}
+.events-body .event-content .item-event .content-card .date-event {
+  margin-top: 20px;
+}
+.events-body .event-content .item-event .content-card .date-event p {
+  color: #dd3b30;
+  font-weight: bold;
+  font-size: 15px;
+}
+.events-body .event-content .item-event .content-card .location {
+  margin-top: 10px;
+}
+.events-body .event-content .item-event .content-card .location p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.584);
+}
+.events-body .event-content .item-event .content-card .title {
+  margin-top: 25px;
+  max-width: 340px;
+}
+.events-body .event-content .item-event .content-card .title p {
+  font-weight: 800;
+  font-size: 20px;
+}
+.events-body .event-content .item-event .content-card .description {
+  margin-top: 25px;
+  font-size: 13px;
+  max-width: 350px;
+}
+.events-body .event-content .item-event .content-card .see-more {
+  position: absolute;
+  right: 20px;
+  bottom: 7px;
+}
+.events-body .event-content .item-event .content-card .see-more .btn {
+  color: #dd3b30;
+  font-size: 15px;
+  font-weight: bold;
+}
+.events-body .event-content .item-event .interaction {
+  position: absolute;
+  top: 175px;
+  right: 30px;
+}
+.events-body .event-content .item-event .interaction img {
+  margin-right: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.66);
+  border-radius: 100%;
 }
 
 .magic {

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="69.756" viewBox="0 0 48 69.756">
+  <g id="Group_16" data-name="Group 16" transform="translate(-1502 -341.557)">
+    <text id="Formesx" transform="translate(1502 408.312)" fill="#95989a" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Formesx</tspan></text>
+    <g id="Group_6" data-name="Group 6" transform="translate(1503 341.557)" opacity="0.45">
+      <path id="Path_10" data-name="Path 10" d="M960-200.324V-234.04l22.84-10.387v36.353Z" transform="translate(-960 244.427)" fill="#fff"/>
+      <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="8.161" cy="8.841" rx="8.161" ry="8.841" transform="translate(23.536 5.15)" fill="#fff"/>
+      <path id="Rectangle_10" data-name="Rectangle 10" d="M11.833,0h5.985A11.833,11.833,0,0,1,29.652,11.833v0a4.9,4.9,0,0,1-4.9,4.9H4.9a4.9,4.9,0,0,1-4.9-4.9v0A11.833,11.833,0,0,1,11.833,0Z" transform="translate(16.872 24.464)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
