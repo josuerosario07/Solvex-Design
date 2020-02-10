@@ -1,5 +1,9 @@
 @import "main";
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   height: 100%;
   width: 100%;
@@ -59,7 +63,7 @@ html {
               a {
                 color: $white !important;
                 text-transform: capitalize;
-                font-size: 16px;
+                font-size: 13px;
                 font-weight: 500;
               }
 
@@ -585,7 +589,7 @@ html {
 
             p {
               color: $white;
-              font-size: 54px;
+              font-size: 20px;
               max-width: 822px;
               font-weight: 600;
             }
@@ -607,7 +611,6 @@ html {
 
           img {
             width: 366px;
-            box-shadow: $box-shadow;
             border-radius: 100%;
 
             &:last-child {
@@ -618,9 +621,33 @@ html {
         }
       }
 
-      .content {
-        margin-top: 80px;
+      .about-solvex {
+        margin-top: 100px;
+        h2 {
+          @include subtitleSection;
+          color: $white;
+        }
 
+        span {
+          @include subtitleSection;
+          color: $gray-solvex-text;
+          font-size: 35px;
+        }
+        .title {
+          max-width: 800px;
+          span {
+            margin-top: 20px !important;
+          }
+          p {
+            margin-top: 10px;
+            color: $white;
+          }
+        }
+      }
+
+      .content {
+        margin-top: 150px;
+        position: relative;
         h2 {
           @include subtitleSection;
         }
@@ -630,7 +657,16 @@ html {
           color: $gray-solvex-text;
           font-size: 35px;
         }
-
+        .title {
+          max-width: 800px;
+          margin-top: 200px;
+          span {
+            margin-top: 20px !important;
+          }
+          p {
+            margin-top: 10px;
+          }
+        }
         .people {
           width: 100%;
           margin-top: 100px;
@@ -1353,6 +1389,10 @@ html {
             right: 0;
             .btn {
               height: 50px;
+              background: $orange-solvex;
+              color: $white;
+              border: none;
+              border-radius: 0;
             }
           }
           input {
@@ -1411,9 +1451,30 @@ html {
         }
         .location {
           margin-top: 10px;
+          @include flexRow;
+          width: 100%;
+          justify-content: space-between;
           p {
-            font-size: 15px;
+            font-size: 12px;
             color: rgba(255, 255, 255, 0.584);
+          }
+          .label {
+            background-color: $green-Solvex;
+            padding: 3px 6px;
+            border-radius: 3px;
+            @include flexRow;
+            .material-icons {
+              font-size: 18px;
+              margin-top: 1px;
+              margin-right: 5px;
+            }
+            p {
+              color: white;
+              font-size: 14px;
+            }
+          }
+          .red {
+            background-color: rgb(177, 2, 2);
           }
         }
         .title {
@@ -1449,6 +1510,39 @@ html {
           margin-right: 10px;
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.66);
           border-radius: 100%;
+        }
+      }
+    }
+  }
+}
+.team-body {
+  background-image: url(../assets/images/backgroun-team.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .navigate {
+    padding-top: 200px;
+    nav {
+      ol {
+        background-color: transparent;
+        li {
+          a {
+            color: $white;
+          }
+        }
+        .active {
+          color: $orange-solvex;
+        }
+      }
+    }
+  }
+
+  .team-content {
+    .team {
+      .container-atsj {
+        .people {
+          flex-wrap: wrap !important;
         }
       }
     }

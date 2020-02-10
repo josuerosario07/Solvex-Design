@@ -50,6 +50,12 @@
     -moz-transform: rotate(-360deg);
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -99,7 +105,7 @@ html body header .navbar .container-atsj ul {
 html body header .navbar .container-atsj ul li a {
   color: #fff !important;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
 }
 html body header .navbar .container-atsj ul li .active {
@@ -515,7 +521,7 @@ html body #section-about #about .all-pl .atsjcn h1 {
 }
 html body #section-about #about .all-pl .atsjcn p {
   color: #fff;
-  font-size: 54px;
+  font-size: 20px;
   max-width: 822px;
   font-weight: 600;
 }
@@ -533,15 +539,39 @@ html body #section-about #about .profile-header {
 }
 html body #section-about #about .profile-header img {
   width: 366px;
-  box-shadow: 0px 12px 34px #dd3b30;
   border-radius: 100%;
 }
 html body #section-about #about .profile-header img:last-child {
   width: 280px;
   margin-left: -180px;
 }
+html body #section-about .about-solvex {
+  margin-top: 100px;
+}
+html body #section-about .about-solvex h2 {
+  font-family: coolvetica;
+  font-size: 63px;
+  color: #fff;
+}
+html body #section-about .about-solvex span {
+  font-family: coolvetica;
+  font-size: 63px;
+  color: #aaaaaa;
+  font-size: 35px;
+}
+html body #section-about .about-solvex .title {
+  max-width: 800px;
+}
+html body #section-about .about-solvex .title span {
+  margin-top: 20px !important;
+}
+html body #section-about .about-solvex .title p {
+  margin-top: 10px;
+  color: #fff;
+}
 html body #section-about .content {
-  margin-top: 80px;
+  margin-top: 150px;
+  position: relative;
 }
 html body #section-about .content h2 {
   font-family: coolvetica;
@@ -552,6 +582,16 @@ html body #section-about .content span {
   font-size: 63px;
   color: #aaaaaa;
   font-size: 35px;
+}
+html body #section-about .content .title {
+  max-width: 800px;
+  margin-top: 200px;
+}
+html body #section-about .content .title span {
+  margin-top: 20px !important;
+}
+html body #section-about .content .title p {
+  margin-top: 10px;
 }
 html body #section-about .content .people {
   width: 100%;
@@ -1222,6 +1262,10 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
 }
 .events-body .sub-header-events .container-atsj .content .input-group .input-group-prepend .btn {
   height: 50px;
+  background: #dd3b30;
+  color: #fff;
+  border: none;
+  border-radius: 0;
 }
 .events-body .sub-header-events .container-atsj .content .input-group input {
   height: 50px;
@@ -1277,10 +1321,35 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
 }
 .events-body .event-content .item-event .content-card .location {
   margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 .events-body .event-content .item-event .content-card .location p {
-  font-size: 15px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.584);
+}
+.events-body .event-content .item-event .content-card .location .label {
+  background-color: #28a745;
+  padding: 3px 6px;
+  border-radius: 3px;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+}
+.events-body .event-content .item-event .content-card .location .label .material-icons {
+  font-size: 18px;
+  margin-top: 1px;
+  margin-right: 5px;
+}
+.events-body .event-content .item-event .content-card .location .label p {
+  color: white;
+  font-size: 14px;
+}
+.events-body .event-content .item-event .content-card .location .red {
+  background-color: #b10202;
 }
 .events-body .event-content .item-event .content-card .title {
   margin-top: 25px;
@@ -1314,6 +1383,29 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   margin-right: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.66);
   border-radius: 100%;
+}
+
+.team-body {
+  background-image: url(../assets/images/backgroun-team.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.team-body .navigate {
+  padding-top: 200px;
+}
+.team-body .navigate nav ol {
+  background-color: transparent;
+}
+.team-body .navigate nav ol li a {
+  color: #fff;
+}
+.team-body .navigate nav ol .active {
+  color: #dd3b30;
+}
+.team-body .team-content .team .container-atsj .people {
+  flex-wrap: wrap !important;
 }
 
 .magic {
