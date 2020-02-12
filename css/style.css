@@ -128,8 +128,6 @@ html body header .all-pl {
 html body header .all-pl .atsjcn {
   background-color: transparent;
   max-width: 940px;
-  display: block;
-  margin: auto;
 }
 html body header .all-pl .atsjcn h1 {
   font-family: coolvetica;
@@ -163,6 +161,9 @@ html body .sub-header .all-pl .container-atsj .atsjcn h1 {
 html body .sub-header .all-pl .container-atsj .atsjcn p {
   max-width: 700px;
   font-size: 28px;
+}
+html body .sub-header .all-pl .container-atsj .image img {
+  width: 80%;
 }
 html body .content {
   color: #fff;
@@ -523,7 +524,7 @@ html body #section-about #about .all-pl .atsjcn p {
   color: #fff;
   font-size: 20px;
   max-width: 822px;
-  font-weight: 600;
+  font-weight: 200;
 }
 html body #section-about #about .back-header {
   top: 0px !important;
@@ -783,6 +784,7 @@ html body #section-about .content .credits .item-sx .right .items .title {
   font-size: 38px;
   font-family: coolvetica;
   margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 html body #section-about .content .credits .item-sx .right .items .member {
   margin-top: 34px;
@@ -1163,6 +1165,9 @@ html body .content-factory .container-atsj .tab-content .tab-pane .item-definiti
   font-family: coolvetica;
   font-size: 58px;
   color: #dd3b30;
+}
+html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .image-item {
+  margin-top: 100px;
 }
 html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .right {
   max-width: 675px;

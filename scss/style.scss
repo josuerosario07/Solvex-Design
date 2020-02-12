@@ -96,8 +96,6 @@ html {
         .atsjcn {
           background-color: transparent;
           max-width: 940px;
-          display: block;
-          margin: auto;
 
           h1 {
             font-family: $coolvetica;
@@ -134,6 +132,11 @@ html {
             p {
               max-width: 700px;
               font-size: 28px;
+            }
+          }
+          .image {
+            img {
+              width: 80%;
             }
           }
         }
@@ -591,7 +594,7 @@ html {
               color: $white;
               font-size: 20px;
               max-width: 822px;
-              font-weight: 600;
+              font-weight: 200;
             }
           }
         }
@@ -868,6 +871,7 @@ html {
                   font-family: $coolvetica;
 
                   margin-top: 0 !important;
+                  margin-bottom: 0 !important;
                 }
 
                 .member {
@@ -1285,6 +1289,9 @@ html {
                     font-size: 58px;
                     color: $orange-solvex;
                   }
+                }
+                .image-item {
+                  margin-top: 100px;
                 }
               }
               .right {
