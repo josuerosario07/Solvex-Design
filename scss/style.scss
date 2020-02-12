@@ -626,6 +626,8 @@ html {
         h2 {
           @include subtitleSection;
           color: $white;
+          color: $orange-solvex;
+          margin-top: 150px;
         }
 
         span {
@@ -634,7 +636,6 @@ html {
           font-size: 35px;
         }
         .title {
-          max-width: 800px;
           span {
             margin-top: 20px !important;
           }
@@ -643,10 +644,47 @@ html {
             color: $white;
           }
         }
+        .valuesx {
+          margin-top: 100px;
+          .title {
+            max-width: 900px;
+            h2 {
+              color: $white;
+            }
+          }
+          .row {
+            margin-top: 80px;
+          }
+          .item {
+            max-width: 459px;
+            box-shadow: 0px 24px 82px #000000;
+            background: #0b1829;
+            border-radius: 20px;
+            .image {
+              img {
+                width: 100%;
+              }
+            }
+            .content {
+              padding: 40px;
+              margin-top: 0px;
+
+              h3 {
+                font-size: 40px;
+                font-weight: 800;
+                margin-bottom: 15px;
+                color: $orange-solvex;
+              }
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+        }
       }
 
       .content {
-        margin-top: 150px;
+        margin-top: 100px;
         position: relative;
         h2 {
           @include subtitleSection;
@@ -828,6 +866,8 @@ html {
                 .title {
                   font-size: 38px;
                   font-family: $coolvetica;
+
+                  margin-top: 0 !important;
                 }
 
                 .member {
@@ -1368,18 +1408,36 @@ html {
 }
 
 .events-body {
-  background-image: url(../assets/images/chevron-solvex.svg);
-  background-position-x: -1000px;
-  background-position-y: -1000px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   .sub-header-events {
-    min-height: 500px;
-    padding-top: 200px;
+    min-height: 550px;
+    padding-top: 130px;
+    position: relative;
+    .bg-subheader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
     .container-atsj {
       .content {
         width: 80%;
         @include blockItem;
+        .title {
+          margin-bottom: 20px;
+          h1 {
+            font-family: $coolvetica;
+            font-size: 45px;
+          }
+          p {
+            font-size: 20px;
+            span {
+              color: $orange-solvex;
+            }
+          }
+        }
         .input-group {
           position: relative;
           width: 100%;
@@ -1411,6 +1469,18 @@ html {
     }
   }
   .event-content {
+    .title {
+      h2 {
+        font-size: 35px !important;
+        padding: 5px;
+        span {
+          color: $orange-solvex !important;
+        }
+      }
+      margin-top: 60px;
+      margin-bottom: 0px;
+    }
+
     .item-event {
       padding: 7px;
       background-color: $back-solvex !important;
@@ -1418,6 +1488,7 @@ html {
       max-height: 530px;
       color: $white;
       position: relative;
+      margin-top: 80px;
       margin-bottom: 40px;
       box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.625);
       p {
@@ -1426,6 +1497,15 @@ html {
       .image {
         width: 100%;
         height: 186px;
+        position: relative;
+        .old {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: grey;
+        }
         img {
           height: 100%;
           width: 100%;
@@ -1444,7 +1524,7 @@ html {
         .date-event {
           margin-top: 20px;
           p {
-            color: $orange-solvex;
+            color: $white;
             font-weight: bold;
             font-size: 15px;
           }
@@ -1473,8 +1553,8 @@ html {
               font-size: 14px;
             }
           }
-          .red {
-            background-color: rgb(177, 2, 2);
+          .disable-label {
+            background-color: #737171;
           }
         }
         .title {
@@ -1546,6 +1626,12 @@ html {
         }
       }
     }
+  }
+}
+
+.owl-carousel {
+  .item {
+    background: $white;
   }
 }
 

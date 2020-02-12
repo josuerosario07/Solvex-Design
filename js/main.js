@@ -1,5 +1,3 @@
-var rellax = new Rellax(".rellax");
-
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
 
@@ -63,4 +61,4 @@ $(document).ready(function() {
   });
 });
 
-///
+var rellax = new Rellax(".rellax");

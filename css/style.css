@@ -552,15 +552,14 @@ html body #section-about .about-solvex h2 {
   font-family: coolvetica;
   font-size: 63px;
   color: #fff;
+  color: #dd3b30;
+  margin-top: 150px;
 }
 html body #section-about .about-solvex span {
   font-family: coolvetica;
   font-size: 63px;
   color: #aaaaaa;
   font-size: 35px;
-}
-html body #section-about .about-solvex .title {
-  max-width: 800px;
 }
 html body #section-about .about-solvex .title span {
   margin-top: 20px !important;
@@ -569,8 +568,42 @@ html body #section-about .about-solvex .title p {
   margin-top: 10px;
   color: #fff;
 }
+html body #section-about .about-solvex .valuesx {
+  margin-top: 100px;
+}
+html body #section-about .about-solvex .valuesx .title {
+  max-width: 900px;
+}
+html body #section-about .about-solvex .valuesx .title h2 {
+  color: #fff;
+}
+html body #section-about .about-solvex .valuesx .row {
+  margin-top: 80px;
+}
+html body #section-about .about-solvex .valuesx .item {
+  max-width: 459px;
+  box-shadow: 0px 24px 82px #000000;
+  background: #0b1829;
+  border-radius: 20px;
+}
+html body #section-about .about-solvex .valuesx .item .image img {
+  width: 100%;
+}
+html body #section-about .about-solvex .valuesx .item .content {
+  padding: 40px;
+  margin-top: 0px;
+}
+html body #section-about .about-solvex .valuesx .item .content h3 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #dd3b30;
+}
+html body #section-about .about-solvex .valuesx .item .content p {
+  font-size: 13px;
+}
 html body #section-about .content {
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
 }
 html body #section-about .content h2 {
@@ -749,6 +782,7 @@ html body #section-about .content .credits .item-sx .right .items img {
 html body #section-about .content .credits .item-sx .right .items .title {
   font-size: 38px;
   font-family: coolvetica;
+  margin-top: 0 !important;
 }
 html body #section-about .content .credits .item-sx .right .items .member {
   margin-top: 34px;
@@ -1235,21 +1269,37 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   background-color: #0b1829;
 }
 
-.events-body {
-  background-image: url(../assets/images/chevron-solvex.svg);
-  background-position-x: -1000px;
-  background-position-y: -1000px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 .events-body .sub-header-events {
-  min-height: 500px;
-  padding-top: 200px;
+  min-height: 550px;
+  padding-top: 130px;
+  position: relative;
+}
+.events-body .sub-header-events .bg-subheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 .events-body .sub-header-events .container-atsj .content {
   width: 80%;
   display: block;
   margin: auto;
+}
+.events-body .sub-header-events .container-atsj .content .title {
+  margin-bottom: 20px;
+}
+.events-body .sub-header-events .container-atsj .content .title h1 {
+  font-family: coolvetica;
+  font-size: 45px;
+}
+.events-body .sub-header-events .container-atsj .content .title p {
+  font-size: 20px;
+}
+.events-body .sub-header-events .container-atsj .content .title p span {
+  color: #dd3b30;
 }
 .events-body .sub-header-events .container-atsj .content .input-group {
   position: relative;
@@ -1280,6 +1330,17 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   justify-content: space-between;
   padding: 0 30px;
 }
+.events-body .event-content .title {
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+.events-body .event-content .title h2 {
+  font-size: 35px !important;
+  padding: 5px;
+}
+.events-body .event-content .title h2 span {
+  color: #dd3b30 !important;
+}
 .events-body .event-content .item-event {
   padding: 7px;
   background-color: #162539 !important;
@@ -1287,6 +1348,7 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   max-height: 530px;
   color: #fff;
   position: relative;
+  margin-top: 80px;
   margin-bottom: 40px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.625);
 }
@@ -1296,6 +1358,15 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
 .events-body .event-content .item-event .image {
   width: 100%;
   height: 186px;
+  position: relative;
+}
+.events-body .event-content .item-event .image .old {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: grey;
 }
 .events-body .event-content .item-event .image img {
   height: 100%;
@@ -1315,7 +1386,7 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   margin-top: 20px;
 }
 .events-body .event-content .item-event .content-card .date-event p {
-  color: #dd3b30;
+  color: #fff;
   font-weight: bold;
   font-size: 15px;
 }
@@ -1348,8 +1419,8 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   color: white;
   font-size: 14px;
 }
-.events-body .event-content .item-event .content-card .location .red {
-  background-color: #b10202;
+.events-body .event-content .item-event .content-card .location .disable-label {
+  background-color: #737171;
 }
 .events-body .event-content .item-event .content-card .title {
   margin-top: 25px;
@@ -1406,6 +1477,10 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
 }
 .team-body .team-content .team .container-atsj .people {
   flex-wrap: wrap !important;
+}
+
+.owl-carousel .item {
+  background: #fff;
 }
 
 .magic {
