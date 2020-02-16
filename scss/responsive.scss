@@ -12,6 +12,18 @@
           display: table;
         }
       }
+      .sub-header {
+        .all-pl {
+          padding-top: 11%;
+          .container-atsj {
+            .atsjcn {
+              h1 {
+                font-size: 60px;
+              }
+            }
+          }
+        }
+      }
 
       .content {
         .us {
@@ -62,6 +74,29 @@
         .cost {
           ul {
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    body {
+      .sub-header {
+        .all-pl {
+          padding-top: 13%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    body {
+      .sub-header {
+        .all-pl {
+          padding-top: 19%;
         }
       }
     }
@@ -122,6 +157,27 @@
             text-align: center;
             h1 {
               font-size: 55px;
+            }
+          }
+        }
+      }
+    }
+    .sub-header {
+      .all-pl {
+        .container-atsj {
+          .atsjcn {
+            text-align: center;
+
+            .display-4 {
+              font-size: 50px;
+            }
+            p {
+            }
+          }
+          .image {
+            width: 100%;
+            img {
+              @include blockItem;
             }
           }
         }
@@ -391,6 +447,20 @@
           }
         }
       }
+      .sub-header {
+        .all-pl {
+          .container-atsj {
+            .atsjcn {
+              .display-4 {
+                font-size: 40px;
+              }
+              p {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
       .content {
         .services,
         .tools,
@@ -529,6 +599,47 @@
           }
           ul {
             padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    body {
+      header {
+        .all-pl {
+          .container-atsj {
+            .atsjcn {
+              h1 {
+                font-size: 25px;
+              }
+              p {
+                font-size: 15px;
+                text-align: justify !important;
+              }
+            }
+          }
+        }
+      }
+      .content {
+        .us {
+          .container-atsj {
+            h3 {
+              font-size: 20px !important;
+            }
+            .title {
+              .text-left {
+                h2 {
+                  font-size: 20px !important;
+                  .mini {
+                    font-size: 20px !important;
+                  }
+                }
+              }
+            }
           }
         }
       }

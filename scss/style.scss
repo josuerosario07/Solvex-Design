@@ -970,7 +970,7 @@ html {
           justify-content: space-between; //cube
 
           .cube {
-            width: 320px;
+            max-width: 320px;
             text-align: center;
             margin: 0 auto;
             height: 320px;
@@ -987,7 +987,7 @@ html {
           .flop {
             background: $back-solvex;
             height: 320px;
-            width: 320px;
+            max-width: 320px;
             border: 1px solid rgba(52, 72, 139, 0.858);
             box-shadow: 0 0 8px 10px 10px rgba(0, 0, 0, 0.146) inset;
             color: $white;

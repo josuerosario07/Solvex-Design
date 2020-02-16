@@ -863,7 +863,7 @@ html body #mccp .challege .flexRow {
   /* Rotate the cube */
 }
 html body #mccp .challege .flexRow .cube {
-  width: 320px;
+  max-width: 320px;
   text-align: center;
   margin: 0 auto;
   height: 320px;
@@ -878,7 +878,7 @@ html body #mccp .challege .flexRow .flippety,
 html body #mccp .challege .flexRow .flop {
   background: #162539;
   height: 320px;
-  width: 320px;
+  max-width: 320px;
   border: 1px solid rgba(52, 72, 139, 0.858);
   box-shadow: 0 0 8px 10px 10px rgba(0, 0, 0, 0.146) inset;
   color: #fff;
@@ -1525,6 +1525,12 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   html body header .navbar {
     display: table;
   }
+  html body .sub-header .all-pl {
+    padding-top: 11%;
+  }
+  html body .sub-header .all-pl .container-atsj .atsjcn h1 {
+    font-size: 60px;
+  }
   html body .content .us .serves-hq {
     right: 40px;
   }
@@ -1549,6 +1555,16 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   html body .content .trust .content-sx .paraf,
 html body .content .trust .content-sx .footer-item {
     max-width: 443px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  html body .sub-header .all-pl {
+    padding-top: 13%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html body .sub-header .all-pl {
+    padding-top: 19%;
   }
 }
 @media screen and (max-with: 1200px) {
@@ -1590,6 +1606,19 @@ html body .content .trust .content-sx .footer-item {
   }
   body header .all-pl .container-atsj .atsjcn h1 {
     font-size: 55px;
+  }
+  body .sub-header .all-pl .container-atsj .atsjcn {
+    text-align: center;
+  }
+  body .sub-header .all-pl .container-atsj .atsjcn .display-4 {
+    font-size: 50px;
+  }
+  body .sub-header .all-pl .container-atsj .image {
+    width: 100%;
+  }
+  body .sub-header .all-pl .container-atsj .image img {
+    display: block;
+    margin: auto;
   }
   body .content h3 {
     margin-bottom: 40px !important;
@@ -1807,6 +1836,12 @@ body .trust .content-sx .footer-item .profile {
     font-size: 15px;
     text-align: center;
   }
+  html body .sub-header .all-pl .container-atsj .atsjcn .display-4 {
+    font-size: 40px;
+  }
+  html body .sub-header .all-pl .container-atsj .atsjcn p {
+    font-size: 17px;
+  }
   html body .content .services h3,
 html body .content .tools h3,
 html body .content .patner h3,
@@ -1931,6 +1966,24 @@ html body .content .logo-patner h3 {
   }
   html body .content .cost ul {
     padding-left: 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  html body header .all-pl .container-atsj .atsjcn h1 {
+    font-size: 25px;
+  }
+  html body header .all-pl .container-atsj .atsjcn p {
+    font-size: 15px;
+    text-align: justify !important;
+  }
+  html body .content .us .container-atsj h3 {
+    font-size: 20px !important;
+  }
+  html body .content .us .container-atsj .title .text-left h2 {
+    font-size: 20px !important;
+  }
+  html body .content .us .container-atsj .title .text-left h2 .mini {
+    font-size: 20px !important;
   }
 }
 
