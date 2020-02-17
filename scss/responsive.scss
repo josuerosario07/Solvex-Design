@@ -75,10 +75,9 @@
         }
 
         .cost {
-          ul {}
+          ul {
+          }
         }
-
-
       }
 
       .mccp {
@@ -94,7 +93,7 @@
               max-width: 244px;
               height: 244px;
 
-              P {
+              p {
                 font-size: 12px;
               }
             }
@@ -104,7 +103,7 @@
         .content {
           .accordion {
             .card {
-              background-color: #0B1421;
+              background-color: #0b1421;
               box-shadow: 0 24px 82px #0000006b;
               margin-bottom: 0px;
 
@@ -122,7 +121,6 @@
                     color: $white;
                     font-weight: bold;
                     text-decoration: none;
-
                   }
                 }
               }
@@ -208,7 +206,6 @@
             }
           }
         }
-
       }
 
       .content-factory {
@@ -218,7 +215,6 @@
             padding-right: 15px;
 
             .nav-item {
-
               .item-tab {
                 max-width: 260px;
                 padding: 43px 38px 28px 38px;
@@ -228,7 +224,6 @@
                   &:first-child {
                     width: 70%;
                   }
-
                 }
 
                 p {
@@ -250,15 +245,9 @@
           }
 
           .tab-content {
-
             .tab-pane {
               .item-definition {
-
-
                 .left {
-
-
-
                   .image-item {
                     margin-top: 100px;
 
@@ -267,12 +256,33 @@
                     }
                   }
                 }
-
               }
             }
           }
-
-          
+        }
+      }
+      .products {
+        .container-atsj {
+          .nav-tabs {
+            .nav-item {
+              .item-tab {
+                min-width: 300px;
+                min-height: 420px;
+                align-items: flex-start;
+                .title {
+                  h3 {
+                    font-size: 25px;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  img {
+                    width: 20px !important;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -291,7 +301,7 @@
   }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   html {
     body {
       .mccp {
@@ -306,7 +316,6 @@
             }
           }
         }
-
       }
 
       .content-factory {
@@ -318,9 +327,7 @@
           }
 
           .nav-tabs {
-
             .nav-item {
-
               .item-tab {
                 max-width: 215px;
                 min-height: 311px;
@@ -335,20 +342,15 @@
                 }
               }
             }
-
-
           }
 
           .tab-content {
             .tab-pane {
               .item-definition {
-
                 .left {
                   .title {
                     h3 {
-
                       font-size: 35px;
-
                     }
                   }
                 }
@@ -358,6 +360,31 @@
         }
       }
 
+      .products {
+        .container-atsj {
+          .nav-tabs {
+            .nav-item {
+              .item-tab {
+                min-width: 270px !important;
+                min-height: 311px;
+                align-items: flex-start;
+                padding-left: 20px;
+                .title {
+                  h3 {
+                    font-size: 15px;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  img {
+                    width: 16px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -374,9 +401,8 @@
   }
 }
 
-
-
-@media screen and (max-width: 1050px) {}
+@media screen and (max-width: 1050px) {
+}
 
 @media screen and (max-width: 991px) {
   html {
@@ -447,7 +473,8 @@
                 font-size: 50px;
               }
 
-              p {}
+              p {
+              }
             }
 
             .image {
@@ -637,7 +664,6 @@
           .cube-items {
             display: none;
           }
-
         }
 
         .content {
@@ -658,16 +684,15 @@
             display: none;
           }
         }
-
       }
-      .content-factory{
-
-        nav, .tab-content{
+      .content-factory {
+        nav,
+        .tab-content {
           display: none;
         }
         .accordion {
           .card {
-            background-color: #0B1421;
+            background-color: #0b1421;
             box-shadow: 0 24px 82px #0000006b;
             margin-bottom: 0px;
 
@@ -685,7 +710,6 @@
                   color: $white;
                   font-weight: bold;
                   text-decoration: none;
-
                 }
               }
             }
@@ -713,7 +737,7 @@
                     }
                     .image-item {
                       margin-top: 50px;
-                      img{
+                      img {
                         width: 70%;
                         display: block;
                         margin: 0 auto;
@@ -771,7 +795,6 @@
             }
           }
         }
-        
       }
     }
   }
@@ -889,7 +912,6 @@
     body {
       .mccp {
         .challenge {
-
           .title {
             margin-top: 40px;
 
@@ -902,7 +924,6 @@
             font-size: 15px;
             text-align: center;
           }
-
         }
 
         .challenge-responsive {
@@ -946,8 +967,8 @@
             .collapse,
             .collapsing {
               .card-body {
-
-                .item {}
+                .item {
+                }
               }
             }
           }
@@ -956,7 +977,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 442px) {
   html {
@@ -1012,7 +1032,6 @@
       }
 
       .content {
-
         .services,
         .tools,
         .patner,
@@ -1184,14 +1203,14 @@
           }
         }
       }
-      .content-factory{
-        .title{
+      .content-factory {
+        .title {
           margin-bottom: 100px;
-          h2{
+          h2 {
             font-size: 25px !important;
             text-align: center;
           }
-          p{
+          p {
             text-align: center;
           }
         }
@@ -1199,13 +1218,13 @@
           .card {
             .card-header {
               justify-content: center;
-              h2 {    
+              h2 {
                 .btn {
                   padding: 0 !important;
                   width: 100% !important;
                 }
               }
-              img{
+              img {
                 display: none;
               }
             }
@@ -1219,11 +1238,8 @@
                       font-size: 15px;
                     }
                     ul {
-
                       li {
-
                         font-size: 15px;
-
                       }
                     }
                     a {
@@ -1286,7 +1302,7 @@
           }
         }
       }
-      .content-factory{
+      .content-factory {
         .accordion {
           .card {
             .collapse,
@@ -1304,7 +1320,6 @@
                         font-size: 13px;
                       }
                     }
-
                   }
                 }
               }

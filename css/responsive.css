@@ -8,672 +8,918 @@
   color: #000a19;
   border-radius: 60px;
   margin-top: 43px;
-  transition: 0.3s all ease-in-out; }
-  .btn-big:hover {
-    transform: scale(1.1); }
+  transition: 0.3s all ease-in-out;
+}
+.btn-big:hover {
+  transform: scale(1.1);
+}
 
 @font-face {
   font-family: coolvetica;
-  src: url(../assets/fonts/coolvetica-rg.ttf); }
+  src: url(../assets/fonts/coolvetica-rg.ttf);
+}
 @keyframes float {
   0% {
-    transform: translatey(0px); }
+    transform: translatey(0px);
+  }
   50% {
-    transform: translatey(-20px); }
+    transform: translatey(-20px);
+  }
   100% {
-    transform: translatey(0px); } }
+    transform: translatey(0px);
+  }
+}
 @keyframes gradient {
   0% {
-    background-position: 0% 50%; }
+    background-position: 0% 50%;
+  }
   50% {
-    background-position: 100% 50%; }
+    background-position: 100% 50%;
+  }
   100% {
-    background-position: 0% 50%; } }
+    background-position: 0% 50%;
+  }
+}
 @-moz-keyframes rotatecircle {
   0% {
-    -moz-transform: rotate(0deg); }
+    -moz-transform: rotate(0deg);
+  }
   100% {
-    -moz-transform: rotate(-360deg); } }
+    -moz-transform: rotate(-360deg);
+  }
+}
 @media screen and (max-width: 1440px) {
   html body .container-atsj {
-    max-width: 1160px; }
+    max-width: 1160px;
+  }
   html body header .navbar {
-    display: table; }
+    display: table;
+  }
   html body .sub-header .all-pl {
-    padding-top: 11%; }
-    html body .sub-header .all-pl .container-atsj .atsjcn h1 {
-      font-size: 60px; }
+    padding-top: 11%;
+  }
+  html body .sub-header .all-pl .container-atsj .atsjcn h1 {
+    font-size: 60px;
+  }
   html body .content .us .serves-hq {
-    right: 40px; }
+    right: 40px;
+  }
   html body .content .us .container-atsj .text-left h2 {
     font-size: 90px;
-    line-height: 38px; }
-    html body .content .us .container-atsj .text-left h2 .mini {
-      font-size: 50px; }
+    line-height: 38px;
+  }
+  html body .content .us .container-atsj .text-left h2 .mini {
+    font-size: 50px;
+  }
   html body .content .services .item-sx {
     width: 150px;
-    height: 150px; }
-    html body .content .services .item-sx img {
-      margin-top: 20px;
-      width: 80px; }
+    height: 150px;
+  }
+  html body .content .services .item-sx img {
+    margin-top: 20px;
+    width: 80px;
+  }
   html body .content .trust .content-sx .title h4 {
-    font-size: 40px !important; }
+    font-size: 40px !important;
+  }
   html body .content .trust .content-sx .paraf,
-  html body .content .trust .content-sx .footer-item {
-    max-width: 443px; }
+html body .content .trust .content-sx .footer-item {
+    max-width: 443px;
+  }
   html body .mccp .challenge .flexRow .cube {
     max-width: 244px;
-    height: 244px; }
+    height: 244px;
+  }
   html body .mccp .challenge .flexRow .flippety,
-  html body .mccp .challenge .flexRow .flop {
+html body .mccp .challenge .flexRow .flop {
     max-width: 244px;
-    height: 244px; }
-    html body .mccp .challenge .flexRow .flippety P,
-    html body .mccp .challenge .flexRow .flop P {
-      font-size: 12px; }
+    height: 244px;
+  }
+  html body .mccp .challenge .flexRow .flippety p,
+html body .mccp .challenge .flexRow .flop p {
+    font-size: 12px;
+  }
   html body .mccp .content .accordion .card {
-    background-color: #0B1421;
+    background-color: #0b1421;
     box-shadow: 0 24px 82px #0000006b;
-    margin-bottom: 0px; }
-    html body .mccp .content .accordion .card .card-header {
-      background-color: #162539;
-      box-shadow: 0 80px 82px #0000006b;
-      height: 75px;
-      display: flex;
-      flex-flow: row;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-left: 25px;
-      padding-right: 25px; }
-      html body .mccp .content .accordion .card .card-header h2 .btn {
-        color: #fff;
-        font-weight: bold;
-        text-decoration: none; }
-    html body .mccp .content .accordion .card .collapse .card-body,
-    html body .mccp .content .accordion .card .collapsing .card-body {
-      display: flex;
-      flex-flow: row;
-      flex-direction: row;
-      margin-top: 50px;
-      justify-content: center;
-      flex-wrap: wrap; }
-      html body .mccp .content .accordion .card .collapse .card-body .item,
-      html body .mccp .content .accordion .card .collapsing .card-body .item {
-        min-height: 408px;
-        display: flex;
-        flex-flow: column;
-        flex-direction: column;
-        flex: 1 1 auto;
-        max-width: 271px;
-        margin: 50px 25px; }
-        html body .mccp .content .accordion .card .collapse .card-body .item .icon,
-        html body .mccp .content .accordion .card .collapsing .card-body .item .icon {
-          background: #dd3b30;
-          height: 70px;
-          width: 70px;
-          border-radius: 100%;
-          display: flex;
-          flex-flow: column;
-          flex-direction: column;
-          justify-content: center;
-          padding: 10px;
-          align-self: center; }
-          html body .mccp .content .accordion .card .collapse .card-body .item .icon img,
-          html body .mccp .content .accordion .card .collapsing .card-body .item .icon img {
-            width: 70%;
-            height: 70%;
-            align-self: center; }
-        html body .mccp .content .accordion .card .collapse .card-body .item h4,
-        html body .mccp .content .accordion .card .collapsing .card-body .item h4 {
-          font-size: 18px;
-          font-family: coolvetica;
-          color: #fff;
-          margin-top: 20px; }
-        html body .mccp .content .accordion .card .collapse .card-body .item p,
-        html body .mccp .content .accordion .card .collapsing .card-body .item p {
-          font-size: 13px !important;
-          margin-top: 20px;
-          text-align: justify; }
-        html body .mccp .content .accordion .card .collapse .card-body .item .btn,
-        html body .mccp .content .accordion .card .collapsing .card-body .item .btn {
-          background: white;
-          color: #dd3b30;
-          padding: 8px 15px;
-          border-radius: 30px;
-          width: 90%;
-          font-weight: bold;
-          align-self: center;
-          margin-top: 20px; }
+    margin-bottom: 0px;
+  }
+  html body .mccp .content .accordion .card .card-header {
+    background-color: #162539;
+    box-shadow: 0 80px 82px #0000006b;
+    height: 75px;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  html body .mccp .content .accordion .card .card-header h2 .btn {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  html body .mccp .content .accordion .card .collapse .card-body,
+html body .mccp .content .accordion .card .collapsing .card-body {
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  html body .mccp .content .accordion .card .collapse .card-body .item,
+html body .mccp .content .accordion .card .collapsing .card-body .item {
+    min-height: 408px;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    flex: 1 1 auto;
+    max-width: 271px;
+    margin: 50px 25px;
+  }
+  html body .mccp .content .accordion .card .collapse .card-body .item .icon,
+html body .mccp .content .accordion .card .collapsing .card-body .item .icon {
+    background: #dd3b30;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    align-self: center;
+  }
+  html body .mccp .content .accordion .card .collapse .card-body .item .icon img,
+html body .mccp .content .accordion .card .collapsing .card-body .item .icon img {
+    width: 70%;
+    height: 70%;
+    align-self: center;
+  }
+  html body .mccp .content .accordion .card .collapse .card-body .item h4,
+html body .mccp .content .accordion .card .collapsing .card-body .item h4 {
+    font-size: 18px;
+    font-family: coolvetica;
+    color: #fff;
+    margin-top: 20px;
+  }
+  html body .mccp .content .accordion .card .collapse .card-body .item p,
+html body .mccp .content .accordion .card .collapsing .card-body .item p {
+    font-size: 13px !important;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  html body .mccp .content .accordion .card .collapse .card-body .item .btn,
+html body .mccp .content .accordion .card .collapsing .card-body .item .btn {
+    background: white;
+    color: #dd3b30;
+    padding: 8px 15px;
+    border-radius: 30px;
+    width: 90%;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 20px;
+  }
   html body .mccp .content .slider-tabs .nav-tabs li a .item {
     min-height: 480px;
     max-width: 363px;
     margin: 18px;
-    padding: 16px; }
-    html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item img {
-      width: 66px; }
-    html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item h4 {
-      font-size: 30px; }
+    padding: 16px;
+  }
+  html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item img {
+    width: 66px;
+  }
+  html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item h4 {
+    font-size: 30px;
+  }
   html body .content-factory .container-atsj .nav-tabs {
     padding-left: 15px;
-    padding-right: 15px; }
-    html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab {
-      max-width: 260px;
-      padding: 43px 38px 28px 38px;
-      align-items: center; }
-      html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab img:first-child {
-        width: 70%; }
-      html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
-        font-size: 15px; }
-    html body .content-factory .container-atsj .nav-tabs .active .item-tab {
-      background-color: #091945;
-      box-shadow: 0px 40px 43px #000; }
-      html body .content-factory .container-atsj .nav-tabs .active .item-tab p {
-        color: white; }
+    padding-right: 15px;
+  }
+  html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab {
+    max-width: 260px;
+    padding: 43px 38px 28px 38px;
+    align-items: center;
+  }
+  html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab img:first-child {
+    width: 70%;
+  }
+  html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
+    font-size: 15px;
+  }
+  html body .content-factory .container-atsj .nav-tabs .active .item-tab {
+    background-color: #091945;
+    box-shadow: 0px 40px 43px #000;
+  }
+  html body .content-factory .container-atsj .nav-tabs .active .item-tab p {
+    color: white;
+  }
   html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .image-item {
-    margin-top: 100px; }
-    html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .image-item img {
-      width: 80%; } }
+    margin-top: 100px;
+  }
+  html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .image-item img {
+    width: 80%;
+  }
+  html body .products .container-atsj .nav-tabs .nav-item .item-tab {
+    min-width: 300px;
+    min-height: 420px;
+    align-items: flex-start;
+  }
+  html body .products .container-atsj .nav-tabs .nav-item .item-tab .title h3 {
+    font-size: 25px;
+  }
+  html body .products .container-atsj .nav-tabs .nav-item .item-tab p {
+    font-size: 12px;
+  }
+  html body .products .container-atsj .nav-tabs .nav-item .item-tab p img {
+    width: 20px !important;
+  }
+}
 @media screen and (max-width: 1366px) {
   html body .sub-header .all-pl {
-    padding-top: 13%; } }
+    padding-top: 13%;
+  }
+}
 @media screen and (max-width: 1200px) {
   html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs {
-    justify-content: space-around; }
+    justify-content: space-around;
+  }
   html body .content-factory .container-atsj .title h2 {
-    font-size: 35px; }
+    font-size: 35px;
+  }
   html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab {
     max-width: 215px;
     min-height: 311px;
-    padding: 13px 8px 28px 8px; }
-    html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab h3 {
-      margin-top: 15px; }
-    html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
-      font-size: 12px; }
+    padding: 13px 8px 28px 8px;
+  }
+  html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab h3 {
+    margin-top: 15px;
+  }
+  html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
+    font-size: 12px;
+  }
   html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .title h3 {
-    font-size: 35px; } }
+    font-size: 35px;
+  }
+  html body .products .container-atsj .nav-tabs .nav-item .item-tab {
+    min-width: 270px !important;
+    min-height: 311px;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  html body .products .container-atsj .nav-tabs .nav-item .item-tab .title h3 {
+    font-size: 15px;
+  }
+  html body .products .container-atsj .nav-tabs .nav-item .item-tab p {
+    font-size: 12px;
+  }
+  html body .products .container-atsj .nav-tabs .nav-item .item-tab p img {
+    width: 16px !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   html body .sub-header .all-pl {
-    padding-top: 19%; } }
+    padding-top: 19%;
+  }
+}
 @media screen and (max-width: 991px) {
   html body .container-atsj {
-    max-width: 800px; }
+    max-width: 800px;
+  }
   html body .magic {
-    display: none !important; }
+    display: none !important;
+  }
   html body .container {
-    padding: 25px; }
+    padding: 25px;
+  }
   html body header .navbar .container-atsj .navbar-nav {
     display: block;
-    padding: 35px 15px 15px 0; }
-    html body header .navbar .container-atsj .navbar-nav li .active {
-      background: transparent;
-      color: #dd3b30 !important;
-      position: relative; }
-      html body header .navbar .container-atsj .navbar-nav li .active::before {
-        content: " ";
-        position: absolute;
-        top: 11px;
-        left: 0;
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
-        background-color: #dd3b30; }
+    padding: 35px 15px 15px 0;
+  }
+  html body header .navbar .container-atsj .navbar-nav li .active {
+    background: transparent;
+    color: #dd3b30 !important;
+    position: relative;
+  }
+  html body header .navbar .container-atsj .navbar-nav li .active::before {
+    content: " ";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #dd3b30;
+  }
   html body header .all-pl .container-atsj .atsjcn {
     max-width: 712px;
     display: block;
     margin: auto;
-    text-align: center; }
-    html body header .all-pl .container-atsj .atsjcn h1 {
-      font-size: 55px; }
+    text-align: center;
+  }
+  html body header .all-pl .container-atsj .atsjcn h1 {
+    font-size: 55px;
+  }
   html body .sub-header .all-pl .container-atsj .atsjcn {
-    text-align: center; }
-    html body .sub-header .all-pl .container-atsj .atsjcn .display-4 {
-      font-size: 50px; }
+    text-align: center;
+  }
+  html body .sub-header .all-pl .container-atsj .atsjcn .display-4 {
+    font-size: 50px;
+  }
   html body .sub-header .all-pl .container-atsj .image {
-    width: 100%; }
-    html body .sub-header .all-pl .container-atsj .image img {
-      display: block;
-      margin: auto; }
+    width: 100%;
+  }
+  html body .sub-header .all-pl .container-atsj .image img {
+    display: block;
+    margin: auto;
+  }
   html body .content h3 {
     margin-bottom: 40px !important;
-    font-size: 45px !important; }
+    font-size: 45px !important;
+  }
   html body .content p {
-    font-size: 20px !important; }
+    font-size: 20px !important;
+  }
   html body .content .title {
     max-width: 100% !important;
-    margin-bottom: 30px !important; }
+    margin-bottom: 30px !important;
+  }
   html body .content .us {
     margin-top: 50px !important;
-    min-height: unset !important; }
-    html body .content .us .clouds {
-      display: none; }
-    html body .content .us .container-atsj .title {
-      width: 100%;
-      margin-bottom: 50px; }
-      html body .content .us .container-atsj .title .text-left {
-        max-width: 680px !important;
-        display: block;
-        margin: auto; }
-        html body .content .us .container-atsj .title .text-left h2 {
-          font-size: 45px;
-          line-height: 70px !important;
-          text-align: center; }
-          html body .content .us .container-atsj .title .text-left h2 .mini {
-            font-size: 45px !important; }
-    html body .content .us .container-atsj .definition {
-      max-width: 820px;
-      display: block;
-      margin: auto; }
+    min-height: unset !important;
+  }
+  html body .content .us .clouds {
+    display: none;
+  }
+  html body .content .us .container-atsj .title {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  html body .content .us .container-atsj .title .text-left {
+    max-width: 680px !important;
+    display: block;
+    margin: auto;
+  }
+  html body .content .us .container-atsj .title .text-left h2 {
+    font-size: 45px;
+    line-height: 70px !important;
+    text-align: center;
+  }
+  html body .content .us .container-atsj .title .text-left h2 .mini {
+    font-size: 45px !important;
+  }
+  html body .content .us .container-atsj .definition {
+    max-width: 820px;
+    display: block;
+    margin: auto;
+  }
   html body .content .services {
     min-height: unset;
     margin-bottom: 0;
-    margin-top: 100px; }
-    html body .content .services .text {
-      text-align: center; }
-      html body .content .services .text h3 {
-        max-width: 550px;
-        text-align: center;
-        display: block;
-        margin: auto; }
-    html body .content .services .row {
-      margin: 0 !important; }
-      html body .content .services .row .description {
-        margin-bottom: 60px; }
+    margin-top: 100px;
+  }
+  html body .content .services .text {
+    text-align: center;
+  }
+  html body .content .services .text h3 {
+    max-width: 550px;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  html body .content .services .row {
+    margin: 0 !important;
+  }
+  html body .content .services .row .description {
+    margin-bottom: 60px;
+  }
   html body .content .tools .item-sx {
     text-align: center;
     display: block;
-    margin: auto; }
-    html body .content .tools .item-sx .title,
-    html body .content .tools .item-sx .paraf,
-    html body .content .tools .item-sx .btn {
-      display: block;
-      margin: auto; }
-    html body .content .tools .item-sx .paraf {
-      max-width: 700px !important; }
-    html body .content .tools .item-sx .btn {
-      margin-top: 90px !important; }
+    margin: auto;
+  }
+  html body .content .tools .item-sx .title,
+html body .content .tools .item-sx .paraf,
+html body .content .tools .item-sx .btn {
+    display: block;
+    margin: auto;
+  }
+  html body .content .tools .item-sx .paraf {
+    max-width: 700px !important;
+  }
+  html body .content .tools .item-sx .btn {
+    margin-top: 90px !important;
+  }
   html body .content .tools .item-bg {
     display: block;
     margin: auto;
     margin-top: 110px;
-    float: none !important; }
+    float: none !important;
+  }
   html body .trust .desktop-trust {
-    display: none !important; }
+    display: none !important;
+  }
   html body .trust .content-sx {
     max-width: 100% !important;
     display: block;
     margin: auto;
     text-align: center;
-    height: auto !important; }
-    html body .trust .content-sx .title,
-    html body .trust .content-sx .paraf,
-    html body .trust .content-sx .footer-item {
-      display: block;
-      margin: auto;
-      position: relative !important;
-      margin-top: 45px; }
-      html body .trust .content-sx .title .profile,
-      html body .trust .content-sx .paraf .profile,
-      html body .trust .content-sx .footer-item .profile {
-        width: 90px !important;
-        height: 90px !important;
-        margin-top: 26px; }
+    height: auto !important;
+  }
+  html body .trust .content-sx .title,
+html body .trust .content-sx .paraf,
+html body .trust .content-sx .footer-item {
+    display: block;
+    margin: auto;
+    position: relative !important;
+    margin-top: 45px;
+  }
+  html body .trust .content-sx .title .profile,
+html body .trust .content-sx .paraf .profile,
+html body .trust .content-sx .footer-item .profile {
+    width: 90px !important;
+    height: 90px !important;
+    margin-top: 26px;
+  }
   html body .trust .owl-carousel {
-    display: block !important; }
-    html body .trust .owl-carousel .content-sx {
-      padding: 15px;
-      text-align: left; }
-      html body .trust .owl-carousel .content-sx .title h4 {
-        font-size: 40px;
-        text-align: center;
-        font-family: coolvetica;
-        color: #dd3b30 !important;
-        text-align: left; }
-      html body .trust .owl-carousel .content-sx .paraf {
-        max-width: 100% !important; }
-    html body .trust .owl-carousel .footer-item {
-      max-width: 100% !important; }
+    display: block !important;
+  }
+  html body .trust .owl-carousel .content-sx {
+    padding: 15px;
+    text-align: left;
+  }
+  html body .trust .owl-carousel .content-sx .title h4 {
+    font-size: 40px;
+    text-align: center;
+    font-family: coolvetica;
+    color: #dd3b30 !important;
+    text-align: left;
+  }
+  html body .trust .owl-carousel .content-sx .paraf {
+    max-width: 100% !important;
+  }
+  html body .trust .owl-carousel .footer-item {
+    max-width: 100% !important;
+  }
   html body .cost h3 {
-    font-size: 50px; }
+    font-size: 50px;
+  }
   html body .mccp .challenge .title h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 45px; }
+    font-size: 45px;
+  }
   html body .mccp .challenge .cube-items {
-    display: none; }
+    display: none;
+  }
   html body .mccp .content .title {
-    margin-bottom: 30px; }
-    html body .mccp .content .title h2 {
-      text-align: center;
-      font-size: 45px; }
-  html body .mccp .content .cube-items {
-    display: none; }
-  html body .mccp .content .slider-tabs {
-    display: none; }
-  html body .content-factory nav, html body .content-factory .tab-content {
-    display: none; }
-  html body .content-factory .accordion .card {
-    background-color: #0B1421;
-    box-shadow: 0 24px 82px #0000006b;
-    margin-bottom: 0px; }
-    html body .content-factory .accordion .card .card-header {
-      background-color: #162539;
-      box-shadow: 0 80px 82px #0000006b;
-      height: 75px;
-      display: flex;
-      flex-flow: row;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-left: 25px;
-      padding-right: 25px; }
-      html body .content-factory .accordion .card .card-header h2 .btn {
-        color: #fff;
-        font-weight: bold;
-        text-decoration: none; }
-    html body .content-factory .accordion .card .collapse .card-body,
-    html body .content-factory .accordion .card .collapsing .card-body {
-      display: flex;
-      flex-flow: column;
-      flex-direction: column;
-      margin-top: 50px;
-      justify-content: center;
-      flex-wrap: wrap; }
-      html body .content-factory .accordion .card .collapse .card-body .item-definition,
-      html body .content-factory .accordion .card .collapsing .card-body .item-definition {
-        display: flex;
-        flex-flow: column;
-        flex-direction: column;
-        align-items: center; }
-        html body .content-factory .accordion .card .collapse .card-body .item-definition .left .title,
-        html body .content-factory .accordion .card .collapsing .card-body .item-definition .left .title {
-          max-width: unset; }
-          html body .content-factory .accordion .card .collapse .card-body .item-definition .left .title h3,
-          html body .content-factory .accordion .card .collapsing .card-body .item-definition .left .title h3 {
-            color: #fff;
-            font-family: coolvetica;
-            font-size: 25px;
-            text-align: center; }
-        html body .content-factory .accordion .card .collapse .card-body .item-definition .left .image-item,
-        html body .content-factory .accordion .card .collapsing .card-body .item-definition .left .image-item {
-          margin-top: 50px; }
-          html body .content-factory .accordion .card .collapse .card-body .item-definition .left .image-item img,
-          html body .content-factory .accordion .card .collapsing .card-body .item-definition .left .image-item img {
-            width: 70%;
-            display: block;
-            margin: 0 auto; }
-        html body .content-factory .accordion .card .collapse .card-body .item-definition .right,
-        html body .content-factory .accordion .card .collapsing .card-body .item-definition .right {
-          max-width: 550px;
-          margin-top: 50px;
-          padding-bottom: 30px; }
-          html body .content-factory .accordion .card .collapse .card-body .item-definition .right h4,
-          html body .content-factory .accordion .card .collapsing .card-body .item-definition .right h4 {
-            font-weight: 600;
-            color: #3888f4; }
-          html body .content-factory .accordion .card .collapse .card-body .item-definition .right .last-four,
-          html body .content-factory .accordion .card .collapsing .card-body .item-definition .right .last-four {
-            text-transform: uppercase;
-            color: #fff !important;
-            margin-top: 38px; }
-          html body .content-factory .accordion .card .collapse .card-body .item-definition .right p,
-          html body .content-factory .accordion .card .collapsing .card-body .item-definition .right p {
-            font-size: 20px;
-            font-weight: lighter; }
-          html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul,
-          html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul {
-            margin-top: 30px;
-            font-weight: lighter; }
-            html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul li,
-            html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li {
-              margin-top: 20px;
-              list-style-type: none;
-              position: relative; }
-              html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul li:before,
-              html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li:before {
-                content: "";
-                position: absolute;
-                width: 7px;
-                height: 7px;
-                background-color: #ead801;
-                border-radius: 100%;
-                top: 10px;
-                left: -30px; }
-          html body .content-factory .accordion .card .collapse .card-body .item-definition .right a,
-          html body .content-factory .accordion .card .collapsing .card-body .item-definition .right a {
-            color: #dd3b30;
-            font-size: 20px;
-            font-weight: 600;
-            text-decoration: underline;
-            padding-bottom: 6px;
-            margin-top: 25px; } }
-@media screen and (max-width: 770px) {
-  html body .container-atsj {
-    max-width: 700px !important; }
-  html body header .all-pl .container .atsjcn {
-    margin-top: 21%; }
-  html body .content h3 {
-    font-size: 50px !important;
-    display: block;
-    margin: auto;
-    margin-bottom: 30px; }
-  html body .content .title {
-    margin-bottom: 30px !important; }
-  html body .content p {
-    font-size: 17px !important; }
-  html body .content .us {
-    margin-top: 15px; }
-    html body .content .us .container-atsj {
-      padding-top: 80px; }
-      html body .content .us .container-atsj .title .text-left {
-        line-height: 5px; }
-        html body .content .us .container-atsj .title .text-left h2 {
-          text-align: center; }
-      html body .content .us .container-atsj .definition {
-        margin-top: 50px; }
-        html body .content .us .container-atsj .definition p {
-          text-align: left; }
-  html body .content .services {
-    padding-top: 0px;
-    margin-top: 240px; }
-    html body .content .services .title {
-      display: block;
-      margin: auto; }
-      html body .content .services .title .text p {
-        text-align: left;
-        margin-bottom: 30px; }
-  html body .content .patner .item-sx img {
-    width: 100%;
-    display: block;
-    margin: auto; }
-  html body .content .tools .item-sx .paraf p {
-    text-align: left; }
-  html body .content .logo-patner {
-    margin-top: 200px; } }
-@media screen and (max-width: 510px) {
-  html body .mccp .challenge .title {
-    margin-top: 40px; }
-    html body .mccp .challenge .title h2 {
-      font-size: 30px; }
-  html body .mccp .challenge .paraf {
-    font-size: 15px;
-    text-align: center; }
-  html body .mccp .challenge-responsive .item:first-child {
-    margin-top: 50px; }
+    margin-bottom: 30px;
+  }
   html body .mccp .content .title h2 {
-    font-size: 30px; }
-  html body .mccp .content .accordion .card .card-header {
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center !important; }
-    html body .mccp .content .accordion .card .card-header img {
-      display: none; }
-    html body .mccp .content .accordion .card .card-header h2 {
-      text-align: center; }
-      html body .mccp .content .accordion .card .card-header h2 .btn {
-        font-size: 12px;
-        padding: 0 !important;
-        width: 100%; } }
-@media screen and (max-width: 442px) {
-  html body .container-atsj {
-    max-width: 400px !important; }
-  html body .btn {
-    padding: 20px 32px !important;
-    font-size: 15px !important;
-    width: 90%; }
-  html body header nav {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important; }
-  html body header .all-pl .container-atsj .atsjcn {
-    margin-top: 50%; }
-    html body header .all-pl .container-atsj .atsjcn h1 {
-      font-size: 28px; }
-    html body header .all-pl .container-atsj .atsjcn p {
-      font-size: 15px;
-      text-align: center; }
-  html body .sub-header .all-pl .container-atsj .atsjcn .display-4 {
-    font-size: 40px; }
-  html body .sub-header .all-pl .container-atsj .atsjcn p {
-    font-size: 17px; }
-  html body .content .services h3,
-  html body .content .tools h3,
-  html body .content .patner h3,
-  html body .content .clients h3,
-  html body .content .trust h3,
-  html body .content .cost h3,
-  html body .content .logo-patner h3 {
-    font-size: 25px !important;
     text-align: center;
-    width: 100% !important; }
-  html body .content p {
-    font-size: 15px !important; }
-  html body .content .us .container-atsj .title {
-    max-width: 342px;
-    display: block;
-    margin: auto; }
-    html body .content .us .container-atsj .title .text-left h2 {
-      font-size: 25px !important;
-      line-height: 40px !important;
-      text-align: center; }
-      html body .content .us .container-atsj .title .text-left h2 .mini {
-        font-size: 25px !important; }
-  html body .content .us .container-atsj .definition {
-    max-width: 342px;
-    margin-top: 10px; }
-    html body .content .us .container-atsj .definition p {
-      font-size: 15px !important; }
-  html body .content .services {
-    padding-top: 70px !important; }
-    html body .content .services .title {
-      margin-bottom: 70px; }
-      html body .content .services .title .text {
-        max-width: 342px; }
-        html body .content .services .title .text h3 {
-          margin-left: 0;
-          margin-bottom: 18px !important; }
-        html body .content .services .title .text p {
-          font-size: 15px;
-          margin-bottom: 30px; }
-  html body .content .tools {
-    margin-top: 0px; }
-    html body .content .tools .item-sx {
-      max-width: 342px; }
-      html body .content .tools .item-sx .title h3 {
-        max-width: unset !important;
-        margin-bottom: 18px !important; }
-      html body .content .tools .item-sx .paraf {
-        margin-top: 0; }
-    html body .content .tools .item-bg {
-      display: none !important; }
-  html body .content .patner {
-    margin-top: 70px !important; }
-    html body .content .patner .item-sx img {
-      width: 90%; }
-  html body .content .clients {
-    margin-top: 70px; }
-    html body .content .clients .title {
-      max-width: 342px;
-      display: block;
-      margin: auto; }
-      html body .content .clients .title h3 {
-        margin-top: 0;
-        max-width: unset !important;
-        margin-bottom: 18px !important; }
-  html body .content .trust {
-    margin-top: 70px; }
-    html body .content .trust .title {
-      margin-bottom: 0 !important; }
-      html body .content .trust .title h3 {
-        text-align: center !important;
-        margin-bottom: 0 !important; }
-    html body .content .trust .btn-client {
-      padding: 20px 32px !important;
-      font-size: 15px !important; }
-    html body .content .trust .owl-carousel .content-sx .title {
-      display: none; }
-      html body .content .trust .owl-carousel .content-sx .title h1 {
-        font-size: 35px; }
-    html body .content .trust .owl-carousel .content-sx p {
-      text-align: justify; }
-  html body .content .cost {
-    margin-top: 70px; }
-    html body .content .cost .title {
-      max-width: 342px;
-      display: block;
-      margin: auto; }
-      html body .content .cost .title h3 {
-        max-width: unset !important;
-        margin-bottom: 18px !important;
-        text-align: center; }
-    html body .content .cost ul {
-      padding-left: 0px; }
-  html body .content-factory .title {
-    margin-bottom: 100px; }
-    html body .content-factory .title h2 {
-      font-size: 25px !important;
-      text-align: center; }
-    html body .content-factory .title p {
-      text-align: center; }
+    font-size: 45px;
+  }
+  html body .mccp .content .cube-items {
+    display: none;
+  }
+  html body .mccp .content .slider-tabs {
+    display: none;
+  }
+  html body .content-factory nav,
+html body .content-factory .tab-content {
+    display: none;
+  }
+  html body .content-factory .accordion .card {
+    background-color: #0b1421;
+    box-shadow: 0 24px 82px #0000006b;
+    margin-bottom: 0px;
+  }
   html body .content-factory .accordion .card .card-header {
-    justify-content: center; }
-    html body .content-factory .accordion .card .card-header h2 .btn {
-      padding: 0 !important;
-      width: 100% !important; }
-    html body .content-factory .accordion .card .card-header img {
-      display: none; }
+    background-color: #162539;
+    box-shadow: 0 80px 82px #0000006b;
+    height: 75px;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  html body .content-factory .accordion .card .card-header h2 .btn {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  html body .content-factory .accordion .card .collapse .card-body,
+html body .content-factory .accordion .card .collapsing .card-body {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .left .title,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .left .title {
+    max-width: unset;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .left .title h3,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .left .title h3 {
+    color: #fff;
+    font-family: coolvetica;
+    font-size: 25px;
+    text-align: center;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .left .image-item,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .left .image-item {
+    margin-top: 50px;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .left .image-item img,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .left .image-item img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right {
+    max-width: 550px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right h4,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right h4 {
+    font-weight: 600;
+    color: #3888f4;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right .last-four,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right .last-four {
+    text-transform: uppercase;
+    color: #fff !important;
+    margin-top: 38px;
+  }
   html body .content-factory .accordion .card .collapse .card-body .item-definition .right p,
-  html body .content-factory .accordion .card .collapsing .card-body .item-definition .right p {
-    font-size: 15px; }
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right p {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul {
+    margin-top: 30px;
+    font-weight: lighter;
+  }
   html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul li,
-  html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li {
-    font-size: 15px; }
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li {
+    margin-top: 20px;
+    list-style-type: none;
+    position: relative;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul li:before,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li:before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #ead801;
+    border-radius: 100%;
+    top: 10px;
+    left: -30px;
+  }
   html body .content-factory .accordion .card .collapse .card-body .item-definition .right a,
-  html body .content-factory .accordion .card .collapsing .card-body .item-definition .right a {
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right a {
     color: #dd3b30;
     font-size: 20px;
     font-weight: 600;
     text-decoration: underline;
     padding-bottom: 6px;
-    margin-top: 25px; } }
-@media screen and (max-width: 375px) {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 770px) {
+  html body .container-atsj {
+    max-width: 700px !important;
+  }
+  html body header .all-pl .container .atsjcn {
+    margin-top: 21%;
+  }
+  html body .content h3 {
+    font-size: 50px !important;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  html body .content .title {
+    margin-bottom: 30px !important;
+  }
+  html body .content p {
+    font-size: 17px !important;
+  }
+  html body .content .us {
+    margin-top: 15px;
+  }
+  html body .content .us .container-atsj {
+    padding-top: 80px;
+  }
+  html body .content .us .container-atsj .title .text-left {
+    line-height: 5px;
+  }
+  html body .content .us .container-atsj .title .text-left h2 {
+    text-align: center;
+  }
+  html body .content .us .container-atsj .definition {
+    margin-top: 50px;
+  }
+  html body .content .us .container-atsj .definition p {
+    text-align: left;
+  }
+  html body .content .services {
+    padding-top: 0px;
+    margin-top: 240px;
+  }
+  html body .content .services .title {
+    display: block;
+    margin: auto;
+  }
+  html body .content .services .title .text p {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  html body .content .patner .item-sx img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  html body .content .tools .item-sx .paraf p {
+    text-align: left;
+  }
+  html body .content .logo-patner {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 510px) {
+  html body .mccp .challenge .title {
+    margin-top: 40px;
+  }
+  html body .mccp .challenge .title h2 {
+    font-size: 30px;
+  }
+  html body .mccp .challenge .paraf {
+    font-size: 15px;
+    text-align: center;
+  }
+  html body .mccp .challenge-responsive .item:first-child {
+    margin-top: 50px;
+  }
+  html body .mccp .content .title h2 {
+    font-size: 30px;
+  }
+  html body .mccp .content .accordion .card .card-header {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center !important;
+  }
+  html body .mccp .content .accordion .card .card-header img {
+    display: none;
+  }
+  html body .mccp .content .accordion .card .card-header h2 {
+    text-align: center;
+  }
+  html body .mccp .content .accordion .card .card-header h2 .btn {
+    font-size: 12px;
+    padding: 0 !important;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 442px) {
+  html body .container-atsj {
+    max-width: 400px !important;
+  }
+  html body .btn {
+    padding: 20px 32px !important;
+    font-size: 15px !important;
+    width: 90%;
+  }
+  html body header nav {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  html body header .all-pl .container-atsj .atsjcn {
+    margin-top: 50%;
+  }
   html body header .all-pl .container-atsj .atsjcn h1 {
-    font-size: 25px; }
+    font-size: 28px;
+  }
   html body header .all-pl .container-atsj .atsjcn p {
     font-size: 15px;
-    text-align: justify !important; }
-  html body .content .us .container-atsj h3 {
-    font-size: 20px !important; }
+    text-align: center;
+  }
+  html body .sub-header .all-pl .container-atsj .atsjcn .display-4 {
+    font-size: 40px;
+  }
+  html body .sub-header .all-pl .container-atsj .atsjcn p {
+    font-size: 17px;
+  }
+  html body .content .services h3,
+html body .content .tools h3,
+html body .content .patner h3,
+html body .content .clients h3,
+html body .content .trust h3,
+html body .content .cost h3,
+html body .content .logo-patner h3 {
+    font-size: 25px !important;
+    text-align: center;
+    width: 100% !important;
+  }
+  html body .content p {
+    font-size: 15px !important;
+  }
+  html body .content .us .container-atsj .title {
+    max-width: 342px;
+    display: block;
+    margin: auto;
+  }
   html body .content .us .container-atsj .title .text-left h2 {
-    font-size: 20px !important; }
-    html body .content .us .container-atsj .title .text-left h2 .mini {
-      font-size: 20px !important; }
+    font-size: 25px !important;
+    line-height: 40px !important;
+    text-align: center;
+  }
+  html body .content .us .container-atsj .title .text-left h2 .mini {
+    font-size: 25px !important;
+  }
+  html body .content .us .container-atsj .definition {
+    max-width: 342px;
+    margin-top: 10px;
+  }
+  html body .content .us .container-atsj .definition p {
+    font-size: 15px !important;
+  }
+  html body .content .services {
+    padding-top: 70px !important;
+  }
+  html body .content .services .title {
+    margin-bottom: 70px;
+  }
+  html body .content .services .title .text {
+    max-width: 342px;
+  }
+  html body .content .services .title .text h3 {
+    margin-left: 0;
+    margin-bottom: 18px !important;
+  }
+  html body .content .services .title .text p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  html body .content .tools {
+    margin-top: 0px;
+  }
+  html body .content .tools .item-sx {
+    max-width: 342px;
+  }
+  html body .content .tools .item-sx .title h3 {
+    max-width: unset !important;
+    margin-bottom: 18px !important;
+  }
+  html body .content .tools .item-sx .paraf {
+    margin-top: 0;
+  }
+  html body .content .tools .item-bg {
+    display: none !important;
+  }
+  html body .content .patner {
+    margin-top: 70px !important;
+  }
+  html body .content .patner .item-sx img {
+    width: 90%;
+  }
+  html body .content .clients {
+    margin-top: 70px;
+  }
+  html body .content .clients .title {
+    max-width: 342px;
+    display: block;
+    margin: auto;
+  }
+  html body .content .clients .title h3 {
+    margin-top: 0;
+    max-width: unset !important;
+    margin-bottom: 18px !important;
+  }
+  html body .content .trust {
+    margin-top: 70px;
+  }
+  html body .content .trust .title {
+    margin-bottom: 0 !important;
+  }
+  html body .content .trust .title h3 {
+    text-align: center !important;
+    margin-bottom: 0 !important;
+  }
+  html body .content .trust .btn-client {
+    padding: 20px 32px !important;
+    font-size: 15px !important;
+  }
+  html body .content .trust .owl-carousel .content-sx .title {
+    display: none;
+  }
+  html body .content .trust .owl-carousel .content-sx .title h1 {
+    font-size: 35px;
+  }
+  html body .content .trust .owl-carousel .content-sx p {
+    text-align: justify;
+  }
+  html body .content .cost {
+    margin-top: 70px;
+  }
+  html body .content .cost .title {
+    max-width: 342px;
+    display: block;
+    margin: auto;
+  }
+  html body .content .cost .title h3 {
+    max-width: unset !important;
+    margin-bottom: 18px !important;
+    text-align: center;
+  }
+  html body .content .cost ul {
+    padding-left: 0px;
+  }
+  html body .content-factory .title {
+    margin-bottom: 100px;
+  }
+  html body .content-factory .title h2 {
+    font-size: 25px !important;
+    text-align: center;
+  }
+  html body .content-factory .title p {
+    text-align: center;
+  }
+  html body .content-factory .accordion .card .card-header {
+    justify-content: center;
+  }
+  html body .content-factory .accordion .card .card-header h2 .btn {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  html body .content-factory .accordion .card .card-header img {
+    display: none;
+  }
   html body .content-factory .accordion .card .collapse .card-body .item-definition .right p,
-  html body .content-factory .accordion .card .collapsing .card-body .item-definition .right p {
-    font-size: 13px; }
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right p {
+    font-size: 15px;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul li,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li {
+    font-size: 15px;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right a,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right a {
+    color: #dd3b30;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-bottom: 6px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  html body header .all-pl .container-atsj .atsjcn h1 {
+    font-size: 25px;
+  }
+  html body header .all-pl .container-atsj .atsjcn p {
+    font-size: 15px;
+    text-align: justify !important;
+  }
+  html body .content .us .container-atsj h3 {
+    font-size: 20px !important;
+  }
+  html body .content .us .container-atsj .title .text-left h2 {
+    font-size: 20px !important;
+  }
+  html body .content .us .container-atsj .title .text-left h2 .mini {
+    font-size: 20px !important;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right p,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right p {
+    font-size: 13px;
+  }
   html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul,
-  html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul {
-    margin-top: 30px; }
-    html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul li,
-    html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li {
-      margin-top: 13px;
-      font-size: 13px; } }
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul {
+    margin-top: 30px;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .item-definition .right ul li,
+html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li {
+    margin-top: 13px;
+    font-size: 13px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

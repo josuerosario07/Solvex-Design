@@ -288,20 +288,19 @@ html {
         }
 
         .description {
-          a{
+          a {
             text-decoration: none;
-           
+
             h4 {
               margin-top: 35px;
               font-weight: 300;
               font-size: 20px;
-              color:$white;
+              color: $white;
             }
-            &:hover{
-              h4{
+            &:hover {
+              h4 {
                 color: $blue-t-solvex;
                 transition: 0.1s;
-
               }
             }
           }
@@ -537,16 +536,16 @@ html {
           margin-top: 30px;
           text-align: left;
         }
-        .items{
+        .items {
           margin-top: 80px;
           flex: 1 1 auto;
-          .left{
+          .left {
             max-width: 750px;
             margin-right: 180px;
           }
-          .right{
+          .right {
             text-align: left;
-            h3{
+            h3 {
               font-size: 50px;
             }
             .btn {
@@ -560,7 +559,7 @@ html {
               img {
                 margin-left: 15px;
               }
-              &:hover{
+              &:hover {
                 border-radius: 50px;
                 background: $back-solvex;
                 box-shadow: 30px 30px 50px #000;
@@ -570,20 +569,17 @@ html {
         }
 
         ul {
-
           li {
             margin-top: 20px;
             color: $white;
             font-size: 20px;
             font-weight: 600;
             list-style-type: none;
-            img{
+            img {
               margin-right: 20px;
             }
           }
         }
-
-        
       }
 
       .logo-patner {
@@ -1051,23 +1047,23 @@ html {
           }
         }
       }
-      .challenge-responsive{
-        .item{
+      .challenge-responsive {
+        .item {
           margin-top: 100px;
-          .title{
+          .title {
             @include flexRow;
             align-items: center;
             color: white;
-            img{
+            img {
               width: 40px;
               margin-right: 20px;
             }
-            h4{
+            h4 {
               font-weight: 600;
               color: $orange-solvex;
             }
           }
-          .description{
+          .description {
             color: white;
             margin-top: 20px;
           }
