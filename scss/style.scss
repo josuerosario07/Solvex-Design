@@ -288,10 +288,22 @@ html {
         }
 
         .description {
-          h4 {
-            margin-top: 35px;
-            font-weight: 300;
-            font-size: 20px;
+          a{
+            text-decoration: none;
+           
+            h4 {
+              margin-top: 35px;
+              font-weight: 300;
+              font-size: 20px;
+              color:$white;
+            }
+            &:hover{
+              h4{
+                color: $blue-t-solvex;
+                transition: 0.1s;
+
+              }
+            }
           }
         }
       }
@@ -523,30 +535,55 @@ html {
 
         p {
           margin-top: 30px;
+          text-align: left;
+        }
+        .items{
+          margin-top: 80px;
+          flex: 1 1 auto;
+          .left{
+            max-width: 750px;
+            margin-right: 180px;
+          }
+          .right{
+            text-align: left;
+            h3{
+              font-size: 50px;
+            }
+            .btn {
+              background-color: $orange-solvex;
+              color: $white;
+              padding: 22px 45px;
+              font-size: 25px;
+              border-radius: 40px;
+              margin-top: 40px;
+              width: 338px;
+              img {
+                margin-left: 15px;
+              }
+              &:hover{
+                border-radius: 50px;
+                background: $back-solvex;
+                box-shadow: 30px 30px 50px #000;
+              }
+            }
+          }
         }
 
         ul {
-          margin-top: 50px;
 
           li {
-            display: inline-block;
-            margin: 20px;
-            color: $orange-solvex;
+            margin-top: 20px;
+            color: $white;
             font-size: 20px;
             font-weight: 600;
+            list-style-type: none;
+            img{
+              margin-right: 20px;
+            }
           }
         }
 
-        .btn {
-          @extend .btn-big;
-          background-color: $orange-solvex;
-          color: $white;
-          padding: 18px 29px;
-
-          img {
-            display: none;
-          }
-        }
+        
       }
 
       .logo-patner {
@@ -932,7 +969,7 @@ html {
       }
     }
 
-    #mccp {
+    .mccp {
       .sub-header {
         .all-pl {
           .container-atsj {
@@ -945,7 +982,7 @@ html {
         }
       }
 
-      .challege {
+      .challenge {
         .title {
           margin-top: 150px;
 
@@ -962,7 +999,6 @@ html {
           max-width: 1000px;
           margin-top: 20px;
         }
-
         .flexRow {
           width: 100%;
           margin-top: 100px;
@@ -1012,6 +1048,28 @@ html {
             -webkit-transform: rotateX(90deg);
             transform: rotateX(90deg);
             /* Text bleed at 90º */
+          }
+        }
+      }
+      .challenge-responsive{
+        .item{
+          margin-top: 100px;
+          .title{
+            @include flexRow;
+            align-items: center;
+            color: white;
+            img{
+              width: 40px;
+              margin-right: 20px;
+            }
+            h4{
+              font-weight: 600;
+              color: $orange-solvex;
+            }
+          }
+          .description{
+            color: white;
+            margin-top: 20px;
           }
         }
       }
@@ -1203,8 +1261,9 @@ html {
             border: 0;
             background-color: transparent;
             .item-tab {
-              width: 288px;
-              height: 416px;
+              max-width: 288px;
+              min-height: 416px;
+              padding: 43px 38px 28px 38px;
               transition: 0.5s all;
               background-color: $color-tabs;
               border-radius: 14px;
