@@ -286,7 +286,7 @@ html body .mccp .content .accordion .card .collapsing .card-body .item .btn {
 }
 @media screen and (max-width: 991px) {
   html body .container-atsj {
-    max-width: 800px;
+    max-width: 690px;
   }
   html body .magic {
     display: none !important;
@@ -294,9 +294,15 @@ html body .mccp .content .accordion .card .collapsing .card-body .item .btn {
   html body .container {
     padding: 25px;
   }
+  html body header .navbar .container-atsj {
+    padding: 0 !important;
+  }
   html body header .navbar .container-atsj .navbar-nav {
     display: block;
     padding: 35px 15px 15px 0;
+  }
+  html body header .navbar .container-atsj .navbar-nav .navbar-brand img {
+    width: 110px;
   }
   html body header .navbar .container-atsj .navbar-nav li .active {
     background: transparent;
@@ -318,6 +324,7 @@ html body .mccp .content .accordion .card .collapsing .card-body .item .btn {
     display: block;
     margin: auto;
     text-align: center;
+    margin-top: 150px !important;
   }
   html body header .all-pl .container-atsj .atsjcn h1 {
     font-size: 55px;
@@ -418,6 +425,25 @@ html body .content .tools .item-sx .btn {
     margin-top: 110px;
     float: none !important;
   }
+  html body .content .cost .items .left {
+    margin-right: 0;
+  }
+  html body .content .cost .items .right {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  html body .content .cost .items .right ul li {
+    font-size: 17px;
+  }
+  html body .content .cost .items .right .btn {
+    padding: 17px 14px;
+    font-size: 18px;
+    width: 295px;
+    display: block;
+    margin: 40px auto !important;
+  }
   html body .trust .desktop-trust {
     display: none !important;
   }
@@ -486,6 +512,9 @@ html body .trust .content-sx .footer-item .profile {
   }
   html body .mccp .content .slider-tabs {
     display: none;
+  }
+  html body .mccp .challenge-responsive {
+    display: block;
   }
   html body .content-factory nav,
 html body .content-factory .tab-content {
@@ -602,6 +631,34 @@ html body .content-factory .accordion .card .collapsing .card-body .item-definit
     padding-bottom: 6px;
     margin-top: 25px;
   }
+  html body .content-factory .accordion .card .collapse .card-body .example-factory .row,
+html body .content-factory .accordion .card .collapsing .card-body .example-factory .row {
+    margin-top: 100px;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .example-factory .row h3,
+html body .content-factory .accordion .card .collapsing .card-body .example-factory .row h3 {
+    font-size: 45px;
+    font-family: coolvetica;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .example-factory .row img,
+html body .content-factory .accordion .card .collapsing .card-body .example-factory .row img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .example-factory .row h4,
+html body .content-factory .accordion .card .collapsing .card-body .example-factory .row h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ead801;
+    max-width: 650px;
+    text-align: center;
+  }
+  html body .content-factory .accordion .card .collapse .card-body .example-factory .row p,
+html body .content-factory .accordion .card .collapsing .card-body .example-factory .row p {
+    font-weight: 200;
+  }
 }
 @media screen and (max-width: 770px) {
   html body .container-atsj {
@@ -696,6 +753,16 @@ html body .content-factory .accordion .card .collapsing .card-body .item-definit
     font-size: 12px;
     padding: 0 !important;
     width: 100%;
+  }
+  html body .content .cost .items .right ul li {
+    font-size: 12px !important;
+  }
+  html body .content .cost .items .right .btn {
+    padding: 17px 14px;
+    font-size: 18px;
+    width: 295px;
+    display: block;
+    margin: 40px auto !important;
   }
 }
 @media screen and (max-width: 442px) {
@@ -919,6 +986,9 @@ html body .content-factory .accordion .card .collapsing .card-body .item-definit
 html body .content-factory .accordion .card .collapsing .card-body .item-definition .right ul li {
     margin-top: 13px;
     font-size: 13px;
+  }
+  html body .cost .items .right ul li img {
+    display: none;
   }
 }
 

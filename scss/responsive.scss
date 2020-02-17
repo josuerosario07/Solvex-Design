@@ -408,7 +408,7 @@
   html {
     body {
       .container-atsj {
-        max-width: 800px;
+        max-width: 690px;
       }
 
       .magic {
@@ -422,10 +422,15 @@
       header {
         .navbar {
           .container-atsj {
+            padding: 0 !important;
             .navbar-nav {
               display: block;
               padding: 35px 15px 15px 0;
-
+              .navbar-brand {
+                img {
+                  width: 110px;
+                }
+              }
               li {
                 .active {
                   background: transparent;
@@ -454,6 +459,7 @@
               max-width: 712px;
               @include blockItem;
               text-align: center;
+              margin-top: 150px !important;
 
               h1 {
                 font-size: 55px;
@@ -589,6 +595,29 @@
             float: none !important;
           }
         }
+        .cost {
+          .items {
+            .left {
+              margin-right: 0;
+            }
+            .right {
+              @include flexColum;
+              width: 100%;
+              ul {
+                li {
+                  font-size: 17px;
+                }
+              }
+              .btn {
+                padding: 17px 14px;
+                font-size: 18px;
+                width: 295px;
+                display: block;
+                margin: 40px auto !important;
+              }
+            }
+          }
+        }
       }
 
       .trust {
@@ -683,6 +712,9 @@
           .slider-tabs {
             display: none;
           }
+        }
+        .challenge-responsive {
+          display: block;
         }
       }
       .content-factory {
@@ -788,6 +820,30 @@
                       text-decoration: underline;
                       padding-bottom: 6px;
                       margin-top: 25px;
+                    }
+                  }
+                }
+                .example-factory {
+                  .row {
+                    margin-top: 100px;
+                    h3 {
+                      font-size: 45px;
+                      font-family: $coolvetica;
+                    }
+                    img {
+                      width: 70%;
+                      @include blockItem;
+                      margin-bottom: 80px;
+                    }
+                    h4 {
+                      font-size: 20px;
+                      font-weight: 600;
+                      color: $yellow-sx;
+                      max-width: 650px;
+                      text-align: center;
+                    }
+                    p {
+                      font-weight: 200;
                     }
                   }
                 }
@@ -969,6 +1025,26 @@
               .card-body {
                 .item {
                 }
+              }
+            }
+          }
+        }
+      }
+      .content {
+        .cost {
+          .items {
+            .right {
+              ul {
+                li {
+                  font-size: 12px !important;
+                }
+              }
+              .btn {
+                padding: 17px 14px;
+                font-size: 18px;
+                width: 295px;
+                display: block;
+                margin: 40px auto !important;
               }
             }
           }
@@ -1321,6 +1397,19 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+      .cost {
+        .items {
+          .right {
+            ul {
+              li {
+                img {
+                  display: none;
                 }
               }
             }

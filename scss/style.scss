@@ -1048,6 +1048,7 @@ html {
         }
       }
       .challenge-responsive {
+        display: none;
         .item {
           margin-top: 100px;
           .title {
@@ -1356,6 +1357,27 @@ html {
                   text-decoration: underline;
                   padding-bottom: 6px;
                   margin-top: 25px;
+                }
+              }
+            }
+            .example-factory {
+              .row {
+                margin-top: 100px;
+                h3 {
+                  font-size: 45px;
+                  font-family: $coolvetica;
+                }
+                img {
+                  width: 70%;
+                }
+                h4 {
+                  font-size: 30px;
+                  font-weight: 600;
+                  color: $yellow-sx;
+                  max-width: 650px;
+                }
+                p {
+                  font-weight: 200;
                 }
               }
             }
