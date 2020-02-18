@@ -29,7 +29,9 @@ html {
       // background-attachment: fixed;
       // background-color: $dark-solvex;
       position: relative;
-
+      video {
+        opacity: 0.6;
+      }
       .back-header {
         position: absolute;
         top: 0 !important;
@@ -72,6 +74,14 @@ html {
                 border-radius: 30px;
                 background-color: $orange-solvex;
               }
+              .dropdown-menu {
+                background-color: $back-solvex !important;
+                a {
+                  &:hover {
+                    background-color: $dark-solvex;
+                  }
+                }
+              }
             }
           }
 
@@ -99,7 +109,7 @@ html {
 
           h1 {
             font-family: $coolvetica;
-            color: $orange-solvex;
+            color: $orange-t-solvex;
             font-size: 83px;
           }
 
@@ -114,19 +124,22 @@ html {
         position: absolute;
         z-index: 1;
         right: -40px;
+        @media screen and(max-width:991px) {
+          display: none;
+        }
       }
     }
     .sub-header {
-      min-height: 623px;
+      min-height: 450px;
       .all-pl {
-        padding-top: 9%;
+        padding-top: 6%;
         .container-atsj {
           .atsjcn {
             background-color: transparent;
             margin: unset !important;
             h1 {
               font-family: coolvetica;
-              color: $orange-solvex;
+              color: $orange-t-solvex;
               font-size: 83px;
             }
             p {
@@ -1459,7 +1472,7 @@ html {
 
 .events-body {
   .sub-header-events {
-    min-height: 550px;
+    min-height: 380px;
     padding-top: 130px;
     position: relative;
     .bg-subheader {

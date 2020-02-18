@@ -1071,6 +1071,12 @@
         nav {
           padding-top: 0px !important;
           padding-bottom: 0px !important;
+          .navbar-brand {
+            padding: 10px;
+            img {
+              width: 90px;
+            }
+          }
         }
 
         .all-pl {
@@ -1116,7 +1122,7 @@
         .cost,
         .logo-patner {
           h3 {
-            font-size: 25px !important;
+            font-size: 23px !important;
             text-align: center;
             width: 100% !important;
           }
@@ -1134,12 +1140,12 @@
 
               .text-left {
                 h2 {
-                  font-size: 25px !important;
+                  font-size: 22px !important;
                   line-height: 40px !important;
                   text-align: center;
 
                   .mini {
-                    font-size: 25px !important;
+                    font-size: 22px !important;
                   }
                 }
               }
@@ -1224,6 +1230,10 @@
               margin-bottom: 18px !important;
             }
           }
+          .client-logos {
+            @include flexColum;
+            align-items: center;
+          }
         }
 
         .trust {
@@ -1287,7 +1297,7 @@
             text-align: center;
           }
           p {
-            text-align: center;
+            text-align: left !important;
           }
         }
         .accordion {

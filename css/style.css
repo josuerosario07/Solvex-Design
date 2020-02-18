@@ -76,6 +76,9 @@ html body header {
   transition: all ease-in-out 0.6s;
   position: relative;
 }
+html body header video {
+  opacity: 0.6;
+}
 html body header .back-header {
   position: absolute;
   top: 0 !important;
@@ -113,6 +116,12 @@ html body header .navbar .container-atsj ul li .active {
   border-radius: 30px;
   background-color: #dd3b30;
 }
+html body header .navbar .container-atsj ul li .dropdown-menu {
+  background-color: #162539 !important;
+}
+html body header .navbar .container-atsj ul li .dropdown-menu a:hover {
+  background-color: #000a19;
+}
 html body header .navbar .container-atsj button span {
   background-image: url(../assets/images/button-icon.svg) !important;
   background-size: 105%;
@@ -131,7 +140,7 @@ html body header .all-pl .atsjcn {
 }
 html body header .all-pl .atsjcn h1 {
   font-family: coolvetica;
-  color: #dd3b30;
+  color: #c73d34;
   font-size: 83px;
 }
 html body header .all-pl .atsjcn p {
@@ -143,11 +152,16 @@ html body header .vineta-solvex {
   z-index: 1;
   right: -40px;
 }
+@media screen and (max-width: 991px) {
+  html body header .vineta-solvex {
+    display: none;
+  }
+}
 html body .sub-header {
-  min-height: 623px;
+  min-height: 450px;
 }
 html body .sub-header .all-pl {
-  padding-top: 9%;
+  padding-top: 6%;
 }
 html body .sub-header .all-pl .container-atsj .atsjcn {
   background-color: transparent;
@@ -155,7 +169,7 @@ html body .sub-header .all-pl .container-atsj .atsjcn {
 }
 html body .sub-header .all-pl .container-atsj .atsjcn h1 {
   font-family: coolvetica;
-  color: #dd3b30;
+  color: #c73d34;
   font-size: 83px;
 }
 html body .sub-header .all-pl .container-atsj .atsjcn p {
@@ -1320,7 +1334,7 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
 }
 
 .events-body .sub-header-events {
-  min-height: 550px;
+  min-height: 380px;
   padding-top: 130px;
   position: relative;
 }
@@ -2325,6 +2339,12 @@ html body .content-factory .accordion .card .collapsing .card-body .example-fact
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
+  html body header nav .navbar-brand {
+    padding: 10px;
+  }
+  html body header nav .navbar-brand img {
+    width: 90px;
+  }
   html body header .all-pl .container-atsj .atsjcn {
     margin-top: 50%;
   }
@@ -2348,7 +2368,7 @@ html body .content .clients h3,
 html body .content .trust h3,
 html body .content .cost h3,
 html body .content .logo-patner h3 {
-    font-size: 25px !important;
+    font-size: 23px !important;
     text-align: center;
     width: 100% !important;
   }
@@ -2361,12 +2381,12 @@ html body .content .logo-patner h3 {
     margin: auto;
   }
   html body .content .us .container-atsj .title .text-left h2 {
-    font-size: 25px !important;
+    font-size: 22px !important;
     line-height: 40px !important;
     text-align: center;
   }
   html body .content .us .container-atsj .title .text-left h2 .mini {
-    font-size: 25px !important;
+    font-size: 22px !important;
   }
   html body .content .us .container-atsj .definition {
     max-width: 342px;
@@ -2427,6 +2447,12 @@ html body .content .logo-patner h3 {
     max-width: unset !important;
     margin-bottom: 18px !important;
   }
+  html body .content .clients .client-logos {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+  }
   html body .content .trust {
     margin-top: 70px;
   }
@@ -2474,7 +2500,7 @@ html body .content .logo-patner h3 {
     text-align: center;
   }
   html body .content-factory .title p {
-    text-align: center;
+    text-align: left !important;
   }
   html body .content-factory .accordion .card .card-header {
     justify-content: center;
