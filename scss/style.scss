@@ -672,13 +672,7 @@ html {
       }
 
       .about-solvex {
-        margin-top: 100px;
-        h2 {
-          @include subtitleSection;
-          color: $white;
-          color: $orange-solvex;
-          margin-top: 150px;
-        }
+        margin-top: 200px;
 
         span {
           @include subtitleSection;
@@ -686,47 +680,104 @@ html {
           font-size: 35px;
         }
         .title {
-          span {
-            margin-top: 20px !important;
-          }
           p {
-            margin-top: 10px;
+            font-size: 25px;
+            margin-bottom: 0;
+            color: $orange-solvex;
+          }
+          h2 {
+            @include subtitleSection;
+            color: $white;
             color: $white;
           }
         }
+        .definition {
+          margin-top: 50px;
+          p {
+            color: $white;
+          }
+        }
+        .image {
+          width: 100%;
+          height: 646px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
         .valuesx {
-          margin-top: 100px;
+          margin-top: 200px;
+          color: $white;
           .title {
-            max-width: 900px;
-            h2 {
-              color: $white;
-            }
-          }
-          .row {
-            margin-top: 80px;
-          }
-          .item {
-            max-width: 459px;
-            box-shadow: 0px 24px 82px #000000;
-            background: #0b1829;
-            border-radius: 20px;
-            .image {
-              img {
-                width: 100%;
-              }
-            }
-            .content {
-              padding: 40px;
-              margin-top: 0px;
-
-              h3 {
-                font-size: 40px;
-                font-weight: 800;
-                margin-bottom: 15px;
+            max-width: 1200px;
+            @include blockItem;
+            margin-bottom: 100px;
+            p {
+              &:first-child {
+                font-family: $coolvetica;
                 color: $orange-solvex;
               }
+              color: white;
+              font-size: 20px;
+            }
+            h2 {
+              margin-bottom: 20px;
+              margin-top: -20px;
+            }
+          }
+          .item {
+            width: 90%;
+            height: 738px;
+            background: #011633;
+            @include flexColum;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+
+            .content {
+              .image {
+                width: 210px;
+                height: 240px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+              .title {
+                margin-top: 30px;
+                h4 {
+                  font-size: 30px;
+                  text-align: center;
+                }
+              }
+            }
+            .content-2 {
+              height: 0;
+              background: transparent;
+              position: absolute;
+              @include flexColum;
+              justify-content: center;
+              padding: 97px 53px;
+              transition: 0.4s;
+              h4,
               p {
-                font-size: 13px;
+                color: black;
+                opacity: 0;
+              }
+              h4 {
+                font-weight: 600;
+              }
+            }
+            &:hover {
+              .content-2 {
+                background: #ebe7e7;
+                height: 100%;
+                h4,
+                p {
+                  opacity: 1;
+                }
               }
             }
           }
@@ -736,8 +787,14 @@ html {
       .content {
         margin-top: 100px;
         position: relative;
-        h2 {
-          @include subtitleSection;
+        .title {
+          h2 {
+            @include subtitleSection;
+          }
+          p {
+            font-size: 20px;
+            color: $orange-solvex;
+          }
         }
 
         span {
@@ -972,6 +1029,19 @@ html {
             .active {
               width: 100px;
               border-radius: 40px !important;
+            }
+          }
+        }
+        .trust {
+          .title {
+            margin-bottom: 180px;
+            max-width: 100%;
+          }
+          .desktop-trust {
+            .content-sx {
+              .title {
+                margin-top: 0;
+              }
             }
           }
         }

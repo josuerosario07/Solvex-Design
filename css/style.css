@@ -596,14 +596,7 @@ html body #section-about #about .profile-header img:last-child {
   margin-left: -180px;
 }
 html body #section-about .about-solvex {
-  margin-top: 100px;
-}
-html body #section-about .about-solvex h2 {
-  font-family: coolvetica;
-  font-size: 63px;
-  color: #fff;
-  color: #dd3b30;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 html body #section-about .about-solvex span {
   font-family: coolvetica;
@@ -611,54 +604,119 @@ html body #section-about .about-solvex span {
   color: #aaaaaa;
   font-size: 35px;
 }
-html body #section-about .about-solvex .title span {
-  margin-top: 20px !important;
-}
 html body #section-about .about-solvex .title p {
-  margin-top: 10px;
-  color: #fff;
-}
-html body #section-about .about-solvex .valuesx {
-  margin-top: 100px;
-}
-html body #section-about .about-solvex .valuesx .title {
-  max-width: 900px;
-}
-html body #section-about .about-solvex .valuesx .title h2 {
-  color: #fff;
-}
-html body #section-about .about-solvex .valuesx .row {
-  margin-top: 80px;
-}
-html body #section-about .about-solvex .valuesx .item {
-  max-width: 459px;
-  box-shadow: 0px 24px 82px #000000;
-  background: #0b1829;
-  border-radius: 20px;
-}
-html body #section-about .about-solvex .valuesx .item .image img {
-  width: 100%;
-}
-html body #section-about .about-solvex .valuesx .item .content {
-  padding: 40px;
-  margin-top: 0px;
-}
-html body #section-about .about-solvex .valuesx .item .content h3 {
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 15px;
+  font-size: 25px;
+  margin-bottom: 0;
   color: #dd3b30;
 }
-html body #section-about .about-solvex .valuesx .item .content p {
-  font-size: 13px;
+html body #section-about .about-solvex .title h2 {
+  font-family: coolvetica;
+  font-size: 63px;
+  color: #fff;
+  color: #fff;
+}
+html body #section-about .about-solvex .definition {
+  margin-top: 50px;
+}
+html body #section-about .about-solvex .definition p {
+  color: #fff;
+}
+html body #section-about .about-solvex .image {
+  width: 100%;
+  height: 646px;
+}
+html body #section-about .about-solvex .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html body #section-about .about-solvex .valuesx {
+  margin-top: 200px;
+  color: #fff;
+}
+html body #section-about .about-solvex .valuesx .title {
+  max-width: 1200px;
+  display: block;
+  margin: auto;
+  margin-bottom: 100px;
+}
+html body #section-about .about-solvex .valuesx .title p {
+  color: white;
+  font-size: 20px;
+}
+html body #section-about .about-solvex .valuesx .title p:first-child {
+  font-family: coolvetica;
+  color: #dd3b30;
+}
+html body #section-about .about-solvex .valuesx .title h2 {
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+html body #section-about .about-solvex .valuesx .item {
+  width: 90%;
+  height: 738px;
+  background: #011633;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+html body #section-about .about-solvex .valuesx .item .content .image {
+  width: 210px;
+  height: 240px;
+}
+html body #section-about .about-solvex .valuesx .item .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+html body #section-about .about-solvex .valuesx .item .content .title {
+  margin-top: 30px;
+}
+html body #section-about .about-solvex .valuesx .item .content .title h4 {
+  font-size: 30px;
+  text-align: center;
+}
+html body #section-about .about-solvex .valuesx .item .content-2 {
+  height: 0;
+  background: transparent;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: center;
+  padding: 97px 53px;
+  transition: 0.4s;
+}
+html body #section-about .about-solvex .valuesx .item .content-2 h4,
+html body #section-about .about-solvex .valuesx .item .content-2 p {
+  color: black;
+  opacity: 0;
+}
+html body #section-about .about-solvex .valuesx .item .content-2 h4 {
+  font-weight: 600;
+}
+html body #section-about .about-solvex .valuesx .item:hover .content-2 {
+  background: #ebe7e7;
+  height: 100%;
+}
+html body #section-about .about-solvex .valuesx .item:hover .content-2 h4,
+html body #section-about .about-solvex .valuesx .item:hover .content-2 p {
+  opacity: 1;
 }
 html body #section-about .content {
   margin-top: 100px;
   position: relative;
 }
-html body #section-about .content h2 {
+html body #section-about .content .title h2 {
   font-family: coolvetica;
   font-size: 63px;
+}
+html body #section-about .content .title p {
+  font-size: 20px;
+  color: #dd3b30;
 }
 html body #section-about .content span {
   font-family: coolvetica;
@@ -878,6 +936,13 @@ html body #section-about .content .credits .item-sx .dots {
 html body #section-about .content .credits .item-sx .active {
   width: 100px;
   border-radius: 40px !important;
+}
+html body #section-about .content .trust .title {
+  margin-bottom: 180px;
+  max-width: 100%;
+}
+html body #section-about .content .trust .desktop-trust .content-sx .title {
+  margin-top: 0;
 }
 html body .mccp .sub-header .all-pl .container-atsj .image .server-header {
   animation: float 2s ease-in-out infinite !important;
