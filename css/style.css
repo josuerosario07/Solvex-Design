@@ -111,6 +111,10 @@ html body header .navbar .container-atsj ul li a {
   font-size: 13px;
   font-weight: 500;
 }
+html body header .navbar .container-atsj ul li a:hover {
+  color: #dd3b30 !important;
+  transition: 0.2s;
+}
 html body header .navbar .container-atsj ul li .active {
   padding: 5px 20px;
   border-radius: 30px;
@@ -662,6 +666,7 @@ html body #section-about .about-solvex .valuesx .item {
   align-items: center;
   position: relative;
   justify-content: center;
+  margin-bottom: 20px;
 }
 html body #section-about .about-solvex .valuesx .item .content .image {
   width: 210px;
@@ -1069,7 +1074,7 @@ html body .mccp .content .slider-tabs .nav-tabs li a .item {
   display: flex;
   flex-flow: column;
   flex-direction: column;
-  min-height: 672px;
+  min-height: 503px;
   background: #dd3b30;
   justify-content: center;
   padding: 40px;
@@ -1105,6 +1110,11 @@ html body .mccp .content .slider-tabs .nav-tabs li a .item p {
 }
 html body .mccp .content .slider-tabs .nav-tabs li a:hover {
   border: transparent;
+}
+html body .mccp .content .slider-tabs .nav-tabs li .active .item {
+  background: #000a19;
+  color: #dd3b30;
+  box-shadow: 0px 8px 12px 12px #dd3c3038;
 }
 html body .mccp .content .slider-tabs .nav-tabs li:nth-last-child(2) .item {
   background: #0d4b84;
@@ -1438,6 +1448,7 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 8;
 }
 .events-body .sub-header-events .container-atsj .content .input-group .input-group-prepend .btn {
   height: 50px;
