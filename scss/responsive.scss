@@ -285,6 +285,25 @@
           }
         }
       }
+
+      #section-about{
+        .content{
+          .experience{
+            .item-sx{
+              min-height: 600px;
+              .content-sx{
+                .right{
+                  img{
+                    &:last-child{
+                      right: -155px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -679,6 +698,56 @@
           font-size: 50px;
         }
       }
+      #section-about{
+        .about-solvex{
+          .valuesx{
+            .item{
+              width: 100%;
+            }
+          }
+        }
+        .content{
+          .people{
+            @include flexColum;   
+            .item{
+              max-width: 100%;
+            }
+          }
+          .experience{
+            .item-sx{
+              min-height: 600px;
+              padding: 50px;
+              .content-sx{
+                @include flexColum;
+                .left{
+                  width: 100%;
+                  h1{
+                    font-size: 50px;
+                  }
+                  p{
+                    font-size: 14px;
+                  }
+                }
+                .right{
+                  display: none;
+                  img{
+                    &:last-child{
+                      right: -155px;
+                    }
+                  }
+                }
+              }
+              .people-sx{
+                margin-top: 30px;
+                justify-content: space-between;
+                .item{
+                  margin:0;
+                }
+              }
+            }
+          }
+        }
+      }
 
       .mccp {
         .challenge {
@@ -848,6 +917,30 @@
                   }
                 }
               }
+            }
+          }
+        }
+      }
+      #section-about{
+        .about-solvex{
+          .valuesx{
+            .item{
+              width: 100%;
+            }
+          }
+        }
+        .content{
+          .title{
+            margin-top: 0px !important;
+            margin-bottom: 0 !important;
+          }
+          .people{
+            @include flexColum;   
+            margin-top: 30px;
+            .item{
+              max-width: 100%;
+              min-height: unset !important;
+              margin-bottom: 50px;
             }
           }
         }
@@ -1065,6 +1158,18 @@
         padding: 20px 32px !important;
         font-size: 15px !important;
         width: 90%;
+      }
+      h2{
+        font-size: 25px !important;
+      }
+      h3{
+        font-size: 20px !important;
+      }
+      h4{
+        font-size: 17px !important;
+      }
+      p{
+        font-size: 13px !important;
       }
 
       header {
@@ -1343,6 +1448,61 @@
           }
         }
       }
+      #section-about{
+        .about-solvex{
+          .valuesx{
+            .item{
+              width: 100%;
+              height: 500px;
+            }
+          }
+        }
+        .content{
+          .people{
+            @include flexColum;   
+            .item{
+              max-width: 100%;
+            }
+          }
+          .experience{
+            .item-sx{
+              min-height: 600px;
+              padding: 50px;
+              .content-sx{
+                @include flexColum;
+                .left{
+                  width: 100%;
+                  h2{
+                    font-size: 50px;
+                  }
+                  p{
+                    font-size: 14px;
+                  }
+                }
+                .right{
+                  display: none;
+                  img{
+                    &:last-child{
+                      right: -155px;
+                    }
+                  }
+                }
+              }
+              .people-sx{
+                margin-top: 30px;
+                justify-content: space-between;
+                .item{
+                  margin:0;
+                }
+              }
+            }
+          }
+          .btn{
+            width: 100%;
+            margin-top: 0 !important;
+          }
+        }
+      }
     }
   }
 }
@@ -1424,6 +1584,62 @@
               }
             }
           }
+        }
+      }
+      #section-about{
+        .about-solvex{
+          .valuesx{
+            .item{
+              width: 100%;
+            }
+          }
+        }
+        .content{
+          .people{
+            @include flexColum;   
+            .item{
+              max-width: 100%;
+              .social{
+                bottom: 13%;
+              }
+            }
+          }
+          .experience{
+            .item-sx{
+              min-height: 600px;
+              padding: 15px;
+              .content-sx{
+                @include flexColum;
+                .left{
+                  width: 100%;
+                  h2{
+                    font-size: 50px;
+                  }
+                  p{
+                    font-size: 14px;
+                  }
+                }
+                .right{
+                  display: none;
+                  img{
+                    &:last-child{
+                      right: -155px;
+                    }
+                  }
+                }
+              }
+              .people-sx{
+                margin-top: 30px;
+                justify-content: space-between;
+                .item{
+                  margin:0;
+                  width: 70px;
+    height: 70px;
+                }
+              }
+            }
+          }
+         
         }
       }
     }

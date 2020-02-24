@@ -8,45 +8,31 @@
   color: #000a19;
   border-radius: 60px;
   margin-top: 43px;
-  transition: 0.3s all ease-in-out;
-}
-.btn-big:hover {
-  transform: scale(1.1);
-}
+  transition: 0.3s all ease-in-out; }
+  .btn-big:hover {
+    transform: scale(1.1); }
 
 @font-face {
   font-family: coolvetica;
-  src: url(../assets/fonts/coolvetica-rg.ttf);
-}
+  src: url(../assets/fonts/coolvetica-rg.ttf); }
 @keyframes float {
   0% {
-    transform: translatey(0px);
-  }
+    transform: translatey(0px); }
   50% {
-    transform: translatey(-20px);
-  }
+    transform: translatey(-20px); }
   100% {
-    transform: translatey(0px);
-  }
-}
+    transform: translatey(0px); } }
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
-  }
+    background-position: 0% 50%; }
   50% {
-    background-position: 100% 50%;
-  }
+    background-position: 100% 50%; }
   100% {
-    background-position: 0% 50%;
-  }
-}
+    background-position: 0% 50%; } }
 @-moz-keyframes rotatecircle {
   0% {
-    -moz-transform: rotate(0deg);
-  }
+    -moz-transform: rotate(0deg); }
   100% {
-    -moz-transform: rotate(-360deg);
-  }
-}
+    -moz-transform: rotate(-360deg); } }
 
 /*# sourceMappingURL=main.css.map */

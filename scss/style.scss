@@ -874,7 +874,7 @@ html {
               .left {
                 width: 50%;
 
-                h1 {
+                h2 {
                   color: $orange-solvex;
                   @include subtitleSection;
                   font-size: 81px;
@@ -883,6 +883,9 @@ html {
 
                 p {
                   max-width: 790px;
+                  &:last-child{
+                    color: $orange-solvex;
+                  }
                 }
               }
 
