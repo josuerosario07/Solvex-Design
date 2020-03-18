@@ -121,6 +121,21 @@ html {
             color: white;
             margin-top: 20px;
           }
+
+          .micro-indication {
+            margin-top: 60px;
+          }
+          .cta-home {
+            padding: 10px 50px;
+            border-radius: 30px;
+            background-color: $orange-solvex;
+            color: $white;
+            font-weight: 600;
+            margin-top: 20px;
+            img {
+              margin-left: 20px;
+            }
+          }
         }
       }
 
@@ -205,6 +220,9 @@ html {
         }
 
         .container-atsj {
+          h2 {
+            font-size: 63px !important;
+          }
           .text-left {
             max-width: 440px;
 
@@ -319,6 +337,54 @@ html {
                 color: $blue-t-solvex;
                 transition: 0.1s;
               }
+            }
+          }
+        }
+      }
+      .products {
+        margin-top: 40px;
+        .title {
+          text-align: center;
+          h2 {
+            font-family: $coolvetica;
+            font-size: 63px;
+          }
+          p {
+            max-width: 700px;
+            font-size: 20px;
+            font-weight: lighter;
+            @include blockItem;
+            margin-top: 30px;
+          }
+        }
+        .image {
+          @include blockItem;
+          img {
+            @include blockItem;
+          }
+        }
+        .title-up {
+          margin-top: 20px;
+          max-width: 525px;
+          @include blockItem;
+          margin-top: 30px;
+          p {
+            &:nth-last-child(2) {
+              margin-top: 50px !important;
+            }
+          }
+          h3 {
+            font-family: $coolvetica;
+            font-size: 45px;
+          }
+          .btn {
+            width: 122px;
+            border-radius: 30px;
+            background-color: $white;
+            font-weight: 600;
+            @include blockItem;
+            margin-top: 40px;
+            &:hover {
             }
           }
         }
@@ -883,7 +949,7 @@ html {
 
                 p {
                   max-width: 790px;
-                  &:last-child{
+                  &:last-child {
                     color: $orange-solvex;
                   }
                 }
