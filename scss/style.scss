@@ -1390,12 +1390,17 @@ html {
       margin-top: 110px;
       color: $white;
       .container-atsj {
-        .title {
-          max-width: 675px;
+        .title-top {
+          @include flexRow;
+          justify-content: space-between;
           h2 {
             color: $white;
             font-family: $coolvetica;
-            font-size: 58px;
+            font-size: 63px;
+            max-width: 650px;
+          }
+          p {
+            max-width: 700px;
           }
         }
         .title-products {
@@ -1414,9 +1419,7 @@ html {
         }
         .nav-tabs {
           @include flexRow;
-          justify-content: space-between;
-          padding-left: 50px;
-          padding-right: 50px;
+          justify-content: flex-start;
           width: 100%;
           margin-top: 134px;
           border: none;
@@ -1425,40 +1428,22 @@ html {
             padding: 0;
             border: 0;
             background-color: transparent;
+            margin: 0 15px;
             .item-tab {
-              max-width: 288px;
-              min-height: 416px;
-              padding: 43px 38px 28px 38px;
               transition: 0.5s all;
-              background-color: $color-tabs;
-              border-radius: 14px;
-              @include flexColum;
-              img {
-                margin-top: 37px;
-                &:last-child {
-                  margin-top: 10px;
-                }
-              }
-              h3 {
+              p {
                 color: white;
                 font-weight: 600;
                 font-size: 20px;
-                margin-top: 34px;
-              }
-              p {
-                margin-top: 38px;
-                font-size: 17px;
-                color: $orange-solvex;
-                margin-bottom: 0;
+                font-family: $coolvetica;
               }
             }
           }
           .active {
             .item-tab {
-              background-color: #091945;
-              box-shadow: 0px 40px 43px #000;
+              border-bottom: solid 3px $orange-solvex;
               p {
-                color: white;
+                color: $orange-solvex;
               }
             }
           }
