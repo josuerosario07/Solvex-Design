@@ -14,7 +14,7 @@ html {
     width: 100%;
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
-
+    position: relative;
     .container-atsj {
       max-width: 1640px;
     }
@@ -1122,6 +1122,7 @@ html {
     }
 
     .mccp {
+      position: relative;
       .sub-header {
         .all-pl {
           .container-atsj {
@@ -1228,8 +1229,13 @@ html {
       }
 
       .content {
+        position: relative;
+        .container-atsj {
+          position: relative;
+        }
         .title {
           margin-top: 100px;
+          margin-bottom: 0;
 
           h2 {
             @include subtitleSection;
@@ -1252,37 +1258,24 @@ html {
             @include flexRow;
             cursor: pointer !important;
             border-bottom: none;
+            justify-content: flex-end;
             li {
               a {
                 .item {
                   @include flexColum;
-                  min-height: 503px;
-                  background: $orange-solvex;
                   justify-content: center;
-                  padding: 40px;
-                  margin: 30px;
+                  margin: 5px;
                   color: $white;
-                  flex: 1 1 auto;
                   position: relative;
-                  box-shadow: 0px 28px 50px #0000008c;
                   transition: 0.2s;
                   &:hover {
                     background: $dark-solvex;
                     color: $orange-solvex;
-                    box-shadow: 0px 8px 12px 12px #dd3c3038;
-                  }
-                  .arrow {
-                    width: 40px;
-                    transform: rotate(90deg);
-                    align-self: center;
-                    position: absolute;
-                    bottom: 80px;
                   }
                   .sub-item {
                     h4 {
                       font-family: $coolvetica;
-                      margin-top: 30px;
-                      font-size: 38px;
+                      font-size: 20px;
                     }
                   }
 
@@ -1302,12 +1295,7 @@ html {
                 .item {
                   background: $dark-solvex;
                   color: $orange-solvex;
-                  box-shadow: 0px 8px 12px 12px #dd3c3038;
-                }
-              }
-              &:nth-last-child(2) {
-                .item {
-                  background: $original-solvex;
+                  border-bottom: solid 3px $orange-solvex;
                 }
               }
               .active {
@@ -1318,9 +1306,26 @@ html {
           }
           .tab-content {
             .tab-pane {
+              .title-opton-tabs {
+                max-width: 482px;
+                @include blockItem;
+                margin-top: 100px;
+
+                .title {
+                  margin-top: 10px;
+                  margin-bottom: 0;
+                  h3 {
+                    font-family: $coolvetica;
+                    font-size: 45px;
+                  }
+                  p {
+                    color: $orange-solvex;
+                  }
+                }
+              }
               .options-tabs {
                 @include flexRow;
-                margin-top: 100px;
+                margin-top: 30px;
                 justify-content: space-between;
                 flex-wrap: wrap;
 
