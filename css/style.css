@@ -1575,7 +1575,7 @@ html body .products .container-atsj .nav-tabs .active .item-tab {
 .events-body .event-content .item-event .image img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .events-body .event-content .item-event .content-card {
   padding: 18px;
