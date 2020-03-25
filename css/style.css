@@ -1022,6 +1022,15 @@ html body #section-about .content .trust .desktop-trust .content-sx .title {
 html body .mccp {
   position: relative;
 }
+html body .mccp .parrallax-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 html body .mccp .sub-header .all-pl .container-atsj .image .server-header {
   animation: float 2s ease-in-out infinite !important;
 }
@@ -1117,6 +1126,8 @@ html body .mccp .challenge-responsive .item .description {
 }
 html body .mccp .content {
   position: relative;
+  margin-top: 100px;
+  padding-top: 20px;
   position: relative;
 }
 html body .mccp .content .container-atsj {

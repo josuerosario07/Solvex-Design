@@ -1123,6 +1123,15 @@ html {
 
     .mccp {
       position: relative;
+      .parrallax-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
       .sub-header {
         .all-pl {
           .container-atsj {
@@ -1230,6 +1239,9 @@ html {
 
       .content {
         position: relative;
+        margin-top: 100px;
+        padding-top: 20px;
+
         .container-atsj {
           position: relative;
         }
