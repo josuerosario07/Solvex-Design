@@ -549,7 +549,7 @@ html {
           height: 100%;
           object-fit: cover; }
       html body #section-about .about-solvex .valuesx {
-        margin-top: 200px;
+        margin-top: 100px;
         color: #fff; }
         html body #section-about .about-solvex .valuesx .title {
           max-width: 1200px;
@@ -627,42 +627,52 @@ html {
         color: #aaaaaa;
         font-size: 35px; }
       html body #section-about .content .title {
-        max-width: 800px;
-        margin-top: 200px; }
+        margin-top: 100px;
+        text-align: center; }
         html body #section-about .content .title span {
           margin-top: 20px !important; }
         html body #section-about .content .title p {
           margin-top: 10px; }
       html body #section-about .content .people {
         width: 100%;
-        margin-top: 100px;
         display: flex;
         flex-flow: row;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex: 1 1 auto; }
         html body #section-about .content .people .item {
           display: flex;
           flex-flow: column;
           flex-direction: column;
-          height: 320px;
+          min-height: 550px;
           width: 320px;
-          position: relative; }
-          html body #section-about .content .people .item img {
+          position: relative;
+          text-align: center; }
+          html body #section-about .content .people .item .image {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-fit: cover;
-            margin-bottom: 15px; }
+            height: 340px; }
+            html body #section-about .content .people .item .image img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-fit: cover;
+              height: 100%;
+              width: 100%;
+              margin-bottom: 15px; }
           html body #section-about .content .people .item .social {
             width: 70px;
             height: 70px;
             border-radius: 60px;
             position: absolute;
             right: 30px;
-            bottom: 30px; }
+            bottom: 230px; }
+            html body #section-about .content .people .item .social img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
         html body #section-about .content .people span {
-          color: #fff; }
+          color: #fff;
+          margin-top: 30px; }
       html body #section-about .content .btn {
         width: 340px;
         display: block;
@@ -1741,7 +1751,8 @@ html {
   html body #section-about .content .people {
     display: flex;
     flex-flow: column;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     html body #section-about .content .people .item {
       max-width: 100%; }
   html body #section-about .content .experience .item-sx {

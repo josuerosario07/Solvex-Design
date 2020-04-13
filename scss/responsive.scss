@@ -709,6 +709,7 @@
         .content{
           .people{
             @include flexColum;   
+            align-items: center;
             .item{
               max-width: 100%;
             }
