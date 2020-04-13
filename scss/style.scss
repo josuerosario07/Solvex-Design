@@ -16,7 +16,13 @@ html {
     overflow-x: hidden;
     position: relative;
     .container-atsj {
-      max-width: 1640px;
+      max-width: 1200px;
+    }
+    .container-extend{
+      max-width: 1600px;
+    }
+    p{
+      font-size: 16px;
     }
 
     header {
@@ -50,7 +56,7 @@ html {
         top: 0;
         left: 0;
 
-        .container-atsj {
+        .container-extend {
           .navbar-brand {
             margin-right: 60px;
           }
@@ -109,7 +115,7 @@ html {
 
         .atsjcn {
           background-color: transparent;
-          max-width: 940px;
+          // max-width: 940px;
 
           h1 {
             font-family: $coolvetica;
@@ -149,21 +155,25 @@ html {
       }
     }
     .sub-header {
-      min-height: 450px;
+      min-height: 300px;
+      text-align: center;
+      padding-bottom: 30px;
       .all-pl {
-        padding-top: 6%;
+        padding-top: 120px !important;
         .container-atsj {
           .atsjcn {
             background-color: transparent;
             margin: unset !important;
+            padding-top: 0;
+            padding-bottom: 0;
             h1 {
               font-family: coolvetica;
               color: $orange-t-solvex;
               font-size: 83px;
             }
             p {
-              max-width: 700px;
-              font-size: 28px;
+              // max-width: 700px;
+              font-size: 20px;
             }
           }
           .image {
@@ -280,8 +290,8 @@ html {
         }
 
         .item-sx {
-          width: 190px;
-          height: 190px;
+          width: 150px;
+          height: 150px;
           display: block;
           margin: 0 auto;
           border-radius: 100%;
@@ -318,7 +328,7 @@ html {
           img {
             display: block;
             margin: 0 auto;
-            margin-top: 30px;
+            margin-top: 14px;
           }
         }
 
@@ -437,26 +447,26 @@ html {
             margin-top: 25px;
           }
 
-          .blured {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            border-radius: 100%;
+          // .blured {
+          //   position: absolute;
+          //   top: 0;
+          //   left: 0;
+          //   z-index: 1;
+          //   width: 100%;
+          //   height: 100%;
+          //   border-radius: 100%;
 
-            background: linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 1) 0%,
-              rgba(169, 15, 175, 1) 32%,
-              rgba(53, 32, 139, 1) 57%,
-              rgba(147, 68, 9, 1) 79%,
-              rgba(0, 0, 0, 1) 100%
-            );
-            filter: blur(30px);
-            opacity: 0.19;
-          }
+          //   background: linear-gradient(
+          //     90deg,
+          //     rgba(0, 0, 0, 1) 0%,
+          //     rgba(169, 15, 175, 1) 32%,
+          //     rgba(53, 32, 139, 1) 57%,
+          //     rgba(147, 68, 9, 1) 79%,
+          //     rgba(0, 0, 0, 1) 100%
+          //   );
+          //   filter: blur(30px);
+          //   opacity: 0.19;
+          // }
         }
       }
 
@@ -517,8 +527,8 @@ html {
         }
 
         .content-sx {
-          max-width: 670px;
-          min-height: 580px;
+          max-width: 500px;
+          min-height: 510px;
           position: relative;
 
           margin-bottom: 100px;
@@ -528,6 +538,7 @@ html {
             h4 {
               @include subtitleSection;
               color: $orange-solvex;
+              font-size: 40px;
             }
           }
 
@@ -742,7 +753,8 @@ html {
       }
 
       .about-solvex {
-        margin-top: 200px;
+        margin-top: 90px;
+        text-align: center;
 
         span {
           @include subtitleSection;
@@ -797,8 +809,8 @@ html {
             }
           }
           .item {
-            width: 90%;
-            height: 738px;
+            width: 322px;
+            min-height: 350px;
             background: #011633;
             @include flexColum;
             align-items: center;
@@ -807,8 +819,8 @@ html {
             margin-bottom: 20px;
             .content {
               .image {
-                width: 210px;
-                height: 240px;
+                width: 107px;
+                height: 107px;
                 img {
                   width: 100%;
                   height: 100%;
@@ -832,9 +844,10 @@ html {
               padding: 97px 53px;
               transition: 0.4s;
               h4,
-              p {
+              p, ul {
                 color: black;
                 opacity: 0;
+                text-align: left;
               }
               h4 {
                 font-weight: 600;
@@ -845,8 +858,9 @@ html {
                 background: #ebe7e7;
                 height: 100%;
                 h4,
-                p {
+                p, ul {
                   opacity: 1;
+                  font-size: 14px;
                 }
               }
             }
@@ -891,8 +905,8 @@ html {
 
           .item {
             @include flexColum;
-            min-height: 672px;
-            max-width: 475px;
+            height: 320px;
+            width: 320px;
             position: relative;
 
             img {
@@ -907,7 +921,7 @@ html {
               border-radius: 60px;
               position: absolute;
               right: 30px;
-              bottom: 140px;
+              bottom: 30px;
             }
           }
 
@@ -924,11 +938,11 @@ html {
         }
 
         .experience {
-          margin-top: 200px;
+          margin-top: 100px;
 
           .item-sx {
             width: 100%;
-            min-height: 762px;
+            min-height: 650px;
             background-color: $back-solvex;
             padding: 50px 130px;
             @include flexColum;
@@ -1146,7 +1160,6 @@ html {
 
       .challenge {
         .title {
-          margin-top: 150px;
 
           h2 {
             @include subtitleSection;
@@ -1239,7 +1252,7 @@ html {
 
       .content {
         position: relative;
-        margin-top: 100px;
+        // margin-top: 100px;
         padding-top: 20px;
 
         .container-atsj {
@@ -1247,30 +1260,31 @@ html {
         }
         .title {
           margin-top: 100px;
-          margin-bottom: 0;
-
+          margin-bottom: 30px;
+          text-align: center;
           h2 {
             @include subtitleSection;
             color: $white;
             font-size: 50px;
           }
+          .paraf {
+            color: $white;
+            font-size: 20px;
+            // max-width: 1000px;
+            margin-top: 20px;
+          }
         }
 
         position: relative;
 
-        .paraf {
-          color: $white;
-          font-size: 20px;
-          max-width: 1000px;
-          margin-top: 20px;
-        }
+       
 
         .slider-tabs {
           .nav-tabs {
             @include flexRow;
             cursor: pointer !important;
             border-bottom: none;
-            justify-content: flex-end;
+            justify-content: center;
             li {
               a {
                 .item {
@@ -1338,7 +1352,7 @@ html {
               .options-tabs {
                 @include flexRow;
                 margin-top: 30px;
-                justify-content: space-between;
+                // justify-content: space-around;
                 flex-wrap: wrap;
 
                 .item {
@@ -1374,7 +1388,7 @@ html {
                   p {
                     font-size: 15px;
                     margin-top: 20px;
-                    text-align: justify;
+                    // text-align: justify;
                   }
 
                   .btn {
@@ -1403,16 +1417,19 @@ html {
       color: $white;
       .container-atsj {
         .title-top {
-          @include flexRow;
-          justify-content: space-between;
+          // @include flexRow;
+          // justify-content: space-between;
+          max-width: 650px;
+          @include blockItem;
+          text-align: center;
           h2 {
             color: $white;
             font-family: $coolvetica;
             font-size: 63px;
-            max-width: 650px;
+            
           }
           p {
-            max-width: 700px;
+            // max-width: 700px;
           }
         }
         .title-products {
@@ -1433,7 +1450,7 @@ html {
           @include flexRow;
           justify-content: flex-start;
           width: 100%;
-          margin-top: 134px;
+          margin-top: 100px;
           border: none;
 
           .nav-item {
@@ -1479,6 +1496,9 @@ html {
                 }
                 .image-item {
                   margin-top: 100px;
+                  img{
+                    width: 80%;
+                  }
                 }
               }
               .right {
