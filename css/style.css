@@ -1747,7 +1747,7 @@ html {
   html body .cost h3 {
     font-size: 50px; }
   html body #section-about .about-solvex .valuesx .item {
-    width: 100%; }
+    margin: 30px auto; }
   html body #section-about .content .people {
     display: flex;
     flex-flow: column;
@@ -1914,8 +1914,6 @@ html {
         html body .content-factory .accordion .card .collapse .card-body .example-factory .row p,
         html body .content-factory .accordion .card .collapsing .card-body .example-factory .row p {
           font-weight: 200; }
-  html body #section-about .about-solvex .valuesx .item {
-    width: 100%; }
   html body #section-about .content .title {
     margin-top: 0px !important;
     margin-bottom: 0 !important; }
