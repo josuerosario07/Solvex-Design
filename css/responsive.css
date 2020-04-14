@@ -211,18 +211,18 @@
     display: none !important; }
   html body .container {
     padding: 25px; }
-  html body header .navbar .container-atsj {
+  html body header .navbar .container-extend {
     padding: 0 !important; }
-    html body header .navbar .container-atsj .navbar-nav {
+    html body header .navbar .container-extend .navbar-nav {
       display: block;
       padding: 35px 15px 15px 0; }
-      html body header .navbar .container-atsj .navbar-nav .navbar-brand img {
+      html body header .navbar .container-extend .navbar-nav .navbar-brand img {
         width: 110px; }
-      html body header .navbar .container-atsj .navbar-nav li .active {
+      html body header .navbar .container-extend .navbar-nav li .active {
         background: transparent;
         color: #dd3b30 !important;
         position: relative; }
-        html body header .navbar .container-atsj .navbar-nav li .active::before {
+        html body header .navbar .container-extend .navbar-nav li .active::before {
           content: " ";
           position: absolute;
           top: 11px;
