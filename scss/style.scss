@@ -45,6 +45,7 @@ html {
         width: 100%;
         object-fit: cover;
         z-index: -1;
+        left: 0;
       }
 
       .navbar {
@@ -116,6 +117,7 @@ html {
         .atsjcn {
           background-color: transparent;
           // max-width: 940px;
+          text-align: center;
 
           h1 {
             font-family: $coolvetica;
@@ -388,14 +390,16 @@ html {
             font-size: 45px;
           }
           .btn {
-            width: 122px;
+            // width: 122px;
+            // border-radius: 30px;
+            background-color: tranparent;
+            border: solid 1px $orange-solvex;
+            font-weight: bold;
+            color: $orange-solvex;
+            font-size: 16px;
             border-radius: 30px;
-            background-color: $white;
-            font-weight: 600;
-            @include blockItem;
-            margin-top: 40px;
-            &:hover {
-            }
+            margin-top: 10px;
+            
           }
         }
       }
@@ -906,7 +910,7 @@ html {
 
           .item {
             @include flexColum;
-            min-height: 550px;
+            // min-height: 550px;
             width: 320px;
             position: relative;
             text-align: center;
@@ -930,7 +934,7 @@ html {
               border-radius: 60px;
               position: absolute;
               right: 30px;
-              bottom: 230px;
+              bottom: 130px;
               img{
                 width: 100%;
                 height: 100%;
@@ -949,7 +953,7 @@ html {
           @extend .btn-big;
           width: 340px;
           @include blockItem;
-          margin-top: 100px !important;
+          // margin-top: 100px !important;
         }
 
         .experience {
@@ -1744,6 +1748,10 @@ html {
       box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.625);
       p {
         margin: 0px !important;
+       
+      }
+      .description{
+        height: 140px;
       }
       .image {
         width: 100%;
@@ -1811,6 +1819,7 @@ html {
         .title {
           margin-top: 25px;
           max-width: 340px;
+          height: 60px;
           p {
             font-weight: 800;
             font-size: 20px;

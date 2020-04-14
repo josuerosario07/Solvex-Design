@@ -217,7 +217,7 @@
             .nav-item {
               .item-tab {
                 max-width: 260px;
-                padding: 43px 38px 28px 38px;
+                // padding: 43px 38px 28px 38px;
                 align-items: center;
 
                 img {
@@ -234,8 +234,8 @@
 
             .active {
               .item-tab {
-                background-color: #091945;
-                box-shadow: 0px 40px 43px #000;
+                // background-color: #091945;
+                // box-shadow: 0px 40px 43px #000;
 
                 p {
                   color: white;
@@ -266,8 +266,8 @@
           .nav-tabs {
             .nav-item {
               .item-tab {
-                min-width: 300px;
-                min-height: 420px;
+                // min-width: 300px;
+                // min-height: 420px;
                 align-items: flex-start;
                 .title {
                   h3 {
@@ -348,9 +348,9 @@
           .nav-tabs {
             .nav-item {
               .item-tab {
-                max-width: 215px;
-                min-height: 311px;
-                padding: 13px 8px 28px 8px;
+                // max-width: 215px;
+                // min-height: 311px;
+                // padding: 13px 8px 28px 8px;
 
                 h3 {
                   margin-top: 15px;

@@ -153,24 +153,18 @@
     padding-right: 15px; }
     html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab {
       max-width: 260px;
-      padding: 43px 38px 28px 38px;
       align-items: center; }
       html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab img:first-child {
         width: 70%; }
       html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
         font-size: 15px; }
-    html body .content-factory .container-atsj .nav-tabs .active .item-tab {
-      background-color: #091945;
-      box-shadow: 0px 40px 43px #000; }
-      html body .content-factory .container-atsj .nav-tabs .active .item-tab p {
-        color: white; }
+    html body .content-factory .container-atsj .nav-tabs .active .item-tab p {
+      color: white; }
   html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .image-item {
     margin-top: 100px; }
     html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .image-item img {
       width: 80%; }
   html body .products .container-atsj .nav-tabs .nav-item .item-tab {
-    min-width: 300px;
-    min-height: 420px;
     align-items: flex-start; }
     html body .products .container-atsj .nav-tabs .nav-item .item-tab .title h3 {
       font-size: 25px; }
@@ -190,14 +184,10 @@
     justify-content: space-around; }
   html body .content-factory .container-atsj .title h2 {
     font-size: 35px; }
-  html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab {
-    max-width: 215px;
-    min-height: 311px;
-    padding: 13px 8px 28px 8px; }
-    html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab h3 {
-      margin-top: 15px; }
-    html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
-      font-size: 12px; }
+  html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab h3 {
+    margin-top: 15px; }
+  html body .content-factory .container-atsj .nav-tabs .nav-item .item-tab p {
+    font-size: 12px; }
   html body .content-factory .container-atsj .tab-content .tab-pane .item-definition .left .title h3 {
     font-size: 35px; }
   html body .products .container-atsj .nav-tabs .nav-item .item-tab {
