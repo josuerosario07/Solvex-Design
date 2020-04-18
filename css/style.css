@@ -148,7 +148,7 @@ html {
           text-align: center; }
           html body header .all-pl .atsjcn h1 {
             font-family: coolvetica;
-            color: #c73d34;
+            color: #dee2e6;
             font-size: 83px; }
           html body header .all-pl .atsjcn p {
             color: white;
@@ -184,7 +184,7 @@ html {
           padding-bottom: 0; }
           html body .sub-header .all-pl .container-atsj .atsjcn h1 {
             font-family: coolvetica;
-            color: #c73d34;
+            color: #dee2e6;
             font-size: 83px; }
           html body .sub-header .all-pl .container-atsj .atsjcn p {
             font-size: 20px; }
@@ -939,9 +939,24 @@ html {
         html body .mccp .content .container-atsj {
           position: relative; }
         html body .mccp .content .title {
-          margin-top: 100px;
-          margin-bottom: 30px;
-          text-align: center; }
+          position: absolute;
+          left: 0;
+          top: 30px;
+          text-align: left;
+          max-width: 450px;
+          margin-bottom: 0;
+          display: flex;
+          flex-flow: row;
+          flex-direction: row;
+          align-items: center; }
+          @media screen and (max-width: 991px) {
+            html body .mccp .content .title {
+              position: relative; } }
+          html body .mccp .content .title .image {
+            width: 130px;
+            margin-right: 15px; }
+            html body .mccp .content .title .image img {
+              width: 100%; }
           html body .mccp .content .title h2 {
             font-family: coolvetica;
             font-size: 63px;
@@ -951,102 +966,107 @@ html {
             color: #fff;
             font-size: 20px;
             margin-top: 20px; }
-        html body .mccp .content .slider-tabs .nav-tabs {
-          display: flex;
-          flex-flow: row;
-          flex-direction: row;
-          cursor: pointer !important;
-          border-bottom: none;
-          justify-content: center; }
-          html body .mccp .content .slider-tabs .nav-tabs li a {
-            border: transparent; }
-            html body .mccp .content .slider-tabs .nav-tabs li a .item {
-              display: flex;
-              flex-flow: column;
-              flex-direction: column;
-              justify-content: center;
-              margin: 5px;
-              color: #fff;
-              position: relative;
-              transition: 0.2s; }
-              html body .mccp .content .slider-tabs .nav-tabs li a .item:hover {
-                background: #000a19;
-                color: #dd3b30; }
-              html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item h4 {
-                font-family: coolvetica;
-                font-size: 20px; }
-              html body .mccp .content .slider-tabs .nav-tabs li a .item p {
-                position: absolute;
-                bottom: 0;
-                left: 30px;
-                opacity: 0.6; }
-            html body .mccp .content .slider-tabs .nav-tabs li a:hover {
-              border: transparent; }
-          html body .mccp .content .slider-tabs .nav-tabs li .active .item {
-            background: #000a19;
-            color: #dd3b30;
-            border-bottom: solid 3px #dd3b30; }
-          html body .mccp .content .slider-tabs .nav-tabs li .active {
-            background-color: transparent;
-            border: transparent; }
-        html body .mccp .content .slider-tabs .tab-content .tab-pane .title-opton-tabs {
-          max-width: 482px;
-          display: block;
-          margin: auto;
-          margin-top: 100px; }
-          html body .mccp .content .slider-tabs .tab-content .tab-pane .title-opton-tabs .title {
-            margin-top: 10px;
-            margin-bottom: 0; }
-            html body .mccp .content .slider-tabs .tab-content .tab-pane .title-opton-tabs .title h3 {
-              font-family: coolvetica;
-              font-size: 45px; }
-            html body .mccp .content .slider-tabs .tab-content .tab-pane .title-opton-tabs .title p {
-              color: #dd3b30; }
-        html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs {
-          display: flex;
-          flex-flow: row;
-          flex-direction: row;
-          margin-top: 30px;
-          flex-wrap: wrap; }
-          html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item {
-            min-height: 408px;
+        html body .mccp .content .slider-tabs {
+          margin-top: 0px;
+          padding-top: 80px;
+          width: 100%; }
+          html body .mccp .content .slider-tabs .nav-tabs {
             display: flex;
-            flex-flow: column;
-            flex-direction: column;
-            flex: 1 1 auto;
-            max-width: 310px;
-            margin: 50px 30px; }
-            html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .icon {
-              background: #dd3b30;
-              height: 70px;
-              width: 70px;
-              border-radius: 100%;
+            flex-flow: row;
+            flex-direction: row;
+            cursor: pointer !important;
+            border-bottom: none;
+            justify-content: flex-end; }
+            html body .mccp .content .slider-tabs .nav-tabs li a {
+              border: transparent; }
+              html body .mccp .content .slider-tabs .nav-tabs li a .item {
+                display: flex;
+                flex-flow: column;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0px;
+                color: #fff;
+                position: relative;
+                transition: 0.2s;
+                padding: 0; }
+                html body .mccp .content .slider-tabs .nav-tabs li a .item:hover {
+                  background: #000a19;
+                  color: #dd3b30; }
+                html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item h4 {
+                  font-size: 13px;
+                  font-weight: bold; }
+                html body .mccp .content .slider-tabs .nav-tabs li a .item p {
+                  position: absolute;
+                  bottom: 0;
+                  left: 30px;
+                  opacity: 0.6; }
+              html body .mccp .content .slider-tabs .nav-tabs li a:hover {
+                border: transparent; }
+            html body .mccp .content .slider-tabs .nav-tabs li .active .item {
+              background: #000a19;
+              color: #dd3b30;
+              border-bottom: solid 3px #dd3b30; }
+            html body .mccp .content .slider-tabs .nav-tabs li .active {
+              background-color: transparent;
+              border: transparent; }
+          html body .mccp .content .slider-tabs .tab-content .tab-pane .title-opton-tabs {
+            max-width: 482px;
+            display: block;
+            margin: auto;
+            margin-top: 100px; }
+            html body .mccp .content .slider-tabs .tab-content .tab-pane .title-opton-tabs .title {
+              margin-top: 10px;
+              margin-bottom: 0; }
+              html body .mccp .content .slider-tabs .tab-content .tab-pane .title-opton-tabs .title h3 {
+                font-family: coolvetica;
+                font-size: 45px; }
+              html body .mccp .content .slider-tabs .tab-content .tab-pane .title-opton-tabs .title p {
+                color: #dd3b30; }
+          html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs {
+            display: flex;
+            flex-flow: row;
+            flex-direction: row;
+            margin-top: 80px;
+            flex-wrap: wrap; }
+            html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item {
+              min-height: 408px;
               display: flex;
               flex-flow: column;
               flex-direction: column;
-              justify-content: center;
-              padding: 10px; }
-              html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .icon img {
-                width: 70%;
-                height: 70%;
-                align-self: center; }
-            html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item h4 {
-              font-size: 27px;
-              font-family: coolvetica;
-              color: #fff;
-              margin-top: 20px; }
-            html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item p {
-              font-size: 15px;
-              margin-top: 20px; }
-            html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .btn {
-              background: white;
-              color: #dd3b30;
-              padding: 8px 15px;
-              border-radius: 30px;
-              width: 90%;
-              font-weight: bold;
-              align-self: center;
-              margin-top: 20px; }
+              flex: 1 1 auto;
+              max-width: 310px;
+              margin: 50px 30px; }
+              html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .icon {
+                background: #dd3b30;
+                height: 70px;
+                width: 70px;
+                border-radius: 100%;
+                display: flex;
+                flex-flow: column;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px; }
+                html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .icon img {
+                  width: 70%;
+                  height: 70%;
+                  align-self: center; }
+              html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item h4 {
+                font-size: 27px;
+                font-family: coolvetica;
+                color: #fff;
+                margin-top: 20px; }
+              html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item p {
+                font-size: 15px;
+                margin-top: 20px; }
+              html body .mccp .content .slider-tabs .tab-content .tab-pane .options-tabs .item .btn {
+                background: white;
+                color: #dd3b30;
+                padding: 8px 15px;
+                border-radius: 30px;
+                width: 90%;
+                font-weight: bold;
+                align-self: center;
+                margin-top: 20px; }
         html body .mccp .content .bg-vector-blue {
           position: absolute;
           top: 0px;
@@ -1552,8 +1572,6 @@ html {
           margin-top: 20px; }
   html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item img {
     width: 66px; }
-  html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item h4 {
-    font-size: 20px; }
   html body .content-factory .container-atsj .nav-tabs {
     padding-left: 15px;
     padding-right: 15px; }
@@ -1811,7 +1829,11 @@ html {
   html body .mccp .challenge .cube-items {
     display: none; }
   html body .mccp .content .title {
+    justify-content: center;
+    margin-bottom: 80px !important;
     margin-bottom: 30px; }
+    html body .mccp .content .title .image {
+      width: 60px; }
     html body .mccp .content .title h2 {
       text-align: center;
       font-size: 45px; }
@@ -1962,8 +1984,7 @@ html {
   html body .content h3 {
     font-size: 50px !important;
     display: block;
-    margin: auto;
-    margin-bottom: 30px; }
+    margin: auto; }
   html body .content .title {
     margin-bottom: 30px !important; }
   html body .content p {

@@ -1318,9 +1318,26 @@ html {
           position: relative;
         }
         .title {
-          margin-top: 100px;
-          margin-bottom: 30px;
-          text-align: center;
+          // margin-top: 100px;
+          position: absolute;
+          left: 0;
+          top: 30px;
+          text-align: left;
+          max-width: 450px;
+          margin-bottom: 0;
+          @include flexRow;
+          align-items: center;
+          @media screen and (max-width:991px) {
+            position: relative;
+          }
+          .image{
+            width: 130px;
+            margin-right: 15px;
+          
+            img{
+              width: 100%;
+            }
+          }
           h2 {
             @include subtitleSection;
             color: $white;
@@ -1339,28 +1356,33 @@ html {
        
 
         .slider-tabs {
+          margin-top: 0px;
+          padding-top: 80px;
+          width: 100%;
           .nav-tabs {
             @include flexRow;
             cursor: pointer !important;
             border-bottom: none;
-            justify-content: center;
+            justify-content: flex-end;
             li {
               a {
                 .item {
                   @include flexColum;
                   justify-content: center;
-                  margin: 5px;
+                  margin: 0px;
                   color: $white;
                   position: relative;
                   transition: 0.2s;
+                  padding: 0;
                   &:hover {
                     background: $dark-solvex;
                     color: $orange-solvex;
                   }
                   .sub-item {
                     h4 {
-                      font-family: $coolvetica;
-                      font-size: 20px;
+                      // font-family: $coolvetica;
+                      font-size: 13px;
+                      font-weight: bold;
                     }
                   }
 
@@ -1410,7 +1432,7 @@ html {
               }
               .options-tabs {
                 @include flexRow;
-                margin-top: 30px;
+                margin-top: 80px;
                 // justify-content: space-around;
                 flex-wrap: wrap;
 

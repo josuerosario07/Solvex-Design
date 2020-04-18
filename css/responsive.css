@@ -146,8 +146,6 @@
           margin-top: 20px; }
   html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item img {
     width: 66px; }
-  html body .mccp .content .slider-tabs .nav-tabs li a .item .sub-item h4 {
-    font-size: 20px; }
   html body .content-factory .container-atsj .nav-tabs {
     padding-left: 15px;
     padding-right: 15px; }
@@ -405,7 +403,11 @@
   html body .mccp .challenge .cube-items {
     display: none; }
   html body .mccp .content .title {
+    justify-content: center;
+    margin-bottom: 80px !important;
     margin-bottom: 30px; }
+    html body .mccp .content .title .image {
+      width: 60px; }
     html body .mccp .content .title h2 {
       text-align: center;
       font-size: 45px; }
@@ -556,8 +558,7 @@
   html body .content h3 {
     font-size: 50px !important;
     display: block;
-    margin: auto;
-    margin-bottom: 30px; }
+    margin: auto; }
   html body .content .title {
     margin-bottom: 30px !important; }
   html body .content p {
