@@ -293,6 +293,8 @@
       margin: 0 !important; }
       html body .content .services .row .description {
         margin-bottom: 60px; }
+  html body .content .tools .order-mobile {
+    order: 2; }
   html body .content .tools .item-sx {
     text-align: center;
     display: block;
@@ -310,6 +312,7 @@
     display: block;
     margin: auto;
     margin-top: 110px;
+    width: 100%;
     float: none !important; }
   html body .content .cost .items .left {
     margin-right: 0; }
@@ -701,8 +704,6 @@
         margin-bottom: 18px !important; }
       html body .content .tools .item-sx .paraf {
         margin-top: 0; }
-    html body .content .tools .item-bg {
-      display: none !important; }
   html body .content .patner {
     margin-top: 70px !important; }
     html body .content .patner .item-sx img {

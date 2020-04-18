@@ -15,6 +15,46 @@ html {
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
     position: relative;
+    .mask{
+      position: fixed;
+      top: 50%;
+      right: -225px;
+      padding: 0;
+      transform: rotate(-90deg);
+     @media screen and (max-width:991px) {
+       display: none;
+     }
+      z-index: 99;
+      .contact-float{
+        @include flexRow;  
+        width: 486px;
+        justify-content: space-between;
+       box-shadow:0 0 30px rgba(33, 98, 196, 0.486) ;
+        border: solid 1px rgba(255, 255, 255, 0.205);
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding: 10px 20px;
+         align-items: center;
+        //  transform: rotate(0deg);
+        background-color:#000A19;
+        // bottom: 0;
+      
+        .divider{
+          width: 2px;
+          height: 28px;
+          background-color: $white;
+         
+        }
+        a{
+          color: $white;
+          img{
+            margin-right: 8px;
+          }
+        }
+        
+          
+      }
+    }
     .container-atsj {
       max-width: 1200px;
     }
@@ -1908,5 +1948,6 @@ html {
   background-size: cover;
   border-radius: 50%;
 }
+
 
 @import "responsive";

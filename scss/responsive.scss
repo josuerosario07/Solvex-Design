@@ -589,6 +589,12 @@
         }
 
         .tools {
+
+        
+          .order-mobile{
+           
+            order: 2;
+          }
           .item-sx {
             text-align: center;
             @include blockItem;
@@ -611,6 +617,7 @@
           .item-bg {
             @include blockItem;
             margin-top: 110px;
+            width: 100%;
             float: none !important;
           }
         }
@@ -1310,9 +1317,9 @@
             }
           }
 
-          .item-bg {
-            display: none !important;
-          }
+          // .item-bg {
+          //   display: none !important;
+          // }
         }
 
         .patner {
